@@ -3,10 +3,10 @@
     "date": "2026-05-17",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
     "contact_targets": [
-      "약업신문",
-      "기계신문",
-      "서울경제",
-      "전자신문"
+      "HLB",
+      "인천시",
+      "시장 동향",
+      "DH"
     ],
     "items": [
       {
@@ -87,7 +87,7 @@
         "cat": "leader",
         "priority": true,
         "urgency": "mid",
-        "company": "약업신문",
+        "company": "HLB",
         "signal": "리더 이동 신호 · 신임 대표",
         "level": "B",
         "title": "HLB,미국 자회사 엘레바 브라이언 김 신임 대표 선임 - 약업신문",
@@ -122,7 +122,7 @@
         "cat": "outflow",
         "priority": true,
         "urgency": "low",
-        "company": "기계신문",
+        "company": "인천시",
         "signal": "인재 유출 가능성 · 유동성 위기",
         "level": "B",
         "title": "인천시, 기계·제조업 유동성 위기에 2천억 원 '방어막' 가동 - 기계신문",
@@ -157,7 +157,7 @@
         "cat": "outflow",
         "priority": true,
         "urgency": "low",
-        "company": "서울경제",
+        "company": "시장 동향",
         "signal": "인재 유출 가능성 · 유동성 위기",
         "level": "B",
         "title": "작년 영업익 85%가 이자…유동성 위기에도 오너家엔 배당[재무 포커스] - 서울경제",
@@ -192,7 +192,7 @@
         "cat": "leader",
         "priority": true,
         "urgency": "mid",
-        "company": "전자신문",
+        "company": "DH",
         "signal": "리더 이동 신호 · 공동 창업자",
         "level": "B",
         "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까 - 전자신문",

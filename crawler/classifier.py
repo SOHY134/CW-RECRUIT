@@ -1,10 +1,30 @@
 ﻿from __future__ import annotations
 
+import re
+
 from crawler.competitors import ALL_COMPETITORS, CW_INTERNAL
 from crawler.keywords import CATEGORY_KEYWORDS
 
 BASE_SCORE = {"outflow": 80, "leader": 75, "hiring": 45, "foreign": 35, "hr": 25}
 URGENCY_BONUS = {"high": 25, "mid": 12, "low": 4}
+NEWS_SOURCE_SUFFIX = re.compile(r"\s[-–—]\s[^-–—]{2,30}$")
+LEADING_COMPANY = re.compile(r"^\s*([A-Za-z0-9&.\-가-힣·]+(?:\s?[A-Za-z0-9&.\-가-힣·]+){0,2})\s*[,，]")
+KNOWN_COMPANY_ALIASES = [
+    "HLB",
+    "DH",
+    "딜리버리히어로",
+    "배달의민족",
+    "우아한형제들",
+    "LG전자",
+    "삼성전자",
+    "홈플러스",
+    "롯데마트",
+    "이마트24",
+    "카카오게임즈",
+    "카카오엔터",
+    "아모레퍼시픽",
+    "LG생활건강",
+]
 
 
 def contains_any(text: str, words: list[str]) -> str | None:
@@ -39,6 +59,29 @@ def detect_competitor(text: str) -> str | None:
 def is_internal_company(text: str) -> bool:
     lowered = text.lower().replace(" ", "")
     return any(name.lower().replace(" ", "") in lowered for name in CW_INTERNAL)
+
+
+def strip_source_suffix(title: str) -> str:
+    return NEWS_SOURCE_SUFFIX.sub("", title or "").strip()
+
+
+def detect_company(text: str) -> str | None:
+    cleaned = strip_source_suffix(text)
+    competitor = detect_competitor(cleaned)
+    if competitor:
+        return competitor
+
+    lowered = cleaned.lower().replace(" ", "")
+    for name in KNOWN_COMPANY_ALIASES:
+        if name.lower().replace(" ", "") in lowered:
+            return name
+
+    match = LEADING_COMPANY.match(cleaned)
+    if match:
+        candidate = match.group(1).strip(" '\"“”‘’")
+        if not is_internal_company(candidate):
+            return candidate
+    return None
 
 
 def calculate_score(category: str, urgency: str, competitor: str | None, age_days: int, source_level: str) -> int:

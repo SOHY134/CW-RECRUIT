@@ -55,7 +55,7 @@ def subcategory_for(keyword: str | None, category: str) -> str:
 def make_card(raw: dict, report_date: str) -> dict:
     category = raw["category"]
     title = raw["title"]
-    company = raw.get("competitor") or raw.get("source") or "시장 동향"
+    company = raw.get("company") or raw.get("competitor") or "시장 동향"
     keyword = raw.get("keyword") or CAT_LABEL.get(category, "채용 인텔리전스")
     published_date = raw.get("published_date") or report_date
     source_name = raw.get("source") or "뉴스"

@@ -11,7 +11,7 @@ import feedparser
 import requests
 from dateutil import parser as date_parser
 
-from crawler.classifier import calculate_score, detect_category, detect_competitor, is_internal_company, priority_from_score
+from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, priority_from_score
 from crawler.dedupe import is_duplicate
 from crawler.insight import make_card
 from crawler.keywords import CATEGORY_ORDER, FALLBACK_CATEGORIES
@@ -142,6 +142,7 @@ def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
     final_url = meta.get("url") or url
     level = source_level(final_url)
     competitor = detect_competitor(title)
+    company = detect_company(title)
     days = age_days(published, base_time)
     score = calculate_score(category, urgency, competitor, days, level)
     published_date = published.date().isoformat()
@@ -156,6 +157,7 @@ def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
         "urgency": urgency,
         "keyword": keyword,
         "competitor": competitor,
+        "company": company,
         "score": score,
         "priority": priority_from_score(score, category, urgency),
         "published_date": published_date,
