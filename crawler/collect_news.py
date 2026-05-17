@@ -13,6 +13,7 @@ from dateutil import parser as date_parser
 
 from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, is_public_entity, priority_from_score
 from crawler.dedupe import is_duplicate
+from crawler.gemini_audit import audit_cards
 from crawler.insight import make_card
 from crawler.keywords import CATEGORY_ORDER, FALLBACK_CATEGORIES
 from crawler.sources import RSS_QUERIES, build_feed_urls
@@ -215,6 +216,7 @@ def collect_cards(report_date: str | None = None) -> dict:
 
     selected = select_final_items(normalized)
     cards = [make_card(item, report_date) for item in selected]
+    cards = audit_cards(cards)[:MAX_ITEMS]
     summary = f"최근 {MAX_AGE_DAYS}일 이내 실제 URL이 확인된 채용시장 신호 {len(cards)}건을 수집했습니다."
     contact_targets = [c["company"] for c in cards if c.get("priority")][:5]
     return {"date": report_date, "summary": summary, "contact_targets": contact_targets, "items": cards}
