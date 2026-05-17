@@ -1,0 +1,3 @@
+﻿# Keep generated Python caches out of commits.
+__pycache__/
+*.pyc

@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>커넥트웨이브 채용 인텔리전스</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f4f3ef;--surf:#fff;--surf2:#faf9f7;--line:#e6e2d9;--line2:#d4cfc4;
+  --text:#171410;--muted:#6e6860;--sub:#a09890;
+  --red:#b92218;--red-bg:#fff1ee;--red-mid:#f4c9c3;
+  --grn:#1a7a38;--grn-bg:#e8f7ee;
+  --blu:#1a50a0;--blu-bg:#ecf2ff;
+  --amb:#8c5200;--amb-bg:#fff5df;
+  --pur:#5230b0;--pur-bg:#f0eaff;
+  --sw:252px;--top:52px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.55;overflow-x:hidden}
+button,input,select{font-family:inherit}
+a{color:inherit;text-decoration:none}
+
+/* ── TOPBAR ── */
+.topbar{position:fixed;top:0;left:0;right:0;height:var(--top);z-index:80;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 16px;gap:10px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;letter-spacing:-.01em}
+.logo-mark{width:28px;height:28px;border-radius:8px;background:var(--red);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+.top-r{margin-left:auto;display:flex;align-items:center;gap:8px}
+.live-dot{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--grn);font-weight:600}
+.live-dot i{width:7px;height:7px;border-radius:50%;background:var(--grn);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.btn{border:1px solid var(--line2);background:#fff;border-radius:8px;padding:5px 10px;
+  font-size:11px;font-weight:700;cursor:pointer;transition:background .12s}
+.btn:hover{background:var(--bg)}
+.btn.active{background:var(--text);color:#fff;border-color:var(--text)}
+
+/* ── SIDEBAR ── */
+.side{position:fixed;top:var(--top);left:0;bottom:0;width:var(--sw);
+  background:#fff;border-right:1px solid var(--line);
+  display:flex;flex-direction:column;overflow:hidden;z-index:60}
+.side-inner{flex:1;overflow-y:auto;overflow-x:hidden;padding:12px 10px 16px}
+.side-inner::-webkit-scrollbar{width:3px}
+.side-inner::-webkit-scrollbar-thumb{background:var(--line2);border-radius:2px}
+
+/* Calendar */
+.cal-wrap{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;padding:0 2px}
+.cal-head strong{font-size:12px;font-weight:800}
+.cal-nav{width:24px;height:24px;border:1px solid var(--line2);border-radius:6px;
+  background:#fff;cursor:pointer;font-size:13px;line-height:22px;text-align:center}
+.cal-nav:hover{background:var(--bg)}
+/* Strict 7-column grid, never wraps */
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;width:100%}
+.dow{font-size:9px;font-weight:900;color:var(--sub);text-align:center;line-height:22px}
+.day{border:0;background:transparent;border-radius:6px;
+  width:100%;aspect-ratio:1;padding:0;
+  font-family:'DM Mono',monospace;font-size:10px;color:var(--sub);
+  cursor:default;text-align:center;line-height:1;
+  display:flex;align-items:center;justify-content:center;position:relative}
+.day.has{color:var(--text);font-weight:700;cursor:pointer}
+.day.has::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);
+  width:3px;height:3px;border-radius:50%;background:var(--red)}
+.day.active{background:var(--red);color:#fff;cursor:pointer}
+.day.active::after{background:#fff}
+.day.today{outline:1.5px solid var(--red);outline-offset:-1px}
+.day.empty{cursor:default}
+
+/* View mode buttons */
+.view-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:10px}
+.view-btns button{border:1px solid var(--line2);background:#fff;border-radius:7px;
+  padding:5px 0;font-size:10px;font-weight:800;cursor:pointer;transition:.1s}
+.view-btns button.active{background:var(--text);color:#fff;border-color:var(--text)}
+
+/* Archive list */
+.side-sec-lbl{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--sub);margin-bottom:6px;padding:0 2px}
+.arch-item{width:100%;border:0;background:transparent;display:flex;align-items:center;
+  gap:6px;text-align:left;padding:6px 8px;border-radius:7px;cursor:pointer;
+  color:var(--muted);font-size:11px;transition:.1s}
+.arch-item:hover{background:var(--surf2)}
+.arch-item.active{background:var(--red-bg);color:var(--red);font-weight:800}
+.arch-item .arch-lbl{flex:1;text-align:left}
+.arch-item .arch-sub{font-size:9px;color:var(--sub);font-weight:400}
+.arch-cnt{margin-left:auto;font-family:'DM Mono';font-size:9px;
+  background:var(--bg);border-radius:999px;padding:1px 6px;flex-shrink:0}
+.arch-item.active .arch-cnt{background:var(--red);color:#fff}
+
+/* ── MAIN ── */
+.main{margin-left:var(--sw);padding:calc(var(--top) + 18px) 18px 60px;max-width:1240px}
+
+/* Urgent */
+.urgent{background:var(--red-bg);border:1px solid var(--red-mid);
+  border-radius:14px;padding:13px 15px;margin-bottom:14px}
+.urgent-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.badge{background:var(--red);color:#fff;border-radius:999px;
+  padding:3px 9px;font-size:10px;font-weight:900}
+.urgent-head h2{font-size:13px;font-weight:700;color:#741a13}
+.urgent-list{display:flex;flex-direction:column;gap:4px}
+.urgent-item{display:flex;align-items:center;gap:8px;border:0;
+  background:rgba(255,255,255,.75);border-radius:8px;padding:7px 10px;
+  text-align:left;cursor:pointer;width:100%;transition:background .1s}
+.urgent-item:hover{background:rgba(255,255,255,.95)}
+.urgent-co{font-weight:800;color:#741a13;min-width:110px;font-size:12px;flex-shrink:0}
+.urgent-ttl{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.urgent-lv{font-size:9px;font-weight:900;color:var(--red);background:#fde;
+  border-radius:5px;padding:1px 5px;flex-shrink:0}
+
+/* Metrics */
+.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-bottom:14px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 11px}
+.metric-lbl{font-size:9px;font-weight:900;color:var(--sub);letter-spacing:.07em;
+  text-transform:uppercase;margin-bottom:5px}
+.metric-val{font-family:'DM Mono';font-size:22px;font-weight:900;line-height:1}
+.metric-cap{font-size:10px;color:var(--muted);margin-top:4px}
+
+/* Layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:12px}
+
+/* Feed */
+.feed-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.feed-title{font-size:15px;font-weight:900;letter-spacing:-.02em}
+.ctl{margin-left:auto;display:flex;gap:6px}
+.ctl input,.ctl select{border:1px solid var(--line2);border-radius:8px;
+  padding:6px 9px;background:#fff;font-size:11px}
+.chips{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.chip{border:1px solid var(--line2);background:transparent;border-radius:999px;
+  padding:4px 10px;cursor:pointer;font-size:11px;color:var(--muted);
+  font-weight:700;transition:.1s}
+.chip.active{background:var(--text);border-color:var(--text);color:#fff}
+
+/* Cards */
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:13px 14px;margin-bottom:7px;cursor:pointer;transition:box-shadow .13s}
+.card.high{border-left:4px solid var(--red)}
+.card:hover{box-shadow:0 5px 16px rgba(0,0,0,.07)}
+.card-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-bottom:5px}
+.tag{border-radius:999px;padding:2px 7px;font-size:9px;font-weight:900;letter-spacing:.02em}
+.cat-leader{background:var(--pur-bg);color:#3a2580}
+.cat-outflow{background:var(--red-bg);color:#741a13}
+.cat-hiring{background:var(--grn-bg);color:#145530}
+.cat-hr{background:var(--blu-bg);color:#123a7a}
+.cat-foreign{background:var(--amb-bg);color:#5a3800}
+.lv-a{background:#edf6ff;color:#0a3468;border:1px solid #c5daf4}
+.lv-b{background:#eefaf2;color:#0e4a22;border:1px solid #bce4cc}
+.lv-c{background:#fff9ec;color:#5a3800;border:1px solid #f0d9a0}
+.card-time{font-family:'DM Mono';font-size:10px;color:var(--sub)}
+.card h3{font-size:13.5px;font-weight:700;margin-bottom:4px;line-height:1.4}
+.card p{color:var(--muted);font-size:11.5px;line-height:1.5}
+.hashes{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}
+.hash{background:var(--surf2);border-radius:999px;padding:2px 7px;
+  color:var(--muted);font-size:10px;border:1px solid var(--line)}
+.empty-state{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px}
+
+/* Aside */
+.aside-card{background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:12px;margin-bottom:9px}
+.aside-title{font-size:9px;font-weight:900;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:9px}
+.rank button{width:100%;display:flex;gap:7px;align-items:center;border:0;
+  background:transparent;text-align:left;padding:6px 7px;border-radius:8px;
+  cursor:pointer;transition:.1s}
+.rank button:hover{background:var(--surf2)}
+.rank-co{font-weight:800;font-size:11.5px}
+.rank-sig{font-size:10px;color:var(--muted)}
+.rk{font-family:'DM Mono';color:var(--sub);width:14px;font-size:11px;flex-shrink:0}
+.comp-item{border-bottom:1px solid var(--line);padding:7px 0}
+.comp-item:last-child{border-bottom:0;padding-bottom:0}
+.comp-item b{font-size:11.5px}
+.comp-item small{display:block;color:var(--blu);font-size:10px;margin:2px 0}
+.comp-item p{font-size:10.5px;color:var(--muted)}
+.cred-item{display:flex;align-items:baseline;gap:7px;padding:5px 0;
+  border-bottom:1px solid var(--line)}
+.cred-item:last-child{border-bottom:0}
+.cred-badge{font-size:10px;font-weight:900;border-radius:5px;padding:2px 7px;flex-shrink:0}
+
+/* Modal */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:200;
+  display:none;align-items:center;justify-content:center;padding:16px}
+.modal-bg.open{display:flex}
+.modal{width:100%;max-width:720px;max-height:90vh;overflow:auto;
+  background:#fff;border-radius:18px;box-shadow:0 20px 70px rgba(0,0,0,.2)}
+.modal-head{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);
+  padding:17px 20px;z-index:1;display:flex;align-items:flex-start;gap:10px}
+.modal-head-info{flex:1}
+.modal-head h2{font-size:17px;font-weight:800;line-height:1.35}
+.modal-head .modal-meta{display:flex;align-items:center;gap:5px;margin-top:5px;flex-wrap:wrap}
+.close-btn{border:1px solid var(--line2);background:#fff;border-radius:8px;
+  padding:5px 10px;cursor:pointer;font-size:12px;font-weight:700;flex-shrink:0}
+.modal-body{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.info-block{border:1px solid var(--line);border-radius:11px;padding:13px 14px}
+.info-block h4{font-size:9px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--sub);margin-bottom:7px;font-weight:900}
+.info-block p{font-size:13px;color:var(--muted);line-height:1.65}
+.info-block.insight{background:#fffbf0;border-color:#f2d98a}
+.info-block.insight h4{color:#7a4e00}
+.info-block.insight p{color:#5a3800}
+.info-block.action{background:#f0f5ff;border-color:#c2d4f8}
+.info-block.action h4{color:#103270}
+.info-block.action p{color:#1a3a70}
+.info-block.sources{background:#f5fbf7;border-color:#b8e4c8}
+.info-block.sources h4{color:#145530}
+.src-link{display:flex;align-items:center;gap:10px;
+  border:1px solid var(--line);background:var(--surf2);border-radius:9px;
+  padding:10px 12px;margin-bottom:6px;text-decoration:none;
+  transition:border-color .12s,background .12s}
+.src-link:hover{border-color:var(--blu);background:var(--blu-bg)}
+.src-link:last-child{margin-bottom:0}
+.src-arrow{font-size:14px;color:var(--blu);flex-shrink:0}
+.src-info b{display:block;font-size:12px;margin-bottom:2px}
+.src-info small{font-size:10px;color:var(--sub)}
+
+@media(max-width:1060px){
+  .side{display:none}
+  .main{margin-left:0}
+  .layout{grid-template-columns:1fr}
+  .metrics{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:640px){
+  .metrics{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="logo">
+    <div class="logo-mark">CW</div>
+    커넥트웨이브 채용 인텔리전스
+  </div>
+  <div class="top-r">
+    <div class="live-dot"><i></i>실시간 모니터링</div>
+    <span id="lastUpdated" style="font-size:10px;color:var(--muted)"></span>
+    <button class="btn" onclick="manualRefresh()">↻ 지금 수집</button>
+    <button class="btn" onclick="downloadCSV()">↓ CSV</button>
+  </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="side">
+  <div class="side-inner">
+    <!-- Calendar -->
+    <div class="cal-wrap">
+      <div class="cal-head">
+        <button class="cal-nav" onclick="calNav(-1)">‹</button>
+        <strong id="calLabel">2026.05</strong>
+        <button class="cal-nav" onclick="calNav(1)">›</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+
+    <!-- View mode -->
+    <div class="view-btns">
+      <button id="btn-daily" onclick="setView('daily')" class="active">일간</button>
+      <button id="btn-weekly" onclick="setView('weekly')">주간</button>
+      <button id="btn-monthly" onclick="setView('monthly')">월간</button>
+    </div>
+
+    <!-- Archive -->
+    <div class="side-sec-lbl">아카이브</div>
+    <div id="archList"></div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- 즉시주목 -->
+  <section class="urgent">
+    <div class="urgent-head">
+      <span class="badge">즉시 주목</span>
+      <h2>인재 이탈 가능성이 높은 기업 — 컨택 권장</h2>
+    </div>
+    <div class="urgent-list" id="urgentList"></div>
+  </section>
+
+  <!-- 지표 -->
+  <section class="metrics" id="metricsRow"></section>
+
+  <!-- 피드 + 사이드 -->
+  <section class="layout">
+    <div>
+      <div class="feed-head">
+        <button class="btn" style="padding:5px 8px" onclick="shiftDate(-1)">‹</button>
+        <div class="feed-title" id="feedTitle">—</div>
+        <button class="btn" style="padding:5px 8px" onclick="shiftDate(1)">›</button>
+        <div class="ctl">
+          <input id="kw" placeholder="기업명, 키워드" oninput="renderFeed()">
+          <select id="catSel" onchange="syncChips();renderFeed()">
+            <option value="all">전체</option>
+            <option value="leader">리더 이탈</option>
+            <option value="outflow">인재 유출</option>
+            <option value="hiring">채용 확대</option>
+            <option value="foreign">해외/외국계</option>
+            <option value="hr">HR NEWS</option>
+          </select>
+        </div>
+      </div>
+      <div class="chips">
+        <button class="chip active" data-cat="all" onclick="setCat('all',this)">전체</button>
+        <button class="chip" data-cat="leader" onclick="setCat('leader',this)">리더 이탈</button>
+        <button class="chip" data-cat="outflow" onclick="setCat('outflow',this)">인재 유출</button>
+        <button class="chip" data-cat="hiring" onclick="setCat('hiring',this)">채용 확대</button>
+        <button class="chip" data-cat="foreign" onclick="setCat('foreign',this)">해외/외국계</button>
+        <button class="chip" data-cat="hr" onclick="setCat('hr',this)">HR NEWS</button>
+      </div>
+      <div id="feed"></div>
+    </div>
+
+    <!-- Right sidebar -->
+    <aside>
+      <div class="aside-card">
+        <div class="aside-title">인재 유출 TOP 5</div>
+        <div class="rank" id="rankOutflow"></div>
+      </div>
+      <div class="aside-card">
+        <div class="aside-title">리더 이탈 TOP 5</div>
+        <div class="rank" id="rankLeader"></div>
+      </div>
+      <div class="aside-card">
+        <div class="aside-title">신뢰도 기준</div>
+        <div class="cred-item">
+          <span class="cred-badge lv-a">A</span>
+          <span style="font-size:11px;color:var(--muted)">공시·정부기관·공식자료·IR</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-badge lv-b">B</span>
+          <span style="font-size:11px;color:var(--muted)">주요 언론·복수 기사·전문지</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-badge lv-c">C</span>
+          <span style="font-size:11px;color:var(--muted)">LinkedIn·블라인드·커뮤니티</span>
+        </div>
+      </div>
+      <div class="aside-card">
+        <div class="aside-title">CW 경쟁사 타겟</div>
+        <div id="compList"></div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<!-- Modal -->
+<div class="modal-bg" id="modalBg" onclick="closeBg(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-head-info">
+        <h2 id="mTitle">—</h2>
+        <div class="modal-meta" id="mMeta"></div>
+      </div>
+      <button class="close-btn" onclick="closeModal()">닫기</button>
+    </div>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════
+   DATA — 2026-04-01 ~ 2026-05-10
+   모든 항목 출처 있음 / 그룹사(다나와·에누리·메이크샵·플레이오토·몰테일) 제외
+   카테고리: leader | outflow | hiring | foreign | hr
+   신뢰도: A | B | C
+══════════════════════════════════════════════════════ */
+const ENTRIES = [
+
+/* ═══════════════════════════════════════════════
+   4월 1일 (수) — 인재유출·리더이탈 없음 → HR NEWS + 채용확대로 채움
+   수집 범위: 3/18~4/1
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0401_a",date:"2026-04-01",time:"09:00",cat:"hiring",priority:false,urgency:"low",
+ company:"CJ그룹",signal:"상반기 공채 전년비 30% 확대",level:"A",
+ title:"CJ그룹 2026 상반기 공채 30% 확대 — CJ대한통운·ENM 등 전 계열사",
+ body:"CJ그룹이 2026년 상반기 신입사원 공채 규모를 전년 대비 약 30% 늘렸어요. CJ제일제당·CJ ENM·CJ대한통운 등 주요 계열사 전반에서 채용이 진행돼요. 물류·IT·커머스 직군 비중이 높아요.",
+ insight:"CJ 공채 탈락자 중 커머스·물류 경험자를 파이프라인화하는 역채용 전략이 유효해요. CJ대한통운 물류·IT 직군 불합격자에게 커넥트웨이브 유사 포지션을 역제안하는 아웃바운드 소싱을 병행하세요.",
+ action:"CJ 공채 탈락자 풀을 잡코리아·링커리어에서 모니터링하세요. CJ대한통운 IT·물류 직군 불합격자에게 커넥트웨이브 물류·파트너 운영 포지션을 역제안하는 아웃바운드 소싱 메시지를 준비하세요.",
+ tags:["CJ","공채","채용확대","물류","IT"],
+ sources:[{name:"CJ Newsroom",url:"https://cjnews.cj.net/qa-cj%EA%B7%B8%EB%A3%B9-2026%EB%85%84-%EC%83%81%EB%B0%98%EA%B8%B0-%EC%8B%A0%EC%9E%85%EC%82%AC%EC%9B%90-%EA%B3%B5%EA%B0%9C-%EC%B1%84%EC%9A%A9-%EC%8B%9C%EC%9E%91/",level:"A"},{name:"전자신문",url:"https://www.etnews.com/20260318000216",level:"B"}]},
+
+{id:"e_0401_b",date:"2026-04-01",time:"09:30",cat:"hr",priority:false,urgency:"low",
+ company:"인크루트",signal:"2026 달라지는 HR 제도 총정리 — 노란봉투법·주4.5일제·육아기 10시 출근",level:"B",
+ title:"2026 달라지는 HR 제도 5가지 — 노란봉투법·주4.5일제·최저임금 1만320원 시행",
+ body:"인크루트가 2026년 달라지는 HR 제도를 정리했어요. ①주4.5일제 노동시간 단축 시동 ②3월 노란봉투법 시행 ③육아기 자녀 둔 직원 10시 출근제 신설 ④최저임금 1만320원 적용 ⑤근로자의 날→노동절 명칭 변경이 핵심이에요.",
+ insight:"2026년은 노동 정책 변화가 실제 현장에 본격 반영되는 첫해예요. 채용 JD·취업규칙·급여 체계를 전면 점검할 타이밍이에요. 특히 최저임금 산입 구조와 포괄임금 계약 방식은 즉시 검토가 필요해요.",
+ action:"취업규칙·급여 계산서·연간 캘린더에서 변경 사항(노동절 명칭, 최저임금, 육아기 출근제)을 일괄 반영하세요. 법무팀과 함께 포괄임금 계약서도 점검하세요.",
+ tags:["HR제도","노란봉투법","주4.5일제","최저임금","육아기출근"],
+ sources:[{name:"머스트뉴스",url:"https://mustnews.co.kr/View.aspx?No=3921388",level:"B"},{name:"이지경제",url:"https://www.ezyeconomy.com/news/articleView.html?idxno=230166",level:"B"}]},
+
+{id:"e_0401_c",date:"2026-03-28",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"2026 중점과제 — 주4.5일제 324억 시범사업·포괄임금 분기 기획감독",level:"A",
+ title:"고용노동부 2026 중점과제 — 주4.5일제 324억 투입·포괄임금 오남용 분기별 감독",
+ body:"고용노동부가 2026년 중점과제를 발표했어요. 주4.5일제 모범 사례 확산을 위해 324억원 예산을 투입하고, 포괄임금 오남용 사업장 대상 분기별 기획감독을 실시해요. 야간노동자 실태조사도 병행해요.",
+ insight:"포괄임금 기획감독이 분기별로 실시되면 IT·스타트업이 주요 대상이 돼요. '연봉에 모든 수당 포함'이라는 한 줄 계약은 이미 법적 위험 구간이에요. 지금 당장 노무사 자문으로 계약서를 점검해야 해요.",
+ action:"포괄임금 계약서와 근로계약서를 노무사와 전수 점검하세요. 고정OT 설정 금액이 실근로시간 기준 법정수당에 미치지 못하면 차액 지급 의무가 발생해요.",
+ tags:["고용노동부","포괄임금","주4.5일제","노무감독","HR"],
+ sources:[{name:"정책브리핑",url:"https://www.korea.kr/news/policyNewsView.do?newsId=156734720",level:"A"}]},
+
+{id:"e_0401_d",date:"2026-03-25",time:"09:00",cat:"hr",priority:true,urgency:"mid",
+ company:"샤플",signal:"노란봉투법·포괄임금·근로자추정제 — HR 실무 4대 이슈",level:"B",
+ title:"2026 HR 실무자가 알아야 할 노동법 4대 이슈 — 노란봉투법·포괄임금·근로자추정제",
+ body:"샤플이 2026년 HR 실무자 필수 노동법 이슈 4가지를 정리했어요. ①노란봉투법(원청 사용자 책임 확대) ②포괄임금 오남용 규제 ③근로자추정제(프리랜서→근로자 인정 확대) ④실노동시간 단축 로드맵이에요.",
+ insight:"IT·커머스 기업에서 빈번히 사용되는 프리랜서 개발자, 외주 대행사가 모두 영향권이에요. '계약서 명칭'이 아닌 '실제 운영 방식'으로 사용자성을 판단하기 때문에 현행 계약 구조를 법무팀과 즉시 점검해야 해요.",
+ action:"외주·프리랜서 계약서를 실제 근무 방식 기준으로 법무팀과 전수 검토하세요. 협력사 관리 체계에서 원청 책임 인정 요소를 제거하거나 명확히 구분하세요.",
+ tags:["노란봉투법","포괄임금","근로자추정제","프리랜서","HR","노무"],
+ sources:[{name:"샤플",url:"https://www.shoplworks.com/blog-insight/korea-labor-policy-hr-2026-update",level:"B"}]},
+
+{id:"e_0401_e",date:"2026-04-01",time:"10:00",cat:"hr",priority:false,urgency:"low",
+ company:"서치라이트AI",signal:"2026 하반기 채용 트렌드 — AI 에이전트·스킬기반채용·아웃바운드 44% 증가",level:"B",
+ title:"2026 채용 트렌드: AI 에이전트 채용 확산·아웃바운드 소싱 44% 증가",
+ body:"서치라이트AI가 2026년 하반기 채용 트렌드를 발표했어요. 국내 매출 상위 500대 기업 중 86.7%가 이미 인사 업무에 AI를 활용 중이에요. 아웃바운드 채용이 3년간 44% 증가했고, 가트너는 HR 부문 예산 증가율이 2.4%→0.7%로 급락할 것으로 전망해요.",
+ insight:"HR 예산은 줄지만 AI·기술 도구 예산은 늘어나는 구조예요. 더 적은 인원을 더 정밀하게, 더 빠르게 채용하는 것이 2026년 핵심 과제예요. 소싱 자동화를 지금 도입하지 않으면 경쟁사에 뒤처져요.",
+ action:"현재 채용 프로세스의 병목 지점을 파악하세요. 소싱에 시간이 가장 많이 걸린다면 소싱 자동화를, 스크리닝 품질이 문제라면 역량 기반 평가 체계 구축을 우선순위에 두세요.",
+ tags:["채용트렌드","AI채용","아웃바운드","스킬기반채용","HR"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"},{name:"원티드 블로그",url:"https://blog.wantedlab.com/hr/report/hr-trend-report-2026",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   4월 2일~9일 (주간) — HR·채용 트렌드 + 케이뱅크 희망퇴직
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0403_a",date:"2026-04-03",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"캘러스",signal:"2026 HR 트렌드 — 직무중심 전환·AI 에이전트·성과관리 재설계",level:"B",
+ title:"2026 HR 트렌드 5가지 — '사람 중심'에서 '직무 중심'으로 완전 전환",
+ body:"캘러스가 2026년 HR 트렌드를 발표했어요. 핵심은 직무 중심 인사체계 전환, AI 에이전트 채용 자동화, 상시 성과관리(CPM), 피플 애널리틱스, 탄력적 리더십이에요. 채용·평가·보상·육성 모든 HR 프로세스가 직무 가치 기준으로 재설계돼요.",
+ insight:"채용 JD를 직무 가치 기반으로 재작성할 타이밍이에요. '몇 년차' 대신 '어떤 스킬·성과를 낼 수 있느냐'로 기준을 바꿔야 우수 후보자를 더 정확하게 잡을 수 있어요.",
+ action:"주요 포지션의 JD를 직무 기반으로 재작성하세요. 스킬 요건을 구체화하고 연차 대신 역량 기준으로 스크리닝 방식을 전환하세요.",
+ tags:["HR트렌드","직무중심","AI에이전트","성과관리","채용"],
+ sources:[{name:"캘러스",url:"https://www.calluscompany.com/blog/kr/2026-hr-trend",level:"B"},{name:"openads",url:"https://openads.co.kr/content/contentDetail?contsId=18131",level:"B"}]},
+
+{id:"e_0407_a",date:"2026-04-07",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"청년일자리도약장려금 2026 기준 개정 — 인당 최대 960만원",level:"A",
+ title:"청년일자리도약장려금 2026 기준 개정 — 정규직 채용 시 인당 최대 960만원 지원",
+ body:"고용노동부가 청년일자리도약장려금 2026년 지원 기준을 업데이트했어요. 청년 정규직 채용 연계 시 인당 최대 960만원까지 지원받을 수 있어요. 채용 시작 전 참여 기업 등록 절차를 완료해야 소급 적용이 가능해요.",
+ insight:"채용 예정 포지션에 적용 가능한 지원사업을 사전에 확인하는 것이 채용 비용 절감의 핵심이에요. 지금 당장 고용24에서 요건을 확인하고 참여 신청을 해두는 게 좋아요.",
+ action:"고용24(work24.go.kr)에서 2026년 요건을 HR팀과 경영지원팀이 함께 검토하세요. 채용 예정 포지션별 지원 가능 여부를 분기 초에 확정하고 참여 기업 등록 절차를 밟아두세요.",
+ tags:["청년일자리도약장려금","정부지원","청년채용","HR","장려금"],
+ sources:[{name:"고용노동부",url:"https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20260400705",level:"A"},{name:"고용24",url:"https://m.work24.go.kr/",level:"A"}]},
+
+{id:"e_0408_a",date:"2026-04-08",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"원티드랩",signal:"채용 트렌드 2026 — 팀핏·인재 밀도·AI 채용 리포트 발행",level:"B",
+ title:"원티드 2026 채용 트렌드 리포트 — '팀핏' 부상·인재 밀도 관리·AI 채용 전면화",
+ body:"원티드랩이 인사 담당자 153명 대상 '채용 트렌드 2026' 리포트를 발행했어요. 2026년 채용 패러다임 핵심은 컬처핏→팀핏으로의 전환이에요. 응답 기업의 74.5%가 2026년 채용 규모를 유지하거나 확대할 계획이에요.",
+ insight:"'팀핏' 채용은 단순히 면접 질문 하나를 더 추가하는 것이 아니에요. 팀 내 역할 분배, 의사결정 방식, 협업 스타일을 기반으로 후보자 적합도를 평가하는 구조적 전환이 필요해요.",
+ action:"채용 면접 가이드에 팀핏 검증 질문 세트를 추가하세요. 직무 역량과 별도로 팀 협업 방식·의사결정 스타일을 검증하는 항목을 만들어두세요.",
+ tags:["원티드","채용트렌드","팀핏","인재밀도","AI채용"],
+ sources:[{name:"원티드 블로그",url:"https://blog.wantedlab.com/hr/report/hr-trend-report-2026",level:"B"},{name:"플래텀",url:"https://platum.kr/archives/276662",level:"B"}]},
+
+{id:"e_0409_a",date:"2026-04-09",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"무신사·두나무·아임웹",signal:"신년 초부터 개발자 대규모 채용 — AI 네이티브 요건 필수화",level:"B",
+ title:"무신사·두나무·아임웹 개발자 대규모 채용 — AI 활용 능력 필수 요건으로 전환",
+ body:"2026년 신년 초부터 무신사, 두나무, 아임웹 등이 개발 직군 대규모 채용을 진행하고 있어요. 무신사는 'AI 네이티브 주니어 개발자' 공채를 진행 중이에요. 2026년 채용 공고에서 AI 활용 능력이 선택이 아닌 전제 조건으로 이동하고 있어요.",
+ insight:"경쟁사들이 AI 네이티브 개발자를 적극 채용하고 있어요. 커넥트웨이브도 JD에 AI 도구 활용 역량을 필수 항목으로 추가하고, 온보딩 프로그램에 AI 활용 교육을 포함시켜야 경쟁력을 유지할 수 있어요.",
+ action:"개발 직군 JD에 AI 도구 활용 역량 항목을 추가하세요. 코딩 테스트나 면접에서 AI 도구 활용 경험을 검증하는 항목을 추가하는 것도 검토해보세요.",
+ tags:["무신사","두나무","아임웹","개발자채용","AI네이티브","채용확대"],
+ sources:[{name:"코드트리 블로그",url:"https://www.codetree.ai/blog/2026-%EC%A3%BC%EB%AA%A9%ED%95%A0-%EB%A7%8C%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B1%84%EC%9A%A9-%EB%AA%A8%EC%9D%8C-%EB%AC%B4%EC%8B%A0%EC%82%AC%C2%B7%EB%91%90%EB%82%98%EB%AC%B4%C2%B7%EC%95%84/",level:"B"},{name:"사람인",url:"https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/VzFGMHNFb205aWpoSXlLTXo4NnhBQT09/company_nm/(%EC%A3%BC)%EB%AC%B4%EC%8B%A0%EC%82%AC",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   4월 10일~13일 — 케이뱅크 희망퇴직 + 롯데건설 + HR
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0410_a",date:"2026-04-10",time:"09:00",cat:"hr",priority:true,urgency:"mid",
+ company:"고용노동부",signal:"청년일자리도약장려금 2026 공고 — 상반기 채용 전 필수 확인",level:"A",
+ title:"청년일자리도약장려금 2026 상반기 공고 — 채용 담당자 필수 확인 사항",
+ body:"고용노동부가 2026년 청년일자리도약장려금 지원 사업을 공고했어요. 채용 시작 전 참여 기업 등록 절차를 완료해야 지원금이 적용돼요. 요건 충족 시 청년 정규직 1인당 최대 960만원까지 지원받을 수 있어요.",
+ insight:"많은 채용 담당자가 놓치는 재원이에요. 채용이 시작된 이후에는 소급 적용이 불가해요. 상반기 채용 예정 포지션이 있다면 지금 즉시 확인해야 해요.",
+ action:"고용24(work24.go.kr)에서 2026년 지원 요건을 확인하고 채용 예정 포지션별 지원 가능 여부를 분기 초에 확정하세요.",
+ tags:["청년장려금","정부지원","채용비용","HR","고용노동부"],
+ sources:[{name:"고용노동부",url:"https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20260400705",level:"A"}]},
+
+{id:"e_0413_a",date:"2026-04-13",time:"16:45",cat:"outflow",priority:true,urgency:"high",
+ company:"케이뱅크",signal:"창사 첫 희망퇴직 — 인터넷은행 3사 최초",level:"B",
+ title:"케이뱅크 창사 첫 희망퇴직 — 코스피 상장 한 달 만에 전 직원 대상",
+ body:"케이뱅크가 코스피 상장 완료 후 한 달여 만에 전 직원 대상 상시 희망퇴직 프로그램을 도입했어요. 인터넷전문은행 3사 중 최초 사례로 임직원 578명 중 두 자릿수 안팎 감원이 예상돼요. 5월 중 퇴직 처리 완료 예정이에요.",
+ insight:"핀테크·인터넷은행 출신은 결제·정산·보안·데이터 도메인 이해도가 높아 커넥트웨이브 빌링·정산 플랫폼 포지션과 직결돼요. 주가 공모가 대비 23% 하락으로 조직 불안감이 크고 이직 의향자 비율이 높아요.",
+ action:"LinkedIn에서 케이뱅크 결제/정산 백엔드 5년차 이상을 즉시 서치하세요. 컨택 메시지에 커머스 정산·빌링 도메인 확장성과 대규모 트랜잭션 처리 경험을 명시적으로 강조하세요.",
+ tags:["케이뱅크","희망퇴직","핀테크","인터넷은행","결제정산","인재유출"],
+ sources:[{name:"딜사이트",url:"https://dealsite.co.kr/articles/160700",level:"B"},{name:"알파경제",url:"https://alphabiz.co.kr/news/view/1065594365739399",level:"B"},{name:"조세금융신문",url:"https://www.tfmedia.co.kr/news/article.html?no=203712",level:"B"}]},
+
+{id:"e_0413_b",date:"2026-04-13",time:"10:00",cat:"outflow",priority:false,urgency:"mid",
+ company:"롯데건설",signal:"희망퇴직 — 기본급 최대 30개월치",level:"B",
+ title:"롯데건설 희망퇴직 기본급 최대 30개월치 위로금 — IT·기획 직군 포함",
+ body:"롯데건설이 희망퇴직을 실시하며 기본급 최대 30개월치 위로금을 지급해요. 건설업 불황 지속과 수익성 압박이 배경으로, IT기획·디지털 전환·HR 직군도 일부 포함됐어요.",
+ insight:"건설업이 주 타깃은 아니지만, 롯데건설 IT기획·디지털 전환·HR 직군은 커넥트웨이브 포지션과 부분 연결돼요. 위로금 규모가 크다는 점에서 이직 결정 속도가 빠를 수 있어요.",
+ action:"IT/기획/HR 직군만 핀셋 선별해 LinkedIn에서 롯데건설 이직 준비자를 확인하세요.",
+ tags:["롯데건설","희망퇴직","IT기획","디지털전환","인재유출"],
+ sources:[{name:"알파경제",url:"https://alphabiz.co.kr/news/view/1065594365739399",level:"B"}]},
+
+{id:"e_0413_c",date:"2026-04-13",time:"11:00",cat:"hr",priority:false,urgency:"low",
+ company:"잡코리아",signal:"기업 10곳 중 7곳 채용 규모 유지·확대 계획 — 직무 전문 역량·AI 활용 인재 선호",level:"B",
+ title:"기업 10곳 중 7곳 2026 채용 규모 유지·확대 — AI 활용 역량이 4번째 인재상",
+ body:"잡코리아 설문에 따르면 응답 기업의 74.5%가 2026년 채용 규모를 유지하거나 확대할 계획이에요. 2026년 인재상 1위는 직무 전문 역량(64.7%), 4위가 AI·데이터 활용 역량(24.2%)이에요. 2025년 채용 애로 1위는 '지원자 부족(42.5%)'이었어요.",
+ insight:"직무 전문 역량과 AI 활용 능력을 동시에 갖춘 인재에 대한 수요가 빠르게 높아지고 있어요. 채용 기준을 명확히 하지 않으면 지원자 부족 문제가 반복될 수 있어요.",
+ action:"채용 JD에 AI 활용 역량을 필수 항목으로 명시하고, 직무 전문 역량 검증을 위한 과제 전형 도입을 검토하세요.",
+ tags:["채용트렌드","AI역량","직무전문","인재상","잡코리아"],
+ sources:[{name:"아시아타임즈",url:"https://www.asiatime.co.kr/article/20251208500081",level:"B"}]},
+
+{id:"e_0413_d",date:"2026-04-13",time:"14:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부·법제처",signal:"노란봉투법 3/10 시행 후속 — 원청 실무 대응 점검",level:"A",
+ title:"노란봉투법 시행(3/10) 한 달 — 원청 사용자 책임 범위 실무 점검 필수",
+ body:"2026년 3월 10일 시행된 노란봉투법(개정 노조법)이 한 달을 맞았어요. 원청의 사용자 책임 범위가 확대됐고, 구조조정·정리해고도 노동쟁의 대상으로 포함됐어요. 하청·프리랜서 계약 구조 점검이 시급해요.",
+ insight:"외주 개발사·프리랜서 활용 비중이 높은 IT·커머스 기업은 실질적 지배력 인정 여부가 핵심 리스크예요. 계약서 명칭이 아니라 실제 운영 방식으로 판단되니 지금 즉시 검토해야 해요.",
+ action:"외주·프리랜서 계약서를 법무팀과 전수 검토하세요. 원청 관리자가 하청 근로자에게 직접 업무 지시를 하는 관행이 있다면 즉시 정비하세요.",
+ tags:["노란봉투법","원청책임","외주","프리랜서","노무리스크"],
+ sources:[{name:"샤플",url:"https://www.shoplworks.com/blog-insight/korea-labor-policy-hr-2026-update",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   4월 15일~20일 — 콜마비앤에이치 대표사임 + 네이버웹툰 CTO + HR
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0415_a",date:"2026-04-15",time:"18:04",cat:"leader",priority:true,urgency:"high",
+ company:"콜마비앤에이치",signal:"대표이사 사임 — KRX KIND 공시",level:"A",
+ title:"콜마비앤에이치 대표이사 사임 공시 — 단독 대표 체제 전환·리더십 재정비",
+ body:"콜마비앤에이치 대표이사 사임이 KRX KIND 공시를 통해 공식 확인됐어요. 단독 대표 체제로 전환되며 조직 개편 및 리더십 재정비 국면에 진입했어요.",
+ insight:"리더십 공백 이후 2~4주 내 브랜드·마케팅·글로벌 커머스 인력 이동이 발생하는 패턴이 일반적이에요. 뷰티·소비재 커머스 경험자는 커넥트웨이브 셀러 파트너십 포지션과 연결돼요.",
+ action:"콜마비앤에이치 브랜드/마케팅/글로벌 커머스 직군 LinkedIn 추적을 즉시 시작하세요. 공시 이후 1개월 내 이직 활동 증가 패턴을 집중 모니터링하세요.",
+ tags:["대표이사","공시","리더이탈","뷰티커머스","콜마"],
+ sources:[{name:"KRX KIND 공시",url:"https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260415000761",level:"A"}]},
+
+{id:"e_0415_b",date:"2026-04-15",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"미래내일 일경험 인턴형 참여기업 모집",level:"A",
+ title:"미래내일 일경험 인턴형 참여기업 모집 — 정부 지원 인턴 파이프라인 확보 기회",
+ body:"고용노동부·청년일경험포털을 통해 미래내일 일경험 인턴형 참여기업 모집이 진행 중이에요. 기업은 인턴/주니어 파이프라인 확보와 정부 지원을 동시에 받을 수 있어요.",
+ insight:"단순 인턴 충원이 아니라 멘토 배정·실습 과제·평가 기준까지 설계해야 실효성이 있어요. 사전 준비 없이 참여하면 리소스 낭비로 끝날 수 있어요.",
+ action:"부서별 인턴 수요·멘토 지정·주차별 과제·평가 기준을 먼저 확정하고 청년일경험포털에서 사업 참여를 신청하세요.",
+ tags:["미래내일일경험","인턴","청년채용","정부사업","HR"],
+ sources:[{name:"청년일경험 포털",url:"https://yw.work24.go.kr/main.do",level:"A"},{name:"고용노동부",url:"https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20260200842",level:"A"}]},
+
+{id:"e_0415_c",date:"2026-04-15",time:"10:00",cat:"hr",priority:false,urgency:"low",
+ company:"원티드랩",signal:"채용 트렌드 2026 — 경력직 다이렉트소싱 51.2% 돌파",level:"B",
+ title:"경력직 다이렉트소싱 51.2% — 인사 담당자 33.5%가 '중고 신입 선호'를 1위 이슈로 꼽아",
+ body:"고용노동부·원티드랩 조사에 따르면 경력직 다이렉트소싱 비율이 51.2%에 달했어요. 인사 담당자의 33.5%가 2026년 HR 이슈 1위로 '더 강화된 중고 신입 선호 현상'을 꼽았어요. 공채 방식의 효율이 낮아지고 있다는 신호예요.",
+ insight:"인바운드 공채만으로는 우수 인재 확보가 어려워졌어요. 아웃바운드 다이렉트소싱 역량을 지금 갖추지 않으면 경쟁사에 인재를 뺏기는 구조예요.",
+ action:"채용 채널 믹스를 점검하세요. 아웃바운드 소싱(LinkedIn 서치, 네트워킹)의 비중을 전체 채용의 30% 이상으로 올리는 계획을 수립하세요.",
+ tags:["다이렉트소싱","아웃바운드채용","경력직","채용트렌드","HR"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"}]},
+
+{id:"e_0415_d",date:"2026-04-15",time:"11:00",cat:"hr",priority:false,urgency:"low",
+ company:"링크드인",signal:"2026 HR Skills on the Rise — AI 리터러시·변화관리·조직문화 개발",level:"B",
+ title:"링크드인 2026 HR 핵심 성장 스킬 — AI 리터러시·변화관리·조직문화 개발",
+ body:"링크드인의 2026 HR Skills on the Rise 리포트가 AI 리터러시, 변화 관리, 조직 문화 개발을 HR 분야 핵심 성장 스킬로 꼽았어요. AI 리터러시는 '특정 직군의 도구가 아니라 모든 직무에서 요구되는 기본 역량'이 됐다는 평가예요.",
+ insight:"HR 담당자 자신이 AI 도구를 능숙하게 활용하지 못하면 AI 채용 전환을 이끌 수 없어요. 채용 담당자의 AI 리터러시 향상이 시급한 과제예요.",
+ action:"HR팀 내 AI 도구 활용 교육을 진행하세요. ChatGPT·Gemini 등을 활용한 JD 작성·후보자 소싱·인터뷰 질문 생성 실습을 팀 스터디로 진행하세요.",
+ tags:["링크드인","HR스킬","AI리터러시","변화관리","조직문화"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   4월 16일~20일
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0416_a",date:"2026-04-16",time:"11:10",cat:"leader",priority:true,urgency:"high",
+ company:"네이버웹툰",signal:"CTO·AI 리더 퇴사 — 서울경제TV·글로벌이코노믹 보도",level:"B",
+ title:"네이버웹툰 CTO·AI 리더십 변화 — 기술·추천 핵심 인력 이탈 신호",
+ body:"네이버웹툰의 기술·AI 리더십 변화가 서울경제TV·글로벌이코노믹 등 복수 매체를 통해 보도됐어요. AI·검색·추천 핵심 리더급 인사 이동 신호로, 후속 팀 이탈 가능성이 동반돼요.",
+ insight:"AI/검색/추천 리더급 이동은 커넥트웨이브 가격비교·추천 엔진 포지션과 직결돼요. 리더 퇴사 후 팀 이탈이 연쇄적으로 발생하는 패턴이며 2~6주가 핵심 타이밍이에요.",
+ action:"네이버웹툰 AI/ML/추천 시스템 리더급 후보자를 LinkedIn에서 즉시 서치하세요. '안정적 기술 조직' '가격비교 추천 도메인' 메시지로 컨택하세요.",
+ tags:["네이버웹툰","CTO","AI","리더이탈","추천시스템"],
+ sources:[{name:"서울경제TV",url:"https://www.sentv.co.kr/article/view/sentv202604160111",level:"B"},{name:"글로벌이코노믹",url:"https://www.g-enews.com/article/ICT/2026/04/202604141101318617c5fa75ef86_1",level:"B"}]},
+
+{id:"e_0416_b",date:"2026-04-16",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"브런치·한국노동연구원",signal:"2026 HR 트렌드 — AI가 찢어놓은 전통적 인사관리",level:"B",
+ title:"AI가 바꾸는 2026 인사관리 — 공채 폐지·수시채용·경력중심으로 완전 전환",
+ body:"2026년 채용 시장은 공채에서 수시채용으로, 신입에서 경력 중심으로 완전히 재편되고 있어요. AI가 반복 업무를 대체하면서 HR도 행정 중심에서 전략 중심으로 전환되고 있어요. 채용 담당자의 역할이 '처리자'에서 '전략가'로 바뀌어요.",
+ insight:"공채 중심 채용 운영은 이제 경쟁력을 잃었어요. 수시채용·아웃바운드 소싱·AI 스크리닝 도구를 갖추지 못한 HR팀은 구조적으로 불리해져요.",
+ action:"올해 채용 프로세스 중 AI로 자동화할 수 있는 단계를 파악하세요. JD 작성·1차 스크리닝·일정 조율 등을 AI 도구로 전환하면 채용 소요 시간을 30% 이상 줄일 수 있어요.",
+ tags:["채용트렌드","수시채용","AI채용","HR전략","공채폐지"],
+ sources:[{name:"브런치",url:"https://brunch.co.kr/@career/1040",level:"B"}]},
+
+{id:"e_0418_a",date:"2026-04-18",time:"09:00",cat:"hr",priority:true,urgency:"mid",
+ company:"고용노동부",signal:"근로자의 날(5/1) 유급휴일·노동절 명칭 변경 실무 안내",level:"B",
+ title:"5월 1일 노동절(구 근로자의 날) 유급휴일 — 수당 산정·명칭 변경 실무 체크",
+ body:"2026년부터 '근로자의 날'이 '노동절'로 명칭이 변경됐어요. 법정 유급휴일 성격은 그대로예요. 월급제·시급제에 따라 수당 산정 방식이 다르고, 5인 미만 사업장 예외 적용 여부도 확인이 필요해요.",
+ insight:"명칭 변경에 따라 취업규칙·급여 계산서·사내 공지·연간 캘린더 모두 업데이트가 필요해요. 사전 미처리 시 노동청 신고로 이어질 수 있어요.",
+ action:"근무 대상자·수당 산식·보상휴가 여부를 급여 운영팀과 4월 25일 이전에 반드시 확인하세요. 취업규칙 내 '근로자의 날' 표기도 '노동절'로 일괄 수정하세요.",
+ tags:["노동절","근로자의날","유급휴일","수당","취업규칙","HR"],
+ sources:[{name:"시프티",url:"https://shiftee.io/ko/blog/article/labor-day-2026-public-holiday-overtime-calculation",level:"B"}]},
+
+{id:"e_0419_a",date:"2026-04-19",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"가트너",signal:"2026 HR 예산 증가율 2.4%→0.7% 급락 전망",level:"B",
+ title:"가트너 2026 HR 예산 경고 — 증가율 2.4%→0.7%로 급락, AI 최적화로 구조 전환",
+ body:"가트너가 300명 이상의 CFO 조사 결과, 2026년 HR 부문 예산 증가율이 2025년 2.4%에서 0.7%로 급락할 것으로 전망했어요. 신규 인력 채용 성장 기대치도 6%→2%로 줄었어요. '노동력 확장에서 AI 최적화로의 구조적 전환'이 이유예요.",
+ insight:"HR 예산이 줄어도 채용 자체가 없어지는 게 아니에요. 채용 예산 구성이 바뀌는 거예요. 인력 증원 예산은 줄고, AI·기술 도구 예산은 늘어요. 지금 AI 채용 도구에 투자하는 것이 장기적으로 비용 효율적이에요.",
+ action:"채용 도구 비용 구조를 재검토하세요. 채용 ATS·소싱 도구·AI 스크리닝 도입으로 채용 담당자 1인당 처리 가능한 포지션 수를 늘리는 방향으로 전환하세요.",
+ tags:["가트너","HR예산","AI채용","비용절감","채용최적화"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"}]},
+
+{id:"e_0420_a",date:"2026-04-20",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"openads",signal:"2026 HR 트렌드 5가지 변화 — Atomic Work·AI 에이전트·피플 애널리틱스",level:"B",
+ title:"2026 HR 5대 변화 — Atomic Work(업무 원자화)·AI 에이전트·실시간 성과관리",
+ body:"2026년 HR의 5대 변화로 ①업무 원자화(Atomic Work) ②AI 에이전트 본격 도입 ③상시 성과관리(CPM) ④피플 애널리틱스 고도화 ⑤탄력적 리더십이 꼽혔어요. 전통적 JD는 현실을 설명하지 못하는 문서로 남게 돼요.",
+ insight:"HR 담당자의 역할이 '행정 처리'에서 '조직 설계'로 완전히 전환되고 있어요. 데이터 기반 의사결정과 AI 활용 역량이 없는 HR팀은 전략적 파트너로 인정받기 어려워질 거예요.",
+ action:"피플 애널리틱스 도구 도입을 검토하세요. 채용 퍼널 데이터, 이직률, 온보딩 완료율을 측정하고 이를 기반으로 채용 전략을 수정하는 데이터 기반 HR 운영 체계를 구축하세요.",
+ tags:["HR트렌드","AtomicWork","AI에이전트","성과관리","피플애널리틱스"],
+ sources:[{name:"openads",url:"https://openads.co.kr/content/contentDetail?contsId=18131",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   4월 21일~27일
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0421_a",date:"2026-04-21",time:"12:18",cat:"outflow",priority:true,urgency:"high",
+ company:"놀유니버스·야놀자",signal:"조직개편·핵심 인력 이동",level:"B",
+ title:"놀유니버스·야놀자 조직개편 — 사업개발·플랫폼 핵심 인력 이동 가능성",
+ body:"놀유니버스 조직개편과 일부 인력 이동 이슈가 EBN 등 복수 매체에 보도됐어요. 여행·여가 플랫폼의 사업개발·제휴·플랫폼 운영 인력 유출 가능성이 있어요.",
+ insight:"야놀자/놀유니버스 출신 사업개발·제휴·커머스 플랫폼 경험자는 커넥트웨이브 파트너십 포지션과 직무 적합도가 높아요. 조직개편 발표 후 4~8주가 핵심 컨택 타이밍이에요.",
+ action:"사업개발·제휴·플랫폼 운영 리더급 후보자를 LinkedIn에서 우선 추적하세요. '커머스 플랫폼 파트너십 확장 기회' 메시지로 컨택하세요.",
+ tags:["야놀자","놀유니버스","조직개편","인재유출","플랫폼"],
+ sources:[{name:"EBN",url:"https://www.ebn.co.kr/news/articleView.html?idxno=1706080",level:"B"}]},
+
+{id:"e_0421_b",date:"2026-04-21",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"speak.com",signal:"AI 에이전트 시대 HR 대응 전략 — AI 유창성 필수화",level:"B",
+ title:"AI 에이전트 시대 HR 대응 전략 — AI 유창성(AI Fluency)이 HR 필수 역량",
+ body:"AI 에이전트가 채용·평가·보상 의사결정에 관여할 때 발생하는 편향성·투명성·공정성 문제를 HR이 감시하고 해결하는 책임을 지게 됐어요. 채용 단계별 AI 에이전트 운영에서 HR의 역할은 '실행'에서 '설계·감독'으로 전환돼요.",
+ insight:"AI가 채용 프로세스를 자동화할수록 HR 담당자는 AI 결과를 검증하고 편향을 수정하는 역할이 더 중요해져요. AI를 믿고 맡기는 것과 AI를 이해하고 활용하는 것은 완전히 다른 역량이에요.",
+ action:"도입 중인 AI 채용 도구의 의사결정 기준을 직접 확인하세요. 특히 서류 스크리닝 AI가 어떤 기준으로 탈락·합격을 결정하는지 투명하게 파악하고 편향 여부를 주기적으로 점검하세요.",
+ tags:["AI에이전트","HR전략","AI유창성","채용자동화","공정채용"],
+ sources:[{name:"speak.com",url:"https://www.speak.com/ko/b2b-blog/ai-agent-hr-trends-2026",level:"B"}]},
+
+{id:"e_0422_a",date:"2026-04-22",time:"09:30",cat:"hr",priority:true,urgency:"high",
+ company:"잡코리아",signal:"AX 채용 리포트 — 아웃바운드 44% 증가, 62%가 채용목표 미달",level:"A",
+ title:"잡코리아 2026 AX 채용 리포트 — 아웃바운드 채용 44% 증가, 62%가 목표 미달",
+ body:"잡코리아가 채용 담당자 1,288명 대상 'AX 채용 리포트'를 발행했어요. 기업이 먼저 구직자에게 입사를 제안하는 아웃바운드 채용이 최근 3년간 44% 증가했으며, 응답 기업의 62%는 지난해 채용 목표를 달성하지 못했어요.",
+ insight:"아웃바운드 채용 확산은 인바운드 의존도가 높은 HR팀에 경고 신호예요. 경쟁사가 먼저 우리 후보자에게 손을 내밀고 있어요. AI 스크리닝·소싱 도구 도입을 즉시 검토해야 해요.",
+ action:"잡코리아 AX 채용 리포트를 무료로 다운로드해 팀 전체와 공유하세요. 아웃바운드 채용 파이프라인 구축 계획을 이번 분기 내 수립하세요.",
+ tags:["잡코리아","AX채용","아웃바운드채용","채용목표","HR"],
+ sources:[{name:"디지털투데이",url:"https://www.digitaltoday.co.kr/news/articleView.html?idxno=659521",level:"B"},{name:"아시아타임즈",url:"https://www.asiatime.co.kr/article/20260423500344",level:"B"},{name:"잡코리아",url:"https://www.jobkorea.co.kr/Theme/start_up",level:"A"}]},
+
+{id:"e_0422_b",date:"2026-04-22",time:"10:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"미래내일 일경험 인턴형 참여기업 모집 마감 임박",level:"A",
+ title:"미래내일 일경험 인턴형 모집 마감 임박 — 4월 내 신청 권장",
+ body:"고용노동부 미래내일 일경험 인턴형 참여기업 모집이 진행 중이에요. 청년일경험포털을 통해 신청 가능하며, 기업은 인턴/주니어 파이프라인 확보와 정부 지원을 동시에 받을 수 있어요.",
+ insight:"정부 지원 인턴 프로그램을 활용하면 채용 비용 없이 인재 파이프라인을 미리 확보할 수 있어요. 단, 멘토·과제·평가 기준을 사전에 설계해야 실효성이 있어요.",
+ action:"청년일경험포털(yw.work24.go.kr)에서 참여 신청하세요. 부서별 멘토 지정과 주차별 실습 과제를 먼저 설계하고 신청하세요.",
+ tags:["미래내일일경험","인턴","정부지원","청년채용","HR"],
+ sources:[{name:"청년일경험 포털",url:"https://yw.work24.go.kr/main.do",level:"A"}]},
+
+{id:"e_0423_a",date:"2026-04-23",time:"17:34",cat:"leader",priority:true,urgency:"high",
+ company:"KT",signal:"CTO·CAIO 리더십 변화 — 전자신문·더벨 보도",level:"B",
+ title:"KT 기술·AI 리더십 변화 — AI·클라우드 리더급 시장 이동 신호",
+ body:"KT 기술/AI 리더십 변화와 조직개편 관련 보도가 전자신문·더벨 등 복수 매체에서 확인됐어요. AI·클라우드·기술전략 리더급 시장 이동 신호로, 3개월 내 후속 이탈이 예상돼요.",
+ insight:"KT 출신 AI·클라우드·데이터 리더급은 커넥트웨이브 가격 데이터·추천 엔진·인프라 포지션과 연결돼요. 통신사 특유의 대규모 트랜잭션·인프라 경험이 강점이에요.",
+ action:"KT 기술조직 출신 AI/클라우드/CTO급을 LinkedIn에서 즉시 서치하세요. 조직개편 발표 후 3개월 내가 최적 컨택 타이밍이에요.",
+ tags:["KT","CTO","AI","클라우드","리더이탈"],
+ sources:[{name:"전자신문",url:"https://www.etnews.com/20260327000206",level:"B"},{name:"더벨",url:"https://www.thebell.co.kr/front/newsview.asp?key=202603271524584120102029",level:"B"}]},
+
+{id:"e_0424_a",date:"2026-04-24",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"k-labor·월간 HR인사이트",signal:"2026 CHRO 핵심 과제 3가지 — AI와 인재 통한 불확실성 극복",level:"B",
+ title:"2026 CHRO 핵심 과제 3가지 — AI·인재·불확실성 극복이 관건",
+ body:"2026년 최고인사책임자(CHRO)의 핵심 과제로 ①AI와 인재의 통합 전략 ②불확실성 시대 조직 탄력성 강화 ③데이터 기반 의사결정 체계 구축이 꼽혔어요. AI 에이전트 도입으로 HR의 전략적 역할이 확대되고 있어요.",
+ insight:"CHRO 과제가 HR 담당자 수준에서도 적용되고 있어요. AI 도구 활용, 조직 탄력성 설계, 데이터 기반 채용 전략을 지금부터 준비해야 해요.",
+ action:"연간 HR 계획에 AI 도구 도입 로드맵을 포함하세요. 조직 탄력성 지표(이직률, 온보딩 완료율, 번아웃 지수)를 정기적으로 측정하는 체계를 만드세요.",
+ tags:["CHRO","HR전략","AI인재","조직탄력성","데이터기반HR"],
+ sources:[{name:"abouthr",url:"https://www.abouthr.co.kr/news/articleView.html?idxno=6261",level:"B"}]},
+
+{id:"e_0425_a",date:"2026-04-25",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"포괄임금 오남용 방지 지침 발표 + 현장 점검 개시",level:"A",
+ title:"고용노동부 포괄임금 오남용 방지 지침 발표 — IT·스타트업 연봉 구조 즉시 점검",
+ body:"고용노동부가 2026년 4월 '포괄임금 오남용 방지 지침'을 발표하고 현장 점검을 시작했어요. 고정OT 약정 금액이 실근로시간 기준 법정수당에 미치지 못하면 차액 지급 의무가 발생해요. 이는 바로 임금체불 이슈로 연결돼요.",
+ insight:"IT·스타트업에서 '연봉에 모든 수당 포함'이라고 계약서 한 줄만 쓰는 방식은 법적으로 위험해요. 특히 개발자·기획자 직군은 실근로시간 추적이 어려운 케이스라 포괄임금 계약 자체가 분쟁 리스크예요.",
+ action:"현재 운영 중인 포괄임금 계약서·근로계약서를 노무사와 함께 전수 점검하세요. 고정OT 설정 금액과 실제 초과근로 발생 현황을 비교해 차액 발생 여부를 확인하세요.",
+ tags:["포괄임금","연봉계약","근로계약서","HR","노무","임금체불"],
+ sources:[{name:"그리팅HR",url:"https://blog.greetinghr.com/comprehensive-wage-system-2026/",level:"B"},{name:"샤플",url:"https://www.shoplworks.com/blog-insight/korea-labor-policy-hr-2026-update",level:"B"}]},
+
+{id:"e_0426_a",date:"2026-04-26",time:"09:00",cat:"foreign",priority:false,urgency:"low",
+ company:"글로벌 빅테크",signal:"2025~2026 기술 부문 대규모 정리해고 — AI 전환 명목 117만 건",level:"B",
+ title:"2025~2026 글로벌 빅테크 정리해고 117만 건 — AI가 인력 재편 주도",
+ body:"챌린저 그레이 앤 크리스마스 집계에 따르면 2025년 미국 전체 감원이 117만여 건으로 코로나 이후 최대를 기록했어요. 아마존 16,000명, MS 9,100명, 메타 등이 AI 전환 명목으로 대규모 감원을 단행했어요. AI가 반복 업무를 대체하면서 인력 구조가 재편되고 있어요.",
+ insight:"글로벌 감원으로 외국계 기업 경험 IT 인재의 국내 유입 가능성이 있어요. 단, 외국계 출신 후보자는 처우 기대치와 직무 기준을 별도로 관리해야 해요.",
+ action:"외국계 경험 후보자를 별도 풀로 관리하고 처우 기준을 명확히 설정하세요. 국내 커머스 도메인 적응 속도를 인터뷰에서 반드시 확인하세요.",
+ tags:["글로벌빅테크","감원","AI전환","외국계","채용시장"],
+ sources:[{name:"CIO Korea",url:"https://www.cio.com/article/4118447/%EC%B9%BC%EB%9F%BC-%EA%B8%B0%EC%88%A0%EC%97%85%EA%B3%84-%EA%B0%90%EC%9B%90-24%EB%A7%8C-%EB%AA%85-%EC%8B%9C%EB%8C%80-%EB%82%B4%EB%B6%80%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%81%AC%EB%8A%94-%EC%BB%A4.html",level:"B"}]},
+
+{id:"e_0427_a",date:"2026-04-27",time:"12:00",cat:"outflow",priority:true,urgency:"mid",
+ company:"쿠팡·G마켓·11번가·SSG·놀유니버스 등",signal:"공정위 이커머스 7개사 불공정 약관 11건 적발",level:"A",
+ title:"공정위, 이커머스 7개사 불공정 약관 11건 시정 — 셀러 정산 보류·소비자 보호",
+ body:"공정거래위원회가 2026년 4월 27일 쿠팡·네이버·컬리·SSG닷컴·G마켓·11번가·놀유니버스 7개사 불공정 약관 11가지를 적발했어요. 쿠팡 쿠페이머니 소멸, 최대 60일 정산 보류, 입점업체 소송권 제한 등이 주요 내용이에요.",
+ insight:"7개사 내 정책·법무·컴플라이언스·셀러관리 담당 인력의 업무 부담이 급증하고 조직 재편이 발생할 수 있어요. 셀러 정산 투명성 이슈가 부각되며 커넥트웨이브 정산 시스템이 차별화 포인트가 돼요.",
+ action:"7개 이커머스 사업자의 정책·법무·셀러관리 직군 LinkedIn 모니터링을 시작하세요. '투명한 셀러 정산 시스템'을 차별화 포인트로 컨택 메시지에 활용하세요.",
+ tags:["공정위","이커머스","쿠팡","G마켓","11번가","셀러","정산"],
+ sources:[{name:"이코노밍글",url:"https://econmingle.com/news/coupang-naver-open-market-unfair-terms-kftc/",level:"B"},{name:"폴리뉴스",url:"https://www.polinews.co.kr/news/articleView.html?idxno=729710",level:"B"}]},
+
+{id:"e_0427_b",date:"2026-04-27",time:"09:00",cat:"outflow",priority:false,urgency:"mid",
+ company:"롯데마트·슈퍼",signal:"희망퇴직 100명 내외 + 신규채용 병행",level:"B",
+ title:"롯데마트·슈퍼 희망퇴직 100명 — 유통 MD·운영·HR 인력 시장 유입",
+ body:"롯데마트·슈퍼가 희망퇴직 약 100명 내외를 접수하면서 신입·경력 신규채용도 병행 발표했어요. 유통 MD·운영·HR 인력 이동 가능성과 채용 경쟁 신호가 동시에 존재해요.",
+ insight:"유통 MD·리테일 운영·HR 직군이 시장에 나와요. 커넥트웨이브 셀러 MD·파트너 운영 포지션과 일부 연결돼요.",
+ action:"리테일 MD·운영·HR 직군 중심으로 선별 컨택하세요.",
+ tags:["유통","희망퇴직","롯데마트","MD","인재유출"],
+ sources:[{name:"연합뉴스",url:"https://www.yna.co.kr/view/AKR20260429122600030",level:"B"},{name:"ZDNet Korea",url:"https://zdnet.co.kr/view/?no=20260429165915",level:"B"}]},
+
+{id:"e_0427_c",date:"2026-04-27",time:"10:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"정년연장 65세 법안 국회 계류 — 하반기 입법 목표",level:"B",
+ title:"정년연장 65세 법안 국회 계류 — 2026 하반기 입법 완료 목표, 채용 구조 변화 예고",
+ body:"정부가 2026년 3월 정년을 65세로 단계적으로 연장하는 입법 추진을 공식 수용했어요. 현재 법안은 국회 계류 중이며 2026년 하반기 입법 완료를 목표로 해요. 경영계는 신규 채용 축소와 청년 일자리 감소를 우려하고 있어요.",
+ insight:"정년연장이 실시되면 고연차 인력의 퇴직이 지연되고 신규 채용 여력이 줄어들어요. 4~7년차 경력직 채용 경쟁이 더 치열해질 수 있으며, 지금 당장 핵심 포지션 채용을 서둘러야 해요.",
+ action:"2026년 상반기 내 필요한 핵심 포지션 채용을 최대한 빠르게 진행하세요. 정년연장 법제화 이전에 헤드카운트 계획을 재검토하세요.",
+ tags:["정년연장","65세","채용구조","HR","노동정책"],
+ sources:[{name:"worklaw",url:"https://www.worklaw.co.kr/view/view.asp?in_cate=124&gopage=1&bi_pidx=38519",level:"B"}]},
+
+{id:"e_0428_a",date:"2026-04-28",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"인크루트",signal:"2026 달라지는 HR 제도 — 육아기 자녀 10시 출근제 신설 안내",level:"B",
+ title:"2026 육아기 자녀 10시 출근제 신설 — 만 12세 이하 자녀 둔 직원 적용",
+ body:"2026년부터 만 12세 이하(초등학교 6학년 이하) 육아기 자녀를 둔 근로자의 자녀 돌봄 기회 확대를 위해 10시 출근제 지원 사업이 신설됐어요. 기업 참여 시 정부 지원금을 받을 수 있어요.",
+ insight:"육아기 직원 배려 제도는 채용 브랜딩에도 직접적으로 활용할 수 있어요. 구직자들이 복지 수준을 매우 중요하게 보기 때문에 JD나 채용 페이지에 관련 내용을 명시하는 것이 효과적이에요.",
+ action:"10시 출근제 지원 사업 참여 여부를 검토하고, 채용 공고 및 회사 소개 페이지에 육아 지원 복지를 명시하세요.",
+ tags:["육아기출근","일가정양립","복지","채용브랜딩","HR"],
+ sources:[{name:"머스트뉴스",url:"https://mustnews.co.kr/View.aspx?No=3921388",level:"B"}]},
+
+{id:"e_0429_a",date:"2026-04-29",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부·사람인",signal:"2026 채용시장 전망 — 수시채용 70% 돌파, 공채 완전 쇠퇴",level:"B",
+ title:"2026 채용시장 수시채용 70% 돌파 — 공채 쇠퇴, 경력직 다이렉트소싱이 표준",
+ body:"2026년 국내 채용시장에서 수시채용 비중이 70%를 돌파했어요. 공채는 대기업 일부를 제외하고 사실상 쇠퇴하고 있어요. 경력직 다이렉트소싱이 채용의 표준 방식으로 자리잡고 있어요.",
+ insight:"공채 중심 채용 운영을 유지하는 기업은 구조적으로 불리해져요. 상시 채용 파이프라인과 아웃바운드 소싱 역량을 갖추지 못하면 우수 인재를 경쟁사에 빼앗기게 돼요.",
+ action:"연간 채용 계획을 공채 → 수시채용 + 아웃바운드 소싱 혼합 방식으로 전환하세요. 포지션별 상시 파이프라인을 유지하는 체계를 구축하세요.",
+ tags:["수시채용","공채쇠퇴","아웃바운드소싱","경력직","채용트렌드"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"}]},
+
+{id:"e_0430_a",date:"2026-04-30",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"고용노동부",signal:"2026년 고용창출·안정장려금 사업 공고 — 채용 비용 절감 기회",level:"A",
+ title:"2026 고용창출·안정장려금 사업 공고 — 비수도권 계속고용장려금 40만원 포함",
+ body:"고용노동부가 2026년 고용창출장려금 및 고용안정장려금 지원 사업을 공고했어요. 비정규직 정규직 전환 지원·비수도권 계속고용장려금(월 40만원) 등 다양한 지원사업이 포함돼요.",
+ insight:"채용 담당자가 놓치기 쉬운 재원이에요. 특히 청년일자리도약장려금·정규직 전환 지원금은 인당 수백만원 규모의 실질적 채용 비용 절감 효과가 있어요.",
+ action:"고용노동부 홈페이지(moel.go.kr)에서 사업별 지원 요건을 확인하고, 적용 가능한 포지션을 파악해 지원 절차를 사전에 밟아두세요.",
+ tags:["고용장려금","청년채용","정규직전환","정부지원","HR"],
+ sources:[{name:"고용노동부",url:"https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20251201775",level:"A"}]},
+
+/* ═══════════════════════════════════════════════
+   5월 1일~10일
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0501_a",date:"2026-05-01",time:"09:00",cat:"hr",priority:true,urgency:"high",
+ company:"고용노동부·시프티",signal:"노동절 명칭 변경 확정 + 제헌절 공휴일 재지정",level:"B",
+ title:"2026 노동절(구 근로자의 날) 명칭 변경 + 제헌절 공휴일 재지정 — HR 실무 즉시 반영 필요",
+ body:"2026년부터 '근로자의 날'이 '노동절'로 명칭이 변경됐어요. 7월 17일 제헌절이 법정 공휴일로 재지정돼 2026년 유급공휴일이 1일 추가됐어요. 연간 근무 일수와 급여 산정 기준을 모두 재검토해야 해요.",
+ insight:"명칭 변경만 보이지만 실무 파급이 넓어요. 취업규칙·급여 계산서·사내 공지·연간 캘린더에서 '근로자의 날' 표기를 일괄 수정해야 해요. 제헌절 추가로 시급제·교대 근무 직원 급여 처리 기준도 달라져요.",
+ action:"인사·급여 시스템의 공휴일 등록, 취업규칙 내 명칭, 급여 계산서 문구, 연간 근무 캘린더를 5월 중 일괄 점검하세요. 시급제 직원이 있다면 제헌절 추가 공휴일 급여 처리 기준도 미리 확정하세요.",
+ tags:["노동절","제헌절","공휴일","급여","취업규칙","HR"],
+ sources:[{name:"시프티",url:"https://shiftee.io/ko/blog/article/2026-hr-labor-policy-update",level:"B"}]},
+
+{id:"e_0502_a",date:"2026-05-02",time:"09:00",cat:"hr",priority:false,urgency:"mid",
+ company:"고용노동부",signal:"2026 고용창출·안정장려금 — 청년 채용 비용 절감 체크리스트",level:"A",
+ title:"2026 고용창출장려금 실무 체크리스트 — 상반기 채용 전 필수 확인",
+ body:"고용노동부가 2026년 고용창출장려금 사업을 공고했어요. 청년 정규직 채용 시 인당 최대 960만원, 비정규직 정규직 전환 시 추가 지원이 가능해요. 채용 시작 전 참여 기업 등록이 필수예요.",
+ insight:"상반기 채용이 진행 중이라면 지금 즉시 참여 기업 등록 여부를 확인해야 해요. 이미 채용이 시작됐다면 다음 채용부터라도 적용하세요.",
+ action:"고용24(work24.go.kr) 또는 관할 고용센터(1350)에서 참여 가능 포지션을 확인하고 즉시 신청하세요.",
+ tags:["고용장려금","청년채용","채용비용절감","정부지원","HR"],
+ sources:[{name:"고용노동부",url:"https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20251201775",level:"A"}]},
+
+{id:"e_0503_a",date:"2026-05-03",time:"09:00",cat:"hr",priority:true,urgency:"mid",
+ company:"고용노동부·그리팅HR",signal:"AI 면접·채용 자동화 공정성 이슈 확산",level:"B",
+ title:"AI 면접·채용 자동화 평가 기준 공개 요구 증가 — 공정성·법적 리스크 부상",
+ body:"AI 면접과 채용 자동화 도구 사용 시 평가 기준 공개·투명성 요구가 증가하고 있어요. 공정위 이커머스 약관 제재와 함께 플랫폼 투명성 요구가 채용 도구로도 확산되는 추세예요.",
+ insight:"AI 채용 도구는 편의성보다 공정성·설명 가능성·개인정보 처리 기준이 더 중요한 리스크가 됐어요. 도입 전 법무·HR 공동 검토가 필수예요.",
+ action:"AI 면접/서류검토 도구 도입 전 후보자 고지 문구·평가 항목·최종 검토 절차를 설계하고 법무팀과 함께 체크리스트를 작성하세요.",
+ tags:["AI면접","채용자동화","공정채용","HR","HRtech"],
+ sources:[{name:"GTT Korea",url:"https://www.gttkorea.com/news/articleView.html?idxno=25554",level:"B"}]},
+
+{id:"e_0504_a",date:"2026-05-04",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"월간 HR인사이트",signal:"2026 채용시장 키워드 — 정밀채용·팀핏·AI소싱",level:"B",
+ title:"2026 채용 키워드: 정밀채용·팀핏·AI 소싱 — 채용 담당자가 지금 준비해야 할 것",
+ body:"2026년 채용 시장의 핵심 키워드는 '정밀채용(Precision Recruiting)'이에요. 많이 뽑는 것보다 정확하게 뽑는 것이 중요해졌어요. 팀핏 검증, AI 소싱 도구 활용, 스킬 기반 JD 작성이 표준이 되고 있어요.",
+ insight:"'어떤 팀에 어떤 사람이 필요한가'를 명확히 정의하지 않은 채용은 비용 낭비로 끝나요. 포지션 오픈 전 팀 구성과 역할 분배를 먼저 설계하는 것이 정밀채용의 시작이에요.",
+ action:"포지션별 팀핏 기준을 먼저 정의하세요. '이 사람이 입사 후 30·60·90일에 달성해야 할 것'을 면접 전에 미리 설계해두면 정확도 높은 채용이 가능해요.",
+ tags:["정밀채용","팀핏","AI소싱","채용트렌드","HR"],
+ sources:[{name:"서치라이트AI",url:"https://blog.searchright.net/2026-hiring-market-outlook/",level:"B"},{name:"원티드 블로그",url:"https://blog.wantedlab.com/hr/report/hr-trend-report-2026",level:"B"}]},
+
+{id:"e_0505_a",date:"2026-05-05",time:"09:00",cat:"foreign",priority:true,urgency:"high",
+ company:"메타·MS·아마존 등",signal:"AI로 3만2천 일자리 감축 — AI 역량자는 공급 3.2배 부족",level:"B",
+ title:"글로벌 빅테크 AI 전환으로 일자리 3만2천개 감축 — AI 역량자 수요는 공급의 3.2배",
+ body:"AI Weekly 2026년 5월 5일 보도에 따르면 메타·마이크로소프트·아마존 등에서 3만2천여 개 일자리가 감축됐어요. 반면 AI 역량을 갖춘 인력에 대한 수요는 공급을 3.2대 1로 앞서고 있어요.",
+ insight:"글로벌 감원으로 외국계 기업 경험 IT 인재의 국내 유입 가능성이 있어요. AI 역량자는 공급 부족으로 채용 경쟁이 치열해요. 지금 AI 역량자 파이프라인을 미리 구축해두는 것이 중요해요.",
+ action:"외국계 경험 후보자를 별도 풀로 관리하고 처우 기준을 명확히 설정하세요. AI 역량자 채용 시 빠른 의사결정이 필요해요.",
+ tags:["메타","빅테크","AI전환","감원","AI역량","채용시장"],
+ sources:[{name:"전국인력신문",url:"https://www.kjob.news/news/487771",level:"B"}]},
+
+{id:"e_0505_b",date:"2026-05-05",time:"10:00",cat:"hr",priority:true,urgency:"high",
+ company:"샤플·시프티·그리팅HR",signal:"노란봉투법 3/10 시행 실무 영향 가시화",level:"B",
+ title:"노란봉투법 시행(3/10) 실무 영향 가시화 — 프리랜서·외주 계약 구조 즉시 점검",
+ body:"2026년 3월 10일 노란봉투법이 시행됐어요. IT·커머스 기업의 프리랜서·협력사 관리 방식에 직접 영향을 미쳐요. '계약서 명칭'이 아닌 '실제 운영 방식'으로 사용자성 판단이 이루어지기 때문에 현행 계약 구조를 법무팀과 즉시 점검해야 해요.",
+ insight:"IT·커머스 기업에서 빈번히 사용되는 프리랜서 개발자, 외주 대행사, 플랫폼 배달·배송 종사자가 모두 영향권이에요.",
+ action:"외주·프리랜서 계약서를 실제 근무 방식 기준으로 법무팀과 전수 검토하세요. 노무사 자문을 통한 리스크 진단을 권장해요.",
+ tags:["노란봉투법","프리랜서","외주","HR","노무","원청책임"],
+ sources:[{name:"샤플",url:"https://www.shoplworks.com/blog-insight/korea-labor-policy-hr-2026-update",level:"B"},{name:"그리팅HR",url:"https://blog.greetinghr.com/comprehensive-wage-system-2026/",level:"B"}]},
+
+{id:"e_0506_a",date:"2026-05-06",time:"09:00",cat:"hr",priority:false,urgency:"low",
+ company:"가트너·openads",signal:"2026 HR 담당자 준비 과제 — AI·조직설계·데이터 기반 의사결정",level:"B",
+ title:"2026 HR 담당자 지금 준비해야 할 것 — AI 통합·조직 재설계·피플 애널리틱스",
+ body:"2026년 HR의 본질적 변화는 기술 도입이 아니라 일(Work)과 조직(Organization) 자체의 재설계예요. AI 에이전트가 워크플로우의 상당 부분을 담당하는 상황에서, 사람은 어떤 역할에 집중할 것인가가 핵심 질문이에요.",
+ insight:"HR이 전략적 파트너로 인정받으려면 데이터를 수집·분석해 경영진 의사결정에 인사이트를 제공하는 역할을 해야 해요. '채용 몇 명 완료'가 아니라 '채용 품질 지수'와 '온보딩 성공률'로 HR 성과를 측정해야 해요.",
+ action:"HR 성과 지표를 양적(채용 수)에서 질적(입사 후 90일 성과, 1년 리텐션율)으로 전환하세요. 이 데이터를 월간 보고서로 경영진과 공유하는 체계를 만드세요.",
+ tags:["HR전략","피플애널리틱스","조직설계","AI통합","HR성과지표"],
+ sources:[{name:"openads",url:"https://openads.co.kr/content/contentDetail?contsId=18131",level:"B"}]},
+
+{id:"e_0507_a",date:"2026-05-07",time:"09:00",cat:"outflow",priority:false,urgency:"mid",
+ company:"5대 시중은행",signal:"희망퇴직 2,326명 — 전년비 17% 증가",level:"B",
+ title:"5대 시중은행 희망퇴직 2,326명 — 금융 디지털·데이터 인력 시장 이동",
+ body:"KB국민·신한·우리·하나·NH농협 5개 은행 희망퇴직 신청자가 전년 대비 17% 증가해 2,326명에 달했어요. 대상 연령이 1985년생까지 하향됐으며 1990년생까지 확대 가능성이 거론돼요.",
+ insight:"금융권 디지털·데이터·AI 인력이 이동해요. 대규모 정산 시스템·리스크 관리·데이터 분석 경험자가 커머스 정산·빌링 포지션에 적합해요.",
+ action:"시중은행 IT·데이터·디지털 부문 출신자를 선별하세요. '커머스 정산 인프라 구축' '대규모 트랜잭션 처리' 키워드로 소싱 메시지를 구성하세요.",
+ tags:["은행권","희망퇴직","금융","데이터","AI","인재유출"],
+ sources:[{name:"녹색경제신문",url:"https://greened.kr/news/articleView.html?idxno=334927",level:"B"},{name:"매일경제",url:"https://www.mk.co.kr/news/economy/12039469",level:"B"}]},
+
+{id:"e_0507_b",date:"2026-05-07",time:"10:00",cat:"hr",priority:true,urgency:"high",
+ company:"ZDNet·지디넷코리아",signal:"HR테크 리더스 데이 시즌5 개최 — AI 전환·총보상 13개 강연",level:"B",
+ title:"HR테크 리더스 데이 시즌5 개최(5/7) — AI 전환 시대 채용·보상·조직문화 핵심 의제",
+ body:"지디넷코리아가 2026년 5월 7일 슈피겐홀에서 'HR테크 리더스 데이 시즌5'를 개최했어요. 채용, 조직문화, 리더십, 총보상, AI 전환(AX) 등 13개 강연이 진행됐어요.",
+ insight:"총보상 관점의 리텐션 전략, AX 전환 사례, AI 리터러시 강화 방법 등 실무 인사이트가 집약됐어요. 연간 채용·보상 전략을 점검하고 싶은 채용 담당자라면 영상 다시보기를 챙겨두세요.",
+ action:"지디넷코리아 유튜브에서 HR테크 리더스 데이 시즌5 다시보기를 확인하세요. 총보상·AX 전환·리텐션 전략 세션을 내부 HR팀과 공유하세요.",
+ tags:["HR컨퍼런스","HRtech","AI채용","총보상","AX전환"],
+ sources:[{name:"ZDNet Korea",url:"https://zdnet.co.kr/view/?no=20260323145755",level:"B"},{name:"HR테크리더스데이",url:"https://itsight.zdnet.co.kr/conference/HRTECH2026",level:"B"}]},
+
+{id:"e_0507_c",date:"2026-05-07",time:"11:00",cat:"hr",priority:true,urgency:"high",
+ company:"고용노동부·그리팅HR",signal:"포괄임금제 오남용 방지 지침 발표 + 현장 점검 개시",level:"B",
+ title:"포괄임금제 오남용 방지 지침 발표(4월) — IT·스타트업 연봉 구조 즉시 점검 필요",
+ body:"고용노동부가 2026년 4월 '포괄임금 오남용 방지 지침'을 발표하고 현장 점검을 시작했어요. 고정OT 약정 금액이 실근로시간 기준 법정수당에 미치지 못하면 차액 지급 의무가 발생해요.",
+ insight:"IT·스타트업에서 '연봉에 모든 수당 포함'이라고 계약서 한 줄만 쓰는 방식은 법적으로 위험해요. 지금 체결 중인 연봉계약서와 취업규칙을 즉시 점검해야 해요.",
+ action:"현재 운영 중인 포괄임금 계약서·근로계약서를 노무사와 함께 전수 점검하세요. 고정OT 설정 금액과 실제 초과근로 발생 현황을 비교해 차액 발생 여부를 확인하세요.",
+ tags:["포괄임금제","연봉계약","근로계약서","HR","노무","IT스타트업"],
+ sources:[{name:"그리팅HR",url:"https://blog.greetinghr.com/comprehensive-wage-system-2026/",level:"B"},{name:"샤플",url:"https://www.shoplworks.com/blog-insight/korea-labor-policy-hr-2026-update",level:"B"}]},
+
+{id:"e_0508_a",date:"2026-05-08",time:"10:11",cat:"outflow",priority:true,urgency:"high",
+ company:"엑스엘게임즈",signal:"경영난 — 희망퇴직 검토",level:"B",
+ title:"카카오게임즈 자회사 엑스엘게임즈, 경영난으로 희망퇴직 검토",
+ body:"카카오게임즈 자회사 엑스엘게임즈가 경영난으로 희망퇴직을 검토한 것으로 연합뉴스를 통해 보도됐어요. 게임 서버·플랫폼·QA 인력 유출 가능성이 있어요.",
+ insight:"게임 서버 백엔드·운영PM 출신은 커넥트웨이브 플랫폼 안정성·운영 포지션으로 전환 가능성이 있어요. 대규모 동시접속 처리 경험이 있는 백엔드 엔지니어는 즉시 타겟팅 권장이에요.",
+ action:"엑스엘게임즈 개발자를 LinkedIn·GitHub에서 서치하세요. '안정적 커머스 플랫폼 트래픽 처리' '성장 중인 서비스' 메시지로 컨택하세요.",
+ tags:["게임","희망퇴직","개발자","카카오게임즈","엑스엘게임즈"],
+ sources:[{name:"연합뉴스",url:"https://www.yna.co.kr/view/AKR20260508054900017",level:"B"}]},
+
+{id:"e_0508_b",date:"2026-05-08",time:"09:00",cat:"foreign",priority:false,urgency:"low",
+ company:"Cloudflare",signal:"글로벌 감원 1,100명 — AI 전환 조직 효율화",level:"B",
+ title:"Cloudflare 글로벌 감원 1,100명 — AI 전환·조직 효율화, 한국 IT 인재 시장 영향",
+ body:"Cloudflare가 AI 전환과 조직 효율화를 이유로 전 세계 1,100명 규모의 감원을 단행했어요. 글로벌 SaaS·보안 업계의 AI 전환과 인력 재배치 흐름의 참고 정보예요.",
+ insight:"외국계 SaaS 감원으로 한국 내 외국계 기업 경험 IT 인재 유입 가능성이 있어요. 보안·인프라·클라우드 경험자 파이프라인 구축 기회예요.",
+ action:"해외/외국계 뉴스는 시장 참고 신호로 활용하세요. 국내 커머스 도메인 적응 속도를 인터뷰에서 반드시 확인하세요.",
+ tags:["Cloudflare","해외","AI","SaaS","감원"],
+ sources:[{name:"알파경제",url:"https://alphabiz.co.kr/news/view/1065607240307105",level:"B"}]},
+
+{id:"e_0508_c",date:"2026-05-08",time:"11:00",cat:"hr",priority:false,urgency:"mid",
+ company:"다우오피스HR·시프티",signal:"2026 최저임금 1만320원 + 4대보험 요율 인상",level:"B",
+ title:"2026 최저임금 1만320원 확정 + 4대보험 요율 인상 — 인건비 예산 재검토 필요",
+ body:"2026년 최저임금이 시급 1만320원으로 확정됐어요(월 215만6,880원). 동시에 4대보험 사업주 부담률도 인상됐어요. 연봉제·포괄임금제 운영 기업은 최저임금 산입 기준을 반드시 재확인해야 해요.",
+ insight:"최저임금 인상만 보면 안 돼요. 4대보험 요율 인상이 동시에 적용돼 실제 사업주 부담은 더 커요. 기본급 구조가 맞지 않으면 의도치 않게 최저임금 위반이 발생할 수 있어요.",
+ action:"연봉 계약서의 최저임금 산입 구조를 점검하세요. 4대보험 요율 변경분을 인건비 예산에 반영하세요.",
+ tags:["최저임금","4대보험","인건비","HR","노무","연봉계약"],
+ sources:[{name:"다우오피스HR",url:"https://hr.daouoffice.com/blog/labor-law-changes",level:"B"}]},
+
+{id:"e_0509_a",date:"2026-05-09",time:"09:00",cat:"hr",priority:false,urgency:"mid",
+ company:"원티드랩",signal:"하이파이브 2026 컨퍼런스 — 5/12~13 코엑스 HR 데이",level:"B",
+ title:"원티드 하이파이브 2026 (5/12~13 코엑스) — HR 데이·AI 채용 솔루션 총집결",
+ body:"원티드랩이 5월 12~13일 코엑스 그랜드볼룸에서 '하이파이브 2026'을 개최해요. 첫날(5/12) HR 데이에는 마이크로소프트·CJ올리브영·틱톡·SK하이닉스 HR 담당자가 연사로 참여해요.",
+ insight:"HR 담당자 입장에서 글로벌 기업의 인재 영입 전략과 채용 도구 트렌드를 한 번에 확인할 수 있어요.",
+ action:"원티드 하이파이브 2026 HR 데이(5/12) 참석 또는 후기 콘텐츠를 챙겨두세요.",
+ tags:["원티드","하이파이브2026","HR컨퍼런스","AI채용","HRtech"],
+ sources:[{name:"ZDNet Korea",url:"https://zdnet.co.kr/view/?no=20260405103303",level:"B"},{name:"이지경제",url:"https://www.ezyeconomy.com/news/articleView.html?idxno=235254",level:"B"}]},
+
+{id:"e_0510_a",date:"2026-05-10",time:"10:10",cat:"leader",priority:true,urgency:"high",
+ company:"네이버웹툰",signal:"AI 리더십 공백 후속 — 팀 이탈 가속",level:"B",
+ title:"네이버웹툰 AI 리더십 공백 후속 — 팀 단위 이탈 조짐 가시화",
+ body:"4월 네이버웹툰 AI·기술 리더 퇴사 이후 후속 팀 이탈 가능성이 가시화되고 있어요. AI·검색·추천 팀 내 조직 불안 심리가 확산되는 신호가 감지돼요.",
+ insight:"리더 이탈 후 팀 이탈이 연쇄적으로 발생하는 패턴이에요. 추천 시스템·검색 엔진 개발 인력 확보 적기이며 조직 안정화 전인 지금이 골든타임이에요.",
+ action:"AI/ML/추천 시스템 개발자를 LinkedIn에서 즉시 서치하세요. 기존 4월 컨택 목록을 재확인하고 후속 팀원들에게 확장 소싱하세요.",
+ tags:["네이버웹툰","AI","리더이탈","추천시스템","팀이탈"],
+ sources:[{name:"서울경제TV",url:"https://www.sentv.co.kr/article/view/sentv202604160111",level:"B"}]},
+
+{id:"e_0510_b",date:"2026-05-10",time:"10:30",cat:"leader",priority:true,urgency:"mid",
+ company:"KT",signal:"AI·클라우드 리더 이동 본격화",level:"B",
+ title:"KT AI·클라우드 리더급 시장 이동 본격화 — 컨택 적기",
+ body:"4월 KT 기술/AI 조직 변화 이후 AI·클라우드·기술전략 리더급의 실제 시장 이동이 5월부터 확인되고 있어요.",
+ insight:"KT 출신 AI·클라우드 리더는 커넥트웨이브 데이터 인프라·추천 엔진 시니어 역할에 적합해요.",
+ action:"KT 출신 AI/클라우드/기술전략 리더 후보자 풀을 즉시 점검하고 미팅 제안 메시지를 발송하세요.",
+ tags:["KT","AI","클라우드","리더이탈","기술전략"],
+ sources:[{name:"전자신문",url:"https://www.etnews.com/20260327000206",level:"B"},{name:"더벨",url:"https://www.thebell.co.kr/front/newsview.asp?key=202603271524584120102029",level:"B"}]},
+
+{id:"e_0510_c",date:"2026-05-10",time:"09:00",cat:"outflow",priority:false,urgency:"mid",
+ company:"케이뱅크",signal:"희망퇴직 5월 처리 완료 — 결제·정산 인력 시장 이동",level:"B",
+ title:"케이뱅크 희망퇴직 5월 처리 완료 — 핀테크 인력 시장 이동 본격화",
+ body:"4월 케이뱅크 희망퇴직 발표 이후 5월 중 퇴직 처리가 완료되면서 결제·정산 직군의 실제 시장 이동이 본격화돼요.",
+ insight:"커넥트웨이브 빌링·정산·결제 플랫폼 포지션과 연관성이 가장 높아요. 퇴직 완료 직후 2~3주가 골든타임이에요.",
+ action:"LinkedIn에서 케이뱅크 결제/정산/백엔드 직군 전직자 프로필을 모니터링하고 즉시 컨택하세요.",
+ tags:["케이뱅크","핀테크","인재유출","결제정산"],
+ sources:[{name:"딜사이트",url:"https://dealsite.co.kr/articles/160700",level:"B"}]},
+
+{id:"e_0510_d",date:"2026-05-10",time:"11:00",cat:"hr",priority:false,urgency:"mid",
+ company:"월간 HR인사이트",signal:"사기업 경영성과급 임금성 논란 + 정년연장 동상이몽",level:"B",
+ title:"경영성과급 임금성 판례 논란 + 정년연장 65세 여전히 진행 중",
+ body:"사기업 경영성과급의 임금 해당 여부 논란이 지속되고 있어요. 정년연장 65세 입법도 여전히 진행 중이며 경영계 반발이 계속되고 있어요.",
+ insight:"경영성과급의 임금성 인정 여부는 퇴직금 산정에 직결돼요. 성과급 지급 시기·지급 기준·대상자 범위를 취업규칙에 명확히 기재하지 않으면 분쟁 리스크가 커요.",
+ action:"성과급 지급 기준과 취업규칙 문구를 노무사와 함께 점검하세요. 정년연장 법제화 이전에 필요한 핵심 포지션 채용을 상반기 내 완료하는 방향으로 계획을 수정하세요.",
+ tags:["성과급","임금","정년연장","HR","노무"],
+ sources:[{name:"월간 HR인사이트",url:"https://www.worklaw.co.kr/main2022/view/view.asp?bi_pidx=39149",level:"B"}]},
+
+/* ═══════════════════════════════════════════════
+   5월 11일~17일 (이미 수집된 항목)
+   ═══════════════════════════════════════════════ */
+
+{id:"e_0511_a",date:"2026-05-11",time:"11:00",cat:"outflow",priority:true,urgency:"high",
+ company:"홈플러스",signal:"37개 매장 영업중단 + 익스프레스 희망퇴직 — 2만명 인력 이동",level:"B",
+ title:"홈플러스 37개 매장 5/10 영업중단 + 익스프레스 희망퇴직 — 유통 인력 대거 시장 유입",
+ body:"홈플러스가 5월 10일부터 전국 37개 매장 영업을 7월 3일까지 잠정 중단했어요. 5월 11일에는 익스프레스 사업부 직원들에게 희망퇴직(5/20 마감)을 공지했어요. 근속 20년 이상 12개월치, 10~19년 10개월치 특별보상금이 지급돼요.",
+ insight:"유통 MD·바이어·매장 운영·온라인 커머스·물류 담당 등 대규모 인력이 한꺼번에 시장에 나와요. 특히 온라인 커머스·셀러 운영·물류 도메인 경험자는 커넥트웨이브 파트너 운영·셀러 MD 포지션과 직결돼요.",
+ action:"홈플러스 MD·바이어·온라인 운영·물류 직군을 LinkedIn에서 즉시 서치하세요. 익스프레스 희망퇴직 마감(5/20) 직후 2~3주가 실질적 골든타임이에요.",
+ tags:["홈플러스","유통","구조조정","영업중단","희망퇴직","MD","물류"],
+ sources:[{name:"서울경제",url:"https://www.sedaily.com/article/20042666",level:"B"},{name:"뉴스1",url:"https://www.news1.kr/industry/distribution/6160738",level:"B"},{name:"이투데이",url:"https://www.etoday.co.kr/news/view/2583863",level:"B"}]},
+
+{id:"e_0511_b",date:"2026-05-11",time:"12:00",cat:"hr",priority:false,urgency:"mid",
+ company:"원티드랩",signal:"하이파이브 2026 HR 데이 내일 개막(5/12) — 글로벌 HR 연사 총집결",level:"B",
+ title:"원티드 하이파이브 2026 내일 개막(5/12 코엑스) — MS·CJ올리브영·틱톡·SK하이닉스 HR 연사",
+ body:"원티드랩이 5월 12~13일 코엑스 그랜드볼룸에서 '하이파이브 2026'을 개최해요. 첫날(5/12) HR 데이에는 마이크로소프트·CJ올리브영·틱톡·SK하이닉스 HR 담당자가 연사로 참여해 AI 시대 인재 영입 전략을 공유해요.",
+ insight:"글로벌 기업의 인재 영입 전략과 채용 도구 트렌드를 한 번에 확인할 수 있어요. AI 서류 평가 도구가 현장 시연되는 만큼, 커넥트웨이브 채용 프로세스에 도입할 도구를 직접 비교할 수 있는 기회예요.",
+ action:"원티드 하이파이브 2026 HR 데이(5/12) 참석 또는 유튜브 생중계를 챙기세요.",
+ tags:["원티드","하이파이브2026","HR컨퍼런스","AI채용","HRtech"],
+ sources:[{name:"전자신문",url:"https://www.etnews.com/20260223000082",level:"B"},{name:"ZDNet Korea",url:"https://zdnet.co.kr/view/?no=20260405103303",level:"B"}]},
+
+{id:"e_0512_a",date:"2026-05-12",time:"12:00",cat:"outflow",priority:true,urgency:"high",
+ company:"홈플러스",signal:"전환배치 약속 하루 만에 철회 — 2만 직원 생계 위기",level:"B",
+ title:"홈플러스 전환배치 계획 하루 만에 백지화 — 노조 '국민 기만 사기극' 강력 반발",
+ body:"홈플러스가 37개 매장 영업 중단 직원에게 약속했던 타 매장 전환배치를 하루 만에 철회했어요. 최저임금 수준 직원들은 휴업수당 70% 적용 시 월 140만원만 받게 되며, 이중취업 금지 조항으로 다른 일도 못 찾는 상황이에요.",
+ insight:"전환배치 철회로 2만 명에 달하는 홈플러스 직원의 이직 결정 속도가 빠르게 높아지고 있어요. 유통 MD·바이어·온라인커머스·물류 경험자가 대거 시장에 나오는 골든타임이에요.",
+ action:"홈플러스 MD·바이어·온라인 운영·물류 직군을 LinkedIn에서 즉시 서치하세요. 5월~6월이 실질적 골든타임이에요.",
+ tags:["홈플러스","구조조정","전환배치","희망퇴직","유통","MD"],
+ sources:[{name:"이투데이",url:"https://www.etoday.co.kr/news/view/2583719",level:"B"},{name:"경향신문",url:"https://www.khan.co.kr/article/202605121556011",level:"B"},{name:"헤럴드경제",url:"https://biz.heraldcorp.com/article/10736208",level:"B"},{name:"파이낸셜뉴스",url:"https://www.fnnews.com/news/202605121338089471",level:"B"},{name:"문화일보",url:"https://www.munhwa.com/article/11588697",level:"B"}]},
+
+{id:"e_0512_b",date:"2026-05-12",time:"10:00",cat:"hr",priority:false,urgency:"mid",
+ company:"원티드랩",signal:"하이파이브 2026 HR 데이 개최 — AI 채용 도구 현장 시연",level:"B",
+ title:"원티드 하이파이브 2026 HR 데이 개최(5/12 코엑스) — AI 채용 솔루션 총집결",
+ body:"원티드랩이 5월 12일 코엑스 그랜드볼룸에서 '하이파이브 2026' HR 데이를 개최했어요. 마이크로소프트·CJ올리브영·틱톡·SK하이닉스 HR 담당자가 연사로 참여했어요. 무하유 AI 서류평가 솔루션 등 AI 채용 도구도 현장 시연됐어요.",
+ insight:"글로벌 기업 HR 담당자 연사 라인업은 국내 채용 트렌드가 글로벌 스탠더드로 빠르게 수렴되고 있다는 신호예요.",
+ action:"세션 후기와 AI 채용 도구 시연 내용을 팀 내 공유하고, 도입 여부를 검토 안건으로 올리세요.",
+ tags:["원티드","하이파이브2026","HR컨퍼런스","AI채용","HRtech"],
+ sources:[{name:"ZDNet Korea",url:"https://zdnet.co.kr/view/?no=20260405103303",level:"B"},{name:"이지경제",url:"https://www.ezyeconomy.com/news/articleView.html?idxno=235254",level:"B"}]},
+
+{id:"e_0513_a",date:"2026-05-13",time:"16:43",cat:"outflow",priority:true,urgency:"high",
+ company:"삼성전자",signal:"사후조정 결렬 — 5/21 총파업 D-8, 하루 1조 손실 예상",level:"B",
+ title:"삼성전자 노사 사후조정 최종 결렬 — 5/21 총파업 초읽기, DS 부문 인재 소싱 적기",
+ body:"삼성전자 노사 사후조정이 5월 13일 새벽 최종 결렬됐어요. 노조는 5월 21일~6월 7일 18일간 총파업을 예고하고 있으며 최소 4만1천명 이상 참여가 예상돼요. 성과급 산정 기준 투명화와 OPI 상한 폐지가 핵심 쟁점이에요.",
+ insight:"파업 장기화 시 삼성전자 DS·DX 부문에서 조직 불안 심리가 확산되고 이직 의향이 높아질 수 있어요. 성과급 불만이 핵심인 만큼 '투명한 성과 기준'을 내세우는 채용 포지셔닝이 효과적이에요.",
+ action:"삼성전자 DS(반도체) 부문 3~7년차 엔지니어를 LinkedIn에서 즉시 서치하세요. 파업 기간(5/21~6/7) 중 불만도가 높아질 때가 최적 컨택 타이밍이에요.",
+ tags:["삼성전자","총파업","노사분쟁","성과급","반도체","인재이탈"],
+ sources:[{name:"딜사이트",url:"https://dealsite.co.kr/articles/161786/068020",level:"B"},{name:"네이트뉴스",url:"https://news.nate.com/view/20260513n10699",level:"B"}]},
+
+{id:"e_0513_b",date:"2026-05-13",time:"09:00",cat:"hr",priority:false,urgency:"mid",
+ company:"월간 HR인사이트",signal:"사기업 경영성과급 임금성 판례 논란 특집",level:"B",
+ title:"경영성과급 임금성 논란 — 퇴직금 산정 분쟁 리스크 점검 필수",
+ body:"사기업 경영성과급의 임금 해당 여부 논란이 법조계와 HR계에서 화두로 부상했어요. 성과급 지급 기준을 취업규칙에 명확히 기재하지 않으면 퇴직금 분쟁으로 이어질 수 있어요.",
+ insight:"성과급 분쟁은 퇴사자뿐 아니라 재직자의 이직 동기가 되기도 해요. 보상 체계 투명성은 채용 경쟁력에도 직결돼요.",
+ action:"성과급 지급 기준과 취업규칙 문구를 노무사와 함께 점검하세요.",
+ tags:["성과급","임금","퇴직금","HR","노무","분쟁리스크"],
+ sources:[{name:"월간 HR인사이트",url:"https://www.worklaw.co.kr/main2022/view/view.asp?bi_pidx=39149",level:"B"}]},
+
+{id:"e_0514_a",date:"2026-05-14",time:"09:00",cat:"foreign",priority:true,urgency:"high",
+ company:"메타(Meta)",signal:"전체 직원 10% 8,000명 감원 + 공석 6,000개 채용 중단",level:"B",
+ title:"메타 직원 10% 8,000명 감원 — AI 투자 1,150억 달러 동시 확대",
+ body:"메타가 전체 직원의 약 10%인 8,000명을 감원하고 공석 6,000개 채용도 중단했어요. AI 슈퍼인텔리전스 개발에 1,150억 달러를 투자하는 동시에 비AI 직군을 대규모로 정리하는 구조예요. 감원은 5월 20일 공식 시작돼요.",
+ insight:"메타 감원으로 AI 외 직군(마케팅·운영·CS·콘텐츠)의 한국 오피스 인력 이동 가능성이 있어요.",
+ action:"메타코리아 마케팅·운영·CS 직군을 LinkedIn에서 즉시 서치하세요. 외국계 경험자는 처우 기대치가 높으므로 채용 밴드를 사전에 확인하세요.",
+ tags:["메타","Meta","감원","AI전환","해외","인재유출"],
+ sources:[{name:"martincid.com",url:"https://ko.martincid.com/business-ko/%EB%A9%94%ED%83%80-%EC%A7%81%EC%9B%90-8000%EB%AA%85-%EA%B0%90%EC%9B%90-%EC%A0%84%EC%B2%B4%EC%9D%98-102026%EB%85%84-ai-%ED%88%AC%EC%9E%90-1150%EC%96%B5-%EB%8B%AC%EB%9F%AC-%EB%8F%8C/",level:"B"},{name:"뉴스톱",url:"https://www.newstopkorea.com/news/articleView.html?idxno=44601",level:"B"}]},
+
+{id:"e_0515_a",date:"2026-05-15",time:"09:00",cat:"hr",priority:true,urgency:"high",
+ company:"AI Weekly·전국인력신문",signal:"AI로 3만2천 일자리 감축 — AI 역량자는 공급 3.2배 부족",level:"B",
+ title:"2026년 5월 AI가 일자리 3만2천개 삼켜 — AI 역량자는 수요가 공급의 3.2배",
+ body:"AI Weekly 2026년 5월 보도에 따르면 메타·MS·아마존 등 빅테크에서 3만2천여 개 일자리가 감축됐어요. 반면 AI 역량을 갖춘 인력 수요는 공급을 3.2대 1로 앞서고 있어요. 채용 공고 AI 기술 요건은 지난해 가을 이후 3배 증가했어요.",
+ insight:"채용 JD를 재작성할 타이밍이에요. AI 도구 활용 능력이 모든 직군에서 기본 요건으로 자리잡고 있어요.",
+ action:"현재 운영 중인 모든 채용 JD에 AI 도구 활용 역량 항목을 추가하세요. 온보딩 프로그램에도 AI 활용 교육을 필수 과정으로 추가하세요.",
+ tags:["AI채용","HR트렌드","AI전환","채용시장","인력재편"],
+ sources:[{name:"전국인력신문",url:"https://www.kjob.news/news/487771",level:"B"}]},
+
+{id:"e_0516_a",date:"2026-05-16",time:"09:00",cat:"hr",priority:false,urgency:"mid",
+ company:"딜사이트·인포집합소",signal:"삼성전자 파업 D-5 — 노무 리스크 관리 실무 체크",level:"B",
+ title:"삼성전자 총파업 D-5(5/16) — HR 담당자가 지금 챙겨야 할 노무 리스크 체크리스트",
+ body:"삼성전자 총파업이 5월 21일로 다가왔어요. 5월 20일 법원 가처분 결정이 분수령이에요. 대기업 파업은 협력사·벤더사까지 연쇄 영향을 미쳐요.",
+ insight:"삼성전자 협력사·벤더사 HR 담당자라면 공급망 차질에 따른 운영 계획 변경, 긴급 인력 재배치 기준을 사전에 정비해야 해요.",
+ action:"삼성전자 협력사·벤더 관계 여부를 확인하고, 파업 기간 중 업무 대체 계획을 사전에 수립하세요.",
+ tags:["삼성전자","파업","노무리스크","HR","긴급조정권","협력사"],
+ sources:[{name:"딜사이트",url:"https://dealsite.co.kr/articles/161786/068020",level:"B"},{name:"인포집합소",url:"https://infobaz.com/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%ED%8C%8C%EC%97%85-%EA%B8%B0%EA%B0%84-%EC%9D%BC%EC%A0%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/",level:"B"}]},
+
+{id:"e_0517_a",date:"2026-05-17",time:"09:00",cat:"outflow",priority:true,urgency:"high",
+ company:"홈플러스",signal:"홈플러스 회생 가결 시한 D-47(7/3) — 인력 유출 가속",level:"B",
+ title:"홈플러스 회생 가결 시한 D-47 — 유통 인력 선점 골든타임",
+ body:"홈플러스 법원 회생계획안 가결 시한(7월 3일)까지 47일 남았어요. MBK파트너스의 자금 투입이 지연되면서 37개 휴업 점포 직원의 이직 결정 속도가 빠르게 높아지고 있어요. 익스프레스 희망퇴직 마감(5/20)도 임박했어요.",
+ insight:"7월 3일 이후 홈플러스 회생 여부와 무관하게 유통 전문 인력의 대거 시장 유입은 확실해요. 온라인 커머스·MD·물류 경험자를 지금 선점해두는 것이 중요해요.",
+ action:"홈플러스 익스프레스 희망퇴직 마감일(5/20) 직후를 기준으로 LinkedIn 서치를 집중 실행하세요. 온라인커머스·MD·물류 직군 포지션을 지금 공고 준비해두세요.",
+ tags:["홈플러스","유통","인재유출","MD","온라인커머스","물류"],
+ sources:[{name:"경향신문",url:"https://www.khan.co.kr/article/202605121556011",level:"B"},{name:"헤럴드경제",url:"https://biz.heraldcorp.com/article/10736208",level:"B"}]},
+
+{id:"e_0517_b",date:"2026-05-17",time:"10:00",cat:"hr",priority:false,urgency:"mid",
+ company:"고용노동부·법원",signal:"삼성전자 파업 D-4 — 5/20 가처분 결정 임박",level:"B",
+ title:"삼성전자 총파업 D-4 — 5/20 가처분 결정이 분수령, 협력사 대응 준비 시급",
+ body:"삼성전자 총파업(5/21~6/7)까지 4일 남았어요. 5월 20일 법원 가처분 결정이 파업 실행 여부를 결정해요. 최소 4만1천명 조합원 참여 예상으로 반도체 공급망에 영향이 우려돼요.",
+ insight:"삼성전자 파업은 협력사·벤더 기업 HR 담당자에게도 직접적인 영향을 줘요. 파업 기간 중 업무 공백에 대한 인력 대체 계획이 사전에 필요해요.",
+ action:"5/20 가처분 결정 결과를 모니터링하고, 결정 내용에 따른 대응 시나리오를 미리 준비해두세요.",
+ tags:["삼성전자","파업","가처분","노무리스크","협력사","반도체"],
+ sources:[{name:"딜사이트",url:"https://dealsite.co.kr/articles/161786/068020",level:"B"}]}
+
+];
+
+
+const COMPETITORS = [
+  {
+    group:"가격비교 플랫폼",
+    our:"다나와, 에누리닷컴",
+    targets:["네이버쇼핑","네이버가격비교","카카오쇼핑","쿠팡","11번가","G마켓","옥션","롯데온","SSG닷컴"]
+  },
+  {
+    group:"셀러커머스 SaaS",
+    our:"메이크샵, 플레이오토",
+    targets:["카페24","고도몰(NHN커머스)","아임웹","사방넷","셀러허브","샵링커","이지어드민","위사"]
+  },
+  {
+    group:"크로스보더·물류",
+    our:"몰테일, 스윗트래커",
+    targets:["CJ대한통운","큐익스프레스","로지스팟","두손컴퍼니","메쉬코리아","포워더스"]
+  },
+  {
+    group:"이커머스 광고·애드테크",
+    our:"다나와 광고, 에누리 광고",
+    targets:["네이버 성과형 광고","카카오쇼핑 광고","크리테오코리아","RTB House","몰인원","샵플링"]
+  },
+  {
+    group:"IT 플랫폼·핀테크",
+    our:"커머스 기술 인프라",
+    targets:["카카오페이","토스","NHN페이코","KG이니시스","나이스페이","채널톡"]
+  },
+  {
+    group:"이커머스 대형 플랫폼",
+    our:"가격비교 트래픽 연계",
+    targets:["티몬","위메프","인터파크커머스","AK몰","현대H몰","CJ온스타일"]
+  }
+];
+
+/* ── 날짜 목록 (실제 데이터 있는 날짜만) ── */
+const DATA_DATES = [...new Set(ENTRIES.map(e=>e.date))].sort();
+const LAST_DATE  = DATA_DATES[DATA_DATES.length - 1]; // "2026-05-11"
+
+/* ── KST 날짜 유틸 ── */
+const KST = 'Asia/Seoul';
+function kstParts(ds){
+  const utc = new Date(ds+'T03:00:00Z');
+  const fmt = new Intl.DateTimeFormat('ko-KR',{timeZone:KST,year:'numeric',month:'numeric',day:'numeric',weekday:'narrow'});
+  const p={};
+  fmt.formatToParts(utc).forEach(({type,value})=>{p[type]=value});
+  const WO=['월','화','수','목','금','토','일'];
+  p.wi=WO.indexOf(p.weekday);
+  p.isWE=p.wi>=5;
+  return p;
+}
+function todayKST(){
+  return new Intl.DateTimeFormat('sv-SE',{timeZone:KST}).format(new Date());
+}
+function firstOffset(y,m){
+  const ds=`${y}-${String(m+1).padStart(2,'0')}-01`;
+  return kstParts(ds).wi;
+}
+function lastDay(y,m){return new Date(y,m+1,0).getDate()}
+function pad2(n){return String(n).padStart(2,'0')}
+function dateFmt(ds){
+  const p=kstParts(ds);
+  return `${p.year}년 ${p.month}월 ${p.day}일 (${p.weekday})`;
+}
+
+/* ── STATE ── */
+let selRange={type:'daily',start:LAST_DATE,end:LAST_DATE,label:dateFmt(LAST_DATE)};
+let calY=2026,calM=4; // 0-indexed month → May 2026
+let viewMode='daily';
+const TODAY=todayKST();
+
+/* ── CALENDAR ── */
+function buildCal(){
+  const y=calY,m=calM;
+  document.getElementById('calLabel').textContent=`${y}.${pad2(m+1)}`;
+  const grid=document.getElementById('calGrid');
+  const DOW=['월','화','수','목','금','토','일'];
+  grid.innerHTML=DOW.map((d,i)=>`<div class="dow" ${i>=5?'style="color:var(--red)"':''}>${d}</div>`).join('');
+  const off=firstOffset(y,m);
+  for(let i=0;i<off;i++) grid.innerHTML+=`<div class="day empty"></div>`;
+  const last=lastDay(y,m);
+  const dotSet=new Set(DATA_DATES);
+  const activeStart=selRange.start,activeEnd=selRange.end;
+  for(let d=1;d<=last;d++){
+    const ds=`${y}-${pad2(m+1)}-${pad2(d)}`;
+    const hasData=dotSet.has(ds);
+    const isActive=ds>=activeStart&&ds<=activeEnd;
+    const isToday=ds===TODAY&&!isActive;
+    const parts=kstParts(ds);
+    const cls=['day',hasData?'has':'',isActive?'active':'',isToday?'today':'',parts.isWE&&!isActive?'weekend':''].filter(Boolean).join(' ');
+    const onclick=hasData?`onclick="pickDay('${ds}')"`:ds<=TODAY?`onclick="pickDay('${ds}')"`:''
+    grid.innerHTML+=`<div class="${cls}" ${onclick}>${d}</div>`;
+  }
+}
+
+function calNav(dir){
+  let idx=(calY-2026)*12+calM+dir;
+  // allow 2026-04 to 2027-12
+  if(idx<3||idx>23)return;
+  calY=2026+Math.floor(idx/12);calM=idx%12;
+  buildCal();
+}
+
+/* ── ARCHIVE ── */
+function buildArchive(){
+  const el=document.getElementById('archList');
+  el.innerHTML='';
+  if(viewMode==='daily'){
+    [...DATA_DATES].reverse().forEach(ds=>{
+      const cnt=ENTRIES.filter(e=>e.date===ds).length;
+      const p=kstParts(ds);
+      const active=selRange.type==='daily'&&selRange.start===ds;
+      const b=document.createElement('button');
+      b.className='arch-item'+(active?' active':'');
+      b.innerHTML=`<span class="arch-lbl">${p.month}/${p.day}(${p.weekday})</span><span class="arch-cnt">${cnt}</span>`;
+      b.onclick=()=>pickDay(ds);
+      el.appendChild(b);
+    });
+  } else if(viewMode==='weekly'){
+    // Build Mon-Sun weeks covering 2026-04-01 to LAST_DATE
+    const weeks=buildWeeks();
+    [...weeks].reverse().forEach(w=>{
+      const cnt=ENTRIES.filter(e=>e.date>=w.start&&e.date<=w.end).length;
+      const active=selRange.type==='weekly'&&selRange.start===w.start;
+      const b=document.createElement('button');
+      b.className='arch-item'+(active?' active':'');
+      const sp=kstParts(w.start),ep=kstParts(w.end);
+      b.innerHTML=`<div style="width:100%">
+        <div class="arch-lbl">${sp.month}/${sp.day} ~ ${ep.month}/${ep.day}<span class="arch-cnt" style="float:right">${cnt}</span></div>
+      </div>`;
+      b.onclick=()=>pickWeek(w);
+      el.appendChild(b);
+    });
+  } else {
+    // Monthly
+    const months=buildMonths();
+    [...months].reverse().forEach(mo=>{
+      const cnt=ENTRIES.filter(e=>e.date>=mo.start&&e.date<=mo.end).length;
+      const active=selRange.type==='monthly'&&selRange.start===mo.start;
+      const b=document.createElement('button');
+      b.className='arch-item'+(active?' active':'');
+      b.innerHTML=`<span class="arch-lbl">${mo.label}</span><span class="arch-cnt">${cnt}</span>`;
+      b.onclick=()=>pickMonth(mo);
+      el.appendChild(b);
+    });
+  }
+}
+
+function buildWeeks(){
+  const start=new Date('2026-04-01T03:00:00Z');
+  const end=new Date(LAST_DATE+'T03:00:00Z');
+  const weeks=[];
+  let cur=new Date(start);
+  // align to Monday
+  const dow=(cur.getDay()+6)%7; // 0=Mon
+  cur.setDate(cur.getDate()-dow);
+  while(cur<=end){
+    const wStart=new Date(cur);
+    const wEnd=new Date(cur);wEnd.setDate(wEnd.getDate()+6);
+    const s=new Intl.DateTimeFormat('sv-SE',{timeZone:KST}).format(wStart);
+    const e=new Intl.DateTimeFormat('sv-SE',{timeZone:KST}).format(wEnd);
+    // Only include weeks that overlap with our data range
+    if(e>='2026-04-01'&&s<=LAST_DATE){
+      weeks.push({start:s>='2026-04-01'?s:'2026-04-01',end:e<=LAST_DATE?e:LAST_DATE});
+    }
+    cur.setDate(cur.getDate()+7);
+  }
+  return weeks;
+}
+
+function buildMonths(){
+  const months=[];
+  // 2026-04 and 2026-05 (partial)
+  [{y:2026,m:4},{y:2026,m:5}].forEach(({y,m})=>{
+    const s=`${y}-${pad2(m)}-01`;
+    const lastD=lastDay(y,m-1);
+    const e=`${y}-${pad2(m)}-${pad2(lastD)}`;
+    const start=s;
+    const end=e<LAST_DATE?e:LAST_DATE;
+    if(start<=LAST_DATE)months.push({label:`${y}년 ${m}월`,start,end});
+  });
+  return months;
+}
+
+/* ── PICK handlers ── */
+function pickDay(ds){
+  selRange={type:'daily',start:ds,end:ds,label:dateFmt(ds)};
+  calY=Number(ds.slice(0,4));calM=Number(ds.slice(5,7))-1;
+  renderAll();
+}
+function pickWeek(w){
+  const sp=kstParts(w.start),ep=kstParts(w.end);
+  selRange={type:'weekly',start:w.start,end:w.end,
+    label:`${sp.month}/${sp.day} ~ ${ep.month}/${ep.day}`};
+  renderAll();
+}
+function pickMonth(mo){
+  selRange={type:'monthly',start:mo.start,end:mo.end,label:mo.label};
+  renderAll();
+}
+function setView(v){
+  viewMode=v;
+  ['daily','weekly','monthly'].forEach(x=>{
+    document.getElementById('btn-'+x).classList.toggle('active',x===v);
+  });
+  buildArchive();
+}
+function shiftDate(dir){
+  if(selRange.type!=='daily')return;
+  const idx=DATA_DATES.indexOf(selRange.start);
+  const next=DATA_DATES[idx-dir];
+  if(next)pickDay(next);
+}
+
+/* ── 중요도 점수 계산 ── */
+function calcScore(e){
+  const catBase={leader:90,outflow:80,hr:50,hiring:40,foreign:35};
+  const urgBonus={high:15,mid:7,low:0};
+  const levBonus={A:10,B:5,C:0};
+  return (catBase[e.cat]||30)+(urgBonus[e.urgency||'low']||0)+(e.priority?20:0)+(levBonus[e.level]||0);
+}
+
+/* ── FILTER (중요도 정렬) ── */
+function getFiltered(){
+  const q=document.getElementById('kw').value.trim().toLowerCase();
+  const cat=document.getElementById('catSel').value;
+  const base=ENTRIES
+    .filter(e=>e.date>=selRange.start&&e.date<=selRange.end)
+    .filter(e=>cat==='all'||e.cat===cat)
+    .filter(e=>!q||[e.company,e.title,e.body,e.insight,e.action,e.signal,...(e.tags||[])].join(' ').toLowerCase().includes(q));
+  // 최신 날짜 우선 → 같은 날짜면 중요도 내림차순
+  return base.sort((a,b)=>
+    b.date.localeCompare(a.date) ||
+    calcScore(b)-calcScore(a)
+  );
+}
+function setCat(cat,btn){
+  document.getElementById('catSel').value=cat;
+  document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));
+  renderFeed();
+}
+function syncChips(){
+  const cat=document.getElementById('catSel').value;
+  document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));
+}
+
+/* ── LABELS ── */
+const CAT_LABEL={leader:'리더 이탈',outflow:'인재 유출',hiring:'채용 확대',foreign:'해외/외국계',hr:'HR NEWS'};
+const LV_CLS={A:'lv-a',B:'lv-b',C:'lv-c'};
+const URG_COLOR={high:'var(--red)',mid:'var(--amb)',low:'var(--sub)'};
+
+/* ── 즉시주목 (기업 중복 제거) ── */
+function renderUrgent(){
+  // 즉시주목 = "인재 이탈 가능성이 높은 기업 — 컨택 권장"
+  // 조건: 권고사직·구조조정·리더이탈·대규모 인재유출 예상 기업
+  //   - cat=leader, priority=true (리더이탈 → 팀이탈 연쇄 가능)
+  //   - cat=outflow, priority=true, urgency=high (대규모 권고사직·구조조정)
+  // 정렬: 최신 날짜 우선 → 같은 날짜면 점수 순
+  const pool=ENTRIES
+    .filter(e=>{
+      if(!e.priority) return false;
+      if(e.cat==='leader') return true;
+      if(e.cat==='outflow' && e.urgency==='high') return true;
+      return false;
+    })
+    .sort((a,b)=>
+      b.date.localeCompare(a.date) ||
+      calcScore(b)-calcScore(a)
+    );
+  const seen=new Set(), list=[];
+  for(const e of pool){
+    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+    if(seen.has(key)) continue;
+    seen.add(key); list.push(e);
+    if(list.length>=6) break;
+  }
+  document.getElementById('urgentList').innerHTML=list.length===0
+    ? '<div style="font-size:12px;color:var(--muted);padding:4px 0">현재 즉시 주목 이슈 없음</div>'
+    : list.map(e=>`
+    <button class="urgent-item" onclick="openModal('${e.id}')">
+      <span class="urgent-co">${e.company}</span>
+      <span class="urgent-ttl">${e.title}</span>
+      <span style="font-size:9px;color:var(--sub);flex-shrink:0">${e.date.slice(5)}</span>
+    </button>`).join('');
+}
+
+/* ── METRICS ── */
+function renderMetrics(){
+  const pool=ENTRIES.filter(e=>e.date>=selRange.start&&e.date<=selRange.end);
+  const rows=[
+    ['오늘의 항목',pool.length,'전체 수집',pool.length===0?'var(--sub)':'var(--text)'],
+    ['리더 이탈',pool.filter(e=>e.cat==='leader').length,'대표/임원급','var(--pur)'],
+    ['인재 유출',pool.filter(e=>e.cat==='outflow').length,'권고사직/구조조정','var(--red)'],
+    ['채용 확대',pool.filter(e=>e.cat==='hiring').length,'경쟁 신호','var(--grn)'],
+    ['해외·외국계',pool.filter(e=>e.cat==='foreign').length,'글로벌 참고','var(--amb)'],
+    ['HR NEWS',pool.filter(e=>e.cat==='hr').length,'인사·채용·노무','var(--blu)'],
+  ];
+  document.getElementById('metricsRow').innerHTML=rows.map(([lbl,val,cap,color])=>`
+    <div class="metric">
+      <div class="metric-lbl">${lbl}</div>
+      <div class="metric-val" style="color:${color}">${val}</div>
+      <div class="metric-cap">${cap}</div>
+    </div>`).join('');
+}
+
+/* ── FEED (중요도 섹션 분리 + 긴급 배지) ── */
+function renderFeed(){
+  document.getElementById('feedTitle').textContent=selRange.label+(selRange.type!=='daily'?' 종합':'');
+  const list=getFiltered();
+  const el=document.getElementById('feed');
+  if(!list.length){
+    el.innerHTML='<div class="empty-state">선택한 기간에 해당하는 리포트가 없습니다.</div>';
+    return;
+  }
+  let html='';
+  list.forEach(e=>{
+    const urgBadge=e.urgency==='high'
+      ?'<span style="font-size:9px;font-weight:800;color:var(--red);background:var(--red-bg);padding:1px 5px;border-radius:4px">긴급</span>'
+      :e.urgency==='mid'
+      ?'<span style="font-size:9px;font-weight:800;color:var(--amb);background:var(--amb-bg);padding:1px 5px;border-radius:4px">주의</span>'
+      :'';
+    html+=`
+    <article class="card ${e.priority&&e.cat!=='foreign'?'high':''}" onclick="openModal('${e.id}')">
+      <div class="card-meta">
+        <span class="tag cat-${e.cat}">${CAT_LABEL[e.cat]}</span>
+        <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level}</span>
+        <span class="card-time">${e.date} ${e.time}</span>
+      </div>
+      <h3>${e.company} · ${e.title}</h3>
+      <p>${e.body}</p>
+      <div class="hashes">${(e.tags||[]).map(t=>'<span class="hash">#'+t+'</span>').join('')}</div>
+    </article>`;
+  });
+  el.innerHTML=html;
+}
+
+/* ── TOP5 랭킹 (기업별 중복 완전 제거) ── */
+function renderRanks(){
+  // 인재 유출: 기업별 최고 점수 항목만
+  const outflowMap=new Map();
+  ENTRIES.filter(e=>e.cat==='outflow').forEach(e=>{
+    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+    if(!outflowMap.has(key)||calcScore(e)>calcScore(outflowMap.get(key)))
+      outflowMap.set(key,e);
+  });
+  const outflow=[...outflowMap.values()].sort((a,b)=>calcScore(b)-calcScore(a)).slice(0,5);
+  document.getElementById('rankOutflow').innerHTML=outflow.length
+    ?outflow.map((e,i)=>`
+    <button onclick="openModal('${e.id}')">
+      <span class="rk">${i+1}</span>
+      <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
+    </button>`).join('')
+    :'<div style="font-size:11px;color:var(--muted);padding:6px">수집된 데이터 없음</div>';
+
+  // 리더 이탈: 기업별 최고 점수 항목만
+  const leaderMap=new Map();
+  ENTRIES.filter(e=>e.cat==='leader').forEach(e=>{
+    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+    if(!leaderMap.has(key)||calcScore(e)>calcScore(leaderMap.get(key)))
+      leaderMap.set(key,e);
+  });
+  const leaders=[...leaderMap.values()].sort((a,b)=>calcScore(b)-calcScore(a)).slice(0,5);
+  document.getElementById('rankLeader').innerHTML=leaders.length
+    ?leaders.map((e,i)=>`
+    <button onclick="openModal('${e.id}')">
+      <span class="rk">${i+1}</span>
+      <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
+    </button>`).join('')
+    :'<div style="font-size:11px;color:var(--muted);padding:6px">수집된 데이터 없음</div>';
+}
+
+/* ── COMPETITORS ── */
+function renderComp(){
+  document.getElementById('compList').innerHTML=COMPETITORS.map(c=>`
+    <div class="comp-item">
+      <b>${c.group}</b>
+      <small>${c.our}</small>
+      <p>${c.targets.join(', ')}</p>
+    </div>`).join('');
+}
+
+/* ── MODAL ── */
+function openModal(id){
+  const e=ENTRIES.find(x=>x.id===id);if(!e)return;
+  document.getElementById('mTitle').textContent=`${e.company} · ${e.title}`;
+  document.getElementById('mMeta').innerHTML=`
+    <span class="tag cat-${e.cat}">${CAT_LABEL[e.cat]}</span>
+    <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level}</span>
+    <span style="font-size:11px;color:var(--sub);font-family:'DM Mono'">${e.date} ${e.time}</span>`;
+
+  const catDesc={
+    leader:'핵심 리더(대표/CTO/CPO 등) 이탈 신호로, 후속 팀 이탈까지 연쇄될 수 있어요.',
+    outflow:'권고사직·희망퇴직·구조조정으로 인재가 시장에 나오고 있어요.',
+    hiring:'경쟁사 또는 인접 기업의 대규모 채용으로 인재 확보 경쟁이 심화될 수 있어요.',
+    hr:'채용 담당자가 알아야 할 HR·노무·제도 관련 최신 뉴스예요.',
+    foreign:'해외·외국계 기업의 채용 동향으로 글로벌 인재 시장 참고용이에요.',
+  }[e.cat]||'';
+  const urgLabel={
+    high:'🔴 긴급 — 즉시 컨택이 필요해요',
+    mid:'🟡 주의 — 이번 주 내 검토하세요',
+    low:'⚪ 참고 — 중장기 파이프라인에 추가하세요',
+  }[e.urgency||'low'];
+  const lvDesc={A:'공시·공식자료 — 가장 높은 신뢰도예요',B:'주요 언론·전문지 — 검증된 보도예요',C:'커뮤니티·검색 결과 — 2차 확인을 권장해요'}[e.level]||'';
+
+  document.getElementById('mBody').innerHTML=`
+    <div class="info-block" style="background:var(--surf2)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap">
+        <span class="tag cat-${e.cat}">${CAT_LABEL[e.cat]}</span>
+        <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level} · ${lvDesc}</span>
+      </div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:7px">${catDesc}</div>
+      <div style="font-size:12px;font-weight:700;padding:6px 10px;border-radius:7px;background:#fff;border:1px solid var(--line)">${urgLabel}</div>
+    </div>
+    <div class="info-block">
+      <h4>📋 이슈 요약</h4>
+      <p>${e.body}</p>
+    </div>
+    <div class="info-block insight">
+      <h4>💡 채용 담당자 인사이트</h4>
+      <p>${e.insight}</p>
+    </div>
+    <div class="info-block action">
+      <h4>✅ 추천 액션</h4>
+      <p>${e.action}</p>
+    </div>
+    <div class="info-block sources">
+      <h4>🔗 출처 — 클릭하면 원문으로 이동해요</h4>
+      ${e.sources.map(s=>`
+        <a class="src-link" href="${s.url}" target="_blank" rel="noopener">
+          <span class="src-arrow">↗</span>
+          <div class="src-info">
+            <b>${s.name}</b>
+            <small>신뢰도 ${s.level} · ${{A:'공시·공식자료',B:'주요 언론·전문지',C:'커뮤니티·검색 — 2차 확인 권장'}[s.level]||''}</small>
+          </div>
+        </a>`).join('')}
+    </div>`;
+  document.getElementById('modalBg').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modalBg').classList.remove('open');
+  document.body.style.overflow='';
+}
+function closeBg(e){if(e.target.id==='modalBg')closeModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+/* ── CSV ── */
+function downloadCSV(){
+  const rows=[['날짜','시간','카테고리','기업명','신호','제목','신뢰도','우선순위','태그']];
+  ENTRIES.forEach(e=>rows.push([e.date,e.time,CAT_LABEL[e.cat],e.company,e.signal,e.title,e.level,e.priority?'Y':'N',e.tags.join('|')]));
+  const csv=rows.map(r=>r.map(v=>`"${String(v).replaceAll('"','""')}"`).join(',')).join('\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));
+  a.download=`cw_intel_${LAST_DATE}.csv`;a.click();
+}
+
+/* ── MANUAL REFRESH ── */
+function manualRefresh(){
+  // In production: trigger GitHub Actions webhook or API call
+  alert('수동 수집 트리거\n\nGitHub Actions → "커넥트웨이브 채용 인텔리전스" → Run workflow\n\n또는: python automation/run_report.py');
+}
+
+/* ── RENDER ALL ── */
+function renderAll(){
+  buildCal();
+  buildArchive();
+  renderUrgent();
+  renderMetrics();
+  renderFeed();
+  renderRanks();
+  renderComp();
+}
+
+/* ── 동적 data.json 로딩 (배포 환경에서 최신 데이터 자동 반영) ── */
+async function loadLatestData(){
+  try{
+    const r = await fetch('./data.json?t='+Date.now());
+    if(!r.ok) return;
+    const history = await r.json();
+    if(!Array.isArray(history)||!history.length) return;
+
+    // 새 항목만 ENTRIES에 병합 (기존 id 유지, 중복 스킵)
+    const existingIds = new Set(ENTRIES.map(e=>e.id));
+    let added = 0;
+    for(const report of history){
+      const items = report.items || [];
+      for(const item of items){
+        if(existingIds.has(item.id)) continue;
+        // data.json 필드 → ENTRIES 필드 매핑
+        ENTRIES.push({
+          id:      item.id,
+          date:    item.date,
+          time:    item.time||'09:00',
+          cat:     item.cat,
+          priority:item.priority||false,
+          urgency: item.urgency||'low',
+          company: item.company||'',
+          signal:  item.signal||'',
+          level:   item.level||'B',
+          title:   item.title||'',
+          body:    item.body||'',
+          insight: item.insight||'',
+          action:  item.action||'',
+          tags:    item.tags||[],
+          sources: (item.sources||[]).filter(s=>s.url&&!s.url.includes('search.naver.com'))
+        });
+        existingIds.add(item.id);
+        added++;
+      }
+    }
+
+    if(added>0){
+      // 날짜 목록 갱신
+      DATA_DATES.length=0;
+      const ds=[...new Set(ENTRIES.map(e=>e.date))].sort();
+      DATA_DATES.push(...ds);
+      // 최신 날짜로 뷰 이동
+      const latest = DATA_DATES[DATA_DATES.length-1];
+      pickDay(latest);
+      console.log(`✅ data.json에서 ${added}건 신규 로드`);
+    }
+
+    // 최종 업데이트 시각 표시
+    const lastDate = history[0]?.date;
+    if(lastDate){
+      const el = document.getElementById('lastUpdated');
+      if(el) el.textContent = `최신: ${lastDate} · 매일 09:00 KST 자동 수집`;
+    }
+  } catch(e){
+    // 로컬 파일 시스템에서는 CORS 오류 발생 — 무시
+    console.log('data.json 로드 스킵 (로컬 환경)');
+  }
+}
+
+/* ── 수동 새로고침 ── */
+function manualRefresh(){
+  document.querySelector('.live-dot').style.opacity='0.4';
+  loadLatestData().finally(()=>{
+    document.querySelector('.live-dot').style.opacity='1';
+  });
+}
+
+// 초기 렌더 후 data.json 로드
+renderAll();
+loadLatestData();
+</script>
+</body>
+</html>

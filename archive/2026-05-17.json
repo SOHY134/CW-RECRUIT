@@ -1,0 +1,222 @@
+{
+  "date": "2026-05-17",
+  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
+  "contact_targets": [
+    "약업신문",
+    "기계신문",
+    "서울경제",
+    "전자신문"
+  ],
+  "items": [
+    {
+      "id": "20260517-de0057b1a6",
+      "date": "2026-05-17",
+      "collected_date": "2026-05-17",
+      "time": "12:58",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "쿠팡",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력 - 뉴스핌",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5\" target=\"_blank\">쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력</a",
+      "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
+      "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+      "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "인재 확보",
+        "score:110"
+      ],
+      "sources": [
+        {
+          "name": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20260517-06a7daa43a",
+      "date": "2026-05-17",
+      "collected_date": "2026-05-17",
+      "time": "10:08",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "쿠팡",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "쿠팡풀필먼트서비스, ‘CFS 채용 페스타’로 지역 인재 확보 나서 - 직썰",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1",
+      "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
+      "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+      "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "인재 확보",
+        "score:110"
+      ],
+      "sources": [
+        {
+          "name": "직썰",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20260514-ed91ca9e43",
+      "date": "2026-05-14",
+      "collected_date": "2026-05-17",
+      "time": "03:50",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "약업신문",
+      "signal": "리더 이동 신호 · 신임 대표",
+      "level": "B",
+      "title": "HLB,미국 자회사 엘레바 브라이언 김 신임 대표 선임 - 약업신문",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUE",
+      "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
+      "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+      "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+      "subcategory": "리더 선임",
+      "tags": [
+        "리더 이탈",
+        "리더 선임",
+        "신임 대표",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "약업신문",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUElUSVVJUzRmYmVDZEtNYXI?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUElUSVVJUzRmYmVDZEtNYXI?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20260514-4a68ec370e",
+      "date": "2026-05-14",
+      "collected_date": "2026-05-17",
+      "time": "10:07",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "low",
+      "company": "기계신문",
+      "signal": "인재 유출 가능성 · 유동성 위기",
+      "level": "B",
+      "title": "인천시, 기계·제조업 유동성 위기에 2천억 원 '방어막' 가동 - 기계신문",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5\" target=\"_blank\">인천시, 기계·제조업 유동성 위기에 2천억 원 '방어",
+      "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
+      "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+      "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+      "subcategory": "경영리스크",
+      "tags": [
+        "인재 유출",
+        "경영리스크",
+        "유동성 위기",
+        "score:102"
+      ],
+      "sources": [
+        {
+          "name": "기계신문",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20260514-a575343e79",
+      "date": "2026-05-14",
+      "collected_date": "2026-05-17",
+      "time": "17:47",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "low",
+      "company": "서울경제",
+      "signal": "인재 유출 가능성 · 유동성 위기",
+      "level": "B",
+      "title": "작년 영업익 85%가 이자…유동성 위기에도 오너家엔 배당[재무 포커스] - 서울경제",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0",
+      "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
+      "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+      "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+      "subcategory": "경영리스크",
+      "tags": [
+        "인재 유출",
+        "경영리스크",
+        "유동성 위기",
+        "score:102"
+      ],
+      "sources": [
+        {
+          "name": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0xzS1VUdTJFeDRHY0I5ZnphUC1HamJZMDRuOA?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0xzS1VUdTJFeDRHY0I5ZnphUC1HamJZMDRuOA?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20260513-1696677763",
+      "date": "2026-05-13",
+      "collected_date": "2026-05-17",
+      "time": "15:00",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "전자신문",
+      "signal": "리더 이동 신호 · 공동 창업자",
+      "level": "B",
+      "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까 - 전자신문",
+      "body": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5\" target=\"_blank\">DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까</a>  <font color=\"#6f6f6f\">전",
+      "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
+      "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+      "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "리더 이탈",
+        "공동 창업자",
+        "score:100"
+      ],
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
+        }
+      ]
+    }
+  ]
+}
