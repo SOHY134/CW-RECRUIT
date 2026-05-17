@@ -26,6 +26,7 @@ jobs:
       MAX_AGE_DAYS: '7'
       MIN_DISPLAY_ITEMS: '3'
       MAX_ITEMS: '6'
+      AUDIT_POOL_SIZE: '12'
       MAX_FEEDS: '50'
       ENTRIES_PER_FEED: '10'
       MAX_CANDIDATES: '80'

@@ -24,6 +24,7 @@ MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "7"))
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "6"))
 MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "3"))
 MAX_CANDIDATES = int(os.environ.get("MAX_CANDIDATES", "80"))
+AUDIT_POOL_SIZE = int(os.environ.get("AUDIT_POOL_SIZE", "12"))
 ENTRIES_PER_FEED = int(os.environ.get("ENTRIES_PER_FEED", "10"))
 MAX_FEEDS = int(os.environ.get("MAX_FEEDS", "50"))
 FEED_TIMEOUT = int(os.environ.get("FEED_TIMEOUT", "6"))
@@ -181,7 +182,7 @@ def rank_items(items: list[dict]) -> list[dict]:
     return sorted(items, key=lambda x: (x.get("score", 0), -order.get(x.get("category", "hr"), 99)), reverse=True)
 
 
-def select_final_items(items: list[dict]) -> list[dict]:
+def select_final_items(items: list[dict], limit: int = MAX_ITEMS) -> list[dict]:
     ranked = rank_items(items)
     core = [x for x in ranked if x["category"] in {"outflow", "leader", "hiring"}]
     fallback = [x for x in ranked if x["category"] in FALLBACK_CATEGORIES]
@@ -192,9 +193,9 @@ def select_final_items(items: list[dict]) -> list[dict]:
             continue
         selected.append(item)
         seen_ids.add(item["id"])
-        if len(selected) >= max(MIN_DISPLAY_ITEMS, MAX_ITEMS):
+        if len(selected) >= max(MIN_DISPLAY_ITEMS, limit):
             break
-    return selected[:MAX_ITEMS]
+    return selected[:limit]
 
 
 def collect_cards(report_date: str | None = None) -> dict:
@@ -214,7 +215,7 @@ def collect_cards(report_date: str | None = None) -> dict:
         normalized.append(item)
         titles.append(title)
 
-    selected = select_final_items(normalized)
+    selected = select_final_items(normalized, AUDIT_POOL_SIZE)
     cards = [make_card(item, report_date) for item in selected]
     cards = audit_cards(cards)[:MAX_ITEMS]
     summary = f"최근 {MAX_AGE_DAYS}일 이내 실제 URL이 확인된 채용시장 신호 {len(cards)}건을 수집했습니다."
