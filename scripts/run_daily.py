@@ -34,6 +34,10 @@ def write_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def safe_log(value) -> str:
+    return str(value or "").encode("cp949", errors="replace").decode("cp949")
+
+
 def item_date(item: dict) -> datetime | None:
     try:
         return datetime.fromisoformat(item.get("date", "")).replace(tzinfo=KST)
@@ -110,7 +114,7 @@ def main() -> int:
 
     print(f"CW Recruit Intelligence: {today} / {len(report.get('items', []))} cards")
     for item in report.get("items", [])[:10]:
-        print(f"- [{item.get('cat')}] {item.get('company')} | {item.get('title')}")
+        print(f"- [{safe_log(item.get('cat'))}] {safe_log(item.get('company'))} | {safe_log(item.get('title'))}")
     return 0
 
 

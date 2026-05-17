@@ -8,8 +8,11 @@ from crawler.keywords import CATEGORY_KEYWORDS
 BASE_SCORE = {"outflow": 80, "leader": 75, "hiring": 45, "foreign": 35, "hr": 25}
 URGENCY_BONUS = {"high": 25, "mid": 12, "low": 4}
 NEWS_SOURCE_SUFFIX = re.compile(r"\s[-–—]\s[^-–—]{2,30}$")
-LEADING_COMPANY = re.compile(r"^\s*([A-Za-z0-9&.\-가-힣·]+(?:\s?[A-Za-z0-9&.\-가-힣·]+){0,2})\s*[,，]")
+LEADING_COMPANY = re.compile(r"^\s*([A-Za-z0-9&.\-가-힣·]+(?:\s?[A-Za-z0-9&.\-가-힣·]+){0,3})\s*[,，]")
+PUBLIC_ENTITY_SUFFIXES = ("시", "도", "군", "구", "정부", "중기부", "고용노동부")
 KNOWN_COMPANY_ALIASES = [
+    "쿠팡풀필먼트서비스",
+    "쿠팡",
     "HLB",
     "DH",
     "딜리버리히어로",
@@ -65,6 +68,12 @@ def strip_source_suffix(title: str) -> str:
     return NEWS_SOURCE_SUFFIX.sub("", title or "").strip()
 
 
+def is_public_entity(name: str | None) -> bool:
+    if not name:
+        return False
+    return any(name.endswith(suffix) for suffix in PUBLIC_ENTITY_SUFFIXES)
+
+
 def detect_company(text: str) -> str | None:
     cleaned = strip_source_suffix(text)
     competitor = detect_competitor(cleaned)
@@ -101,5 +110,7 @@ def calculate_score(category: str, urgency: str, competitor: str | None, age_day
     return score
 
 
-def priority_from_score(score: int, category: str, urgency: str) -> bool:
+def priority_from_score(score: int, category: str, urgency: str, company: str | None = None) -> bool:
+    if not company or is_public_entity(company):
+        return False
     return category in {"outflow", "leader"} and (urgency == "high" or score >= 100)

@@ -3,12 +3,81 @@
     "date": "2026-05-17",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
     "contact_targets": [
-      "HLB",
-      "인천시",
-      "시장 동향",
+      "데브시스터즈",
+      "배달의민족",
       "DH"
     ],
     "items": [
+      {
+        "id": "20260511-6ebf8f2c65",
+        "date": "2026-05-11",
+        "collected_date": "2026-05-17",
+        "time": "14:34",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "데브시스터즈",
+        "signal": "인재 유출 가능성 · 희망퇴직",
+        "level": "B",
+        "title": "데브시스터즈, 경영진 무보수·전사 희망퇴직 실시…경영 위기 극복할까 - 굿모닝경제",
+        "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5\" target=\"_blank\">데브시스터즈, 경영진 무보수·전사 희망",
+        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
+        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "subcategory": "희망퇴직",
+        "tags": [
+          "인재 유출",
+          "희망퇴직",
+          "희망퇴직",
+          "score:118"
+        ],
+        "sources": [
+          {
+            "name": "굿모닝경제",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5"
+          }
+        ]
+      },
+      {
+        "id": "20260514-99513862a7",
+        "date": "2026-05-14",
+        "collected_date": "2026-05-17",
+        "time": "11:10",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "mid",
+        "company": "배달의민족",
+        "signal": "인재 유출 가능성 · 매각 추진",
+        "level": "B",
+        "title": "배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵 - 뉴닉",
+        "body": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5\" target=\"_blank\">배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵</a>  <fon",
+        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
+        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "인재 유출",
+          "매각 추진",
+          "score:110"
+        ],
+        "sources": [
+          {
+            "name": "뉴닉",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
+          }
+        ]
+      },
       {
         "id": "20260517-de0057b1a6",
         "date": "2026-05-17",
@@ -80,111 +149,6 @@
         ]
       },
       {
-        "id": "20260514-ed91ca9e43",
-        "date": "2026-05-14",
-        "collected_date": "2026-05-17",
-        "time": "03:50",
-        "cat": "leader",
-        "priority": true,
-        "urgency": "mid",
-        "company": "HLB",
-        "signal": "리더 이동 신호 · 신임 대표",
-        "level": "B",
-        "title": "HLB,미국 자회사 엘레바 브라이언 김 신임 대표 선임 - 약업신문",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUE",
-        "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
-        "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
-        "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
-        "subcategory": "리더 선임",
-        "tags": [
-          "리더 이탈",
-          "리더 선임",
-          "신임 대표",
-          "score:105"
-        ],
-        "sources": [
-          {
-            "name": "약업신문",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUElUSVVJUzRmYmVDZEtNYXI?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQREFNTFc2dk9jcV9lQVVraGs0V1pCRHVQVlFkNDNsZ0E4TUdCN3gxU1gtQnJIVldDZ21LcjFzMl9qeVQ2UWhnNERpcVVpUDhlQ2ljOFVXbHRGX2UtbW80VHFVUWFhanJtTjV0TlBFOXRYd3A0NlBjNUp0YnZUQ0NVNC1OejBGOWZDVXplUElUSVVJUzRmYmVDZEtNYXI?oc=5"
-          }
-        ]
-      },
-      {
-        "id": "20260514-4a68ec370e",
-        "date": "2026-05-14",
-        "collected_date": "2026-05-17",
-        "time": "10:07",
-        "cat": "outflow",
-        "priority": true,
-        "urgency": "low",
-        "company": "인천시",
-        "signal": "인재 유출 가능성 · 유동성 위기",
-        "level": "B",
-        "title": "인천시, 기계·제조업 유동성 위기에 2천억 원 '방어막' 가동 - 기계신문",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5\" target=\"_blank\">인천시, 기계·제조업 유동성 위기에 2천억 원 '방어",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "subcategory": "경영리스크",
-        "tags": [
-          "인재 유출",
-          "경영리스크",
-          "유동성 위기",
-          "score:102"
-        ],
-        "sources": [
-          {
-            "name": "기계신문",
-            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uODBjWkYzVXZGX2ZIdkNBRmJlSzZNa1pyS2NRSFhXTlgtdzNEUnQzUUxHZG9UaXR2TUN4OUtQQTE3TTA1VEhRcU8ybEpwZTlHVHJiTFhGbTVGU0c0Q0dxbHF0S3ZsUQ?oc=5"
-          }
-        ]
-      },
-      {
-        "id": "20260514-a575343e79",
-        "date": "2026-05-14",
-        "collected_date": "2026-05-17",
-        "time": "17:47",
-        "cat": "outflow",
-        "priority": true,
-        "urgency": "low",
-        "company": "시장 동향",
-        "signal": "인재 유출 가능성 · 유동성 위기",
-        "level": "B",
-        "title": "작년 영업익 85%가 이자…유동성 위기에도 오너家엔 배당[재무 포커스] - 서울경제",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "subcategory": "경영리스크",
-        "tags": [
-          "인재 유출",
-          "경영리스크",
-          "유동성 위기",
-          "score:102"
-        ],
-        "sources": [
-          {
-            "name": "서울경제",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0xzS1VUdTJFeDRHY0I5ZnphUC1HamJZMDRuOA?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ScEpELTlkTVFnOVRCSDRtX0RzZWV1VENTclJ4a1QyWlQyVllXRFdWM3VGc0VtRGgzR2d6bEZ1LUhCb1RQUUdWTUNMY2lqc2RzSnfSAVNBVV95cUxNVnVHOThUSnVOMFV3TFM0NDJoM216V1docDlxTy1xU0g0WWxXeE12S21udHdZa3ZyQ0xzS1VUdTJFeDRHY0I5ZnphUC1HamJZMDRuOA?oc=5"
-          }
-        ]
-      },
-      {
         "id": "20260513-1696677763",
         "date": "2026-05-13",
         "collected_date": "2026-05-17",
@@ -216,6 +180,41 @@
             "verify_note": "HTTP 200",
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "id": "20260512-bfbd483945",
+        "date": "2026-05-12",
+        "collected_date": "2026-05-17",
+        "time": "05:12",
+        "cat": "outflow",
+        "priority": false,
+        "urgency": "low",
+        "company": "시장 동향",
+        "signal": "인재 유출 가능성 · 생존 경고등",
+        "level": "B",
+        "title": "라이선스 받으면 투자 끊긴다…STO 스타트업 ‘생존 경고등’ - 이데일리",
+        "body": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5\" target=\"_",
+        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
+        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "subcategory": "투자/생존 리스크",
+        "tags": [
+          "인재 유출",
+          "투자/생존 리스크",
+          "생존 경고등",
+          "score:97"
+        ],
+        "sources": [
+          {
+            "name": "이데일리",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5"
           }
         ]
       }

@@ -1216,6 +1216,24 @@ function calcScore(e){
   return (catBase[e.cat]||30)+(urgBonus[e.urgency||'low']||0)+(e.priority?20:0)+(levBonus[e.level]||0);
 }
 
+function addDays(ds,days){
+  const d=new Date(ds+'T03:00:00Z');
+  d.setDate(d.getDate()+days);
+  return new Intl.DateTimeFormat('sv-SE',{timeZone:KST}).format(d);
+}
+
+function ensureMinimumDailyItems(list){
+  if(selRange.type!=='daily'||list.length>=3) return list;
+  const seen=new Set(list.map(e=>e.id));
+  const start=addDays(selRange.start,-7);
+  const extras=ENTRIES
+    .filter(e=>e.date>=start&&e.date<=selRange.start)
+    .filter(e=>!seen.has(e.id))
+    .filter(e=>(e.sources||[]).some(s=>s.url))
+    .sort((a,b)=>calcScore(b)-calcScore(a)||b.date.localeCompare(a.date));
+  return list.concat(extras.slice(0,3-list.length));
+}
+
 /* ── FILTER (중요도 정렬) ── */
 function getFiltered(){
   const q=document.getElementById('kw').value.trim().toLowerCase();
@@ -1225,10 +1243,11 @@ function getFiltered(){
     .filter(e=>cat==='all'||e.cat===cat)
     .filter(e=>!q||[e.company,e.title,e.body,e.insight,e.action,e.signal,...(e.tags||[])].join(' ').toLowerCase().includes(q));
   // 최신 날짜 우선 → 같은 날짜면 중요도 내림차순
-  return base.sort((a,b)=>
+  const sorted=base.sort((a,b)=>
     b.date.localeCompare(a.date) ||
     calcScore(b)-calcScore(a)
   );
+  return ensureMinimumDailyItems(sorted);
 }
 function setCat(cat,btn){
   document.getElementById('catSel').value=cat;
@@ -1273,7 +1292,7 @@ function renderUrgent(){
   document.getElementById('urgentList').innerHTML=list.length===0
     ? '<div style="font-size:12px;color:var(--muted);padding:4px 0">현재 즉시 주목 이슈 없음</div>'
     : list.map(e=>`
-    <button class="urgent-item" onclick="openModal('${e.id}')">
+    <button type="button" class="urgent-item" onclick="event.preventDefault();openModal('${e.id}');return false;">
       <span class="urgent-co">${e.company}</span>
       <span class="urgent-ttl">${e.title}</span>
       <span style="font-size:9px;color:var(--sub);flex-shrink:0">${e.date.slice(5)}</span>
@@ -1316,7 +1335,7 @@ function renderFeed(){
       ?'<span style="font-size:9px;font-weight:800;color:var(--amb);background:var(--amb-bg);padding:1px 5px;border-radius:4px">주의</span>'
       :'';
     html+=`
-    <article class="card ${e.priority&&e.cat!=='foreign'?'high':''}" onclick="openModal('${e.id}')">
+    <article class="card ${e.priority&&e.cat!=='foreign'?'high':''}" role="button" tabindex="0" onclick="event.preventDefault();openModal('${e.id}');return false;" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('${e.id}');}">
       <div class="card-meta">
         <span class="tag cat-${e.cat}">${CAT_LABEL[e.cat]}</span>
         <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level}</span>
@@ -1342,7 +1361,7 @@ function renderRanks(){
   const outflow=[...outflowMap.values()].sort((a,b)=>calcScore(b)-calcScore(a)).slice(0,5);
   document.getElementById('rankOutflow').innerHTML=outflow.length
     ?outflow.map((e,i)=>`
-    <button onclick="openModal('${e.id}')">
+    <button type="button" onclick="event.preventDefault();openModal('${e.id}');return false;">
       <span class="rk">${i+1}</span>
       <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
     </button>`).join('')
@@ -1358,7 +1377,7 @@ function renderRanks(){
   const leaders=[...leaderMap.values()].sort((a,b)=>calcScore(b)-calcScore(a)).slice(0,5);
   document.getElementById('rankLeader').innerHTML=leaders.length
     ?leaders.map((e,i)=>`
-    <button onclick="openModal('${e.id}')">
+    <button type="button" onclick="event.preventDefault();openModal('${e.id}');return false;">
       <span class="rk">${i+1}</span>
       <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
     </button>`).join('')
@@ -1422,7 +1441,7 @@ function openModal(id){
     <div class="info-block sources">
       <h4>🔗 출처 — 클릭하면 원문으로 이동해요</h4>
       ${e.sources.map(s=>`
-        <a class="src-link" href="${s.url}" target="_blank" rel="noopener">
+        <a class="src-link" href="${s.url}" target="_blank" rel="noopener" onclick="event.stopPropagation();">
           <span class="src-arrow">↗</span>
           <div class="src-info">
             <b>${s.name}</b>

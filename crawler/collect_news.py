@@ -11,7 +11,7 @@ import feedparser
 import requests
 from dateutil import parser as date_parser
 
-from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, priority_from_score
+from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, is_public_entity, priority_from_score
 from crawler.dedupe import is_duplicate
 from crawler.insight import make_card
 from crawler.keywords import CATEGORY_ORDER, FALLBACK_CATEGORIES
@@ -143,6 +143,10 @@ def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
     level = source_level(final_url)
     competitor = detect_competitor(title)
     company = detect_company(title)
+    if category == "leader" and not company:
+        return None
+    if category in {"outflow", "leader"} and is_public_entity(company):
+        return None
     days = age_days(published, base_time)
     score = calculate_score(category, urgency, competitor, days, level)
     published_date = published.date().isoformat()
@@ -159,7 +163,7 @@ def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
         "competitor": competitor,
         "company": company,
         "score": score,
-        "priority": priority_from_score(score, category, urgency),
+        "priority": priority_from_score(score, category, urgency, company),
         "published_date": published_date,
         "published_time": published_time,
         "source": candidate.get("source") or "뉴스",
