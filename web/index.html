@@ -1031,8 +1031,8 @@ const COMPETITORS = [
 ];
 
 /* ── 날짜 목록 (실제 데이터 있는 날짜만) ── */
-const DATA_DATES = [...new Set(ENTRIES.map(e=>e.date))].sort();
-const LAST_DATE  = DATA_DATES[DATA_DATES.length - 1]; // "2026-05-11"
+const DATA_DATES = [...new Set(ENTRIES.map(e=>e.reportDate||e.collected_date||e.date))].sort();
+let LAST_DATE  = DATA_DATES[DATA_DATES.length - 1]; // latest report date
 
 /* ── KST 날짜 유틸 ── */
 const KST = 'Asia/Seoul';
@@ -1058,6 +1058,9 @@ function pad2(n){return String(n).padStart(2,'0')}
 function dateFmt(ds){
   const p=kstParts(ds);
   return `${p.year}년 ${p.month}월 ${p.day}일 (${p.weekday})`;
+}
+function reportDate(e){
+  return e.reportDate||e.collected_date||e.date;
 }
 
 /* ── STATE ── */
@@ -1104,7 +1107,7 @@ function buildArchive(){
   el.innerHTML='';
   if(viewMode==='daily'){
     [...DATA_DATES].reverse().forEach(ds=>{
-      const cnt=ENTRIES.filter(e=>e.date===ds).length;
+      const cnt=ENTRIES.filter(e=>reportDate(e)===ds).length;
       const p=kstParts(ds);
       const active=selRange.type==='daily'&&selRange.start===ds;
       const b=document.createElement('button');
@@ -1117,7 +1120,7 @@ function buildArchive(){
     // Build Mon-Sun weeks covering 2026-04-01 to LAST_DATE
     const weeks=buildWeeks();
     [...weeks].reverse().forEach(w=>{
-      const cnt=ENTRIES.filter(e=>e.date>=w.start&&e.date<=w.end).length;
+      const cnt=ENTRIES.filter(e=>reportDate(e)>=w.start&&reportDate(e)<=w.end).length;
       const active=selRange.type==='weekly'&&selRange.start===w.start;
       const b=document.createElement('button');
       b.className='arch-item'+(active?' active':'');
@@ -1132,7 +1135,7 @@ function buildArchive(){
     // Monthly
     const months=buildMonths();
     [...months].reverse().forEach(mo=>{
-      const cnt=ENTRIES.filter(e=>e.date>=mo.start&&e.date<=mo.end).length;
+      const cnt=ENTRIES.filter(e=>reportDate(e)>=mo.start&&reportDate(e)<=mo.end).length;
       const active=selRange.type==='monthly'&&selRange.start===mo.start;
       const b=document.createElement('button');
       b.className='arch-item'+(active?' active':'');
@@ -1238,7 +1241,7 @@ function getThirtyDayPool(){
   const start=addDays(end,-30);
   const seen=new Set();
   return ENTRIES
-    .filter(e=>e.date>=start&&e.date<=end)
+    .filter(e=>reportDate(e)>=start&&reportDate(e)<=end)
     .filter(e=>(e.sources||[]).some(s=>s.url))
     .sort((a,b)=>calcScore(b)-calcScore(a)||b.date.localeCompare(a.date))
     .filter(e=>{
@@ -1254,7 +1257,7 @@ function ensureMinimumDailyItems(list){
   const seen=new Set(list.map(e=>e.id));
   const start=addDays(selRange.start,-7);
   const extras=ENTRIES
-    .filter(e=>e.date>=start&&e.date<=selRange.start)
+    .filter(e=>reportDate(e)>=start&&reportDate(e)<=selRange.start)
     .filter(e=>!seen.has(e.id))
     .filter(e=>(e.sources||[]).some(s=>s.url))
     .sort((a,b)=>calcScore(b)-calcScore(a)||b.date.localeCompare(a.date));
@@ -1266,7 +1269,7 @@ function getFiltered(){
   const q=document.getElementById('kw').value.trim().toLowerCase();
   const cat=document.getElementById('catSel').value;
   const base=ENTRIES
-    .filter(e=>e.date>=selRange.start&&e.date<=selRange.end)
+    .filter(e=>reportDate(e)>=selRange.start&&reportDate(e)<=selRange.end)
     .filter(e=>cat==='all'||e.cat===cat)
     .filter(e=>!q||[e.company,e.title,e.body,e.insight,e.action,e.signal,...(e.tags||[])].join(' ').toLowerCase().includes(q));
   // 최신 날짜 우선 → 같은 날짜면 중요도 내림차순
@@ -1357,7 +1360,7 @@ function renderUrgent(){
 
 /* ── METRICS ── */
 function renderMetrics(){
-  const pool=ENTRIES.filter(e=>e.date>=selRange.start&&e.date<=selRange.end);
+  const pool=ENTRIES.filter(e=>reportDate(e)>=selRange.start&&reportDate(e)<=selRange.end);
   const rows=[
     ['오늘의 항목',pool.length,'전체 수집',pool.length===0?'var(--sub)':'var(--text)'],
     ['리더 이탈',pool.filter(e=>e.cat==='leader').length,'대표/임원급','var(--pur)'],
@@ -1563,6 +1566,8 @@ async function loadLatestData(){
         ENTRIES.push({
           id:      item.id,
           date:    item.date,
+          reportDate: report.date||item.collected_date||item.date,
+          collected_date: item.collected_date||report.date||item.date,
           time:    item.time||'09:00',
           cat:     item.cat,
           priority:item.priority||false,
@@ -1582,11 +1587,17 @@ async function loadLatestData(){
       }
     }
 
+    // 날짜 목록은 항목 발행일이 아니라 리포트/아카이브 날짜를 기준으로 갱신
+    const ds=[...new Set([
+      ...DATA_DATES,
+      ...history.map(r=>r.date).filter(Boolean),
+      ...ENTRIES.map(e=>reportDate(e))
+    ])].sort();
+    DATA_DATES.length=0;
+    DATA_DATES.push(...ds);
+    LAST_DATE = DATA_DATES[DATA_DATES.length-1];
+
     if(added>0){
-      // 날짜 목록 갱신
-      DATA_DATES.length=0;
-      const ds=[...new Set(ENTRIES.map(e=>e.date))].sort();
-      DATA_DATES.push(...ds);
       // 최신 날짜로 뷰 이동
       const latest = DATA_DATES[DATA_DATES.length-1];
       pickDay(latest);
