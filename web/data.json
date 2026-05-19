@@ -4,7 +4,7 @@
     "summary": "신규 수집 정보와 최근 7일 이내 실제 URL 검증 정보를 합쳐 5건을 표시합니다.",
     "contact_targets": [
       "메타",
-      "딜리버리히어로",
+      "쿠팡",
       "홈플러스"
     ],
     "items": [
@@ -44,39 +44,39 @@
         "raw_title": "10% 감원 통보… 직원 7천명 AI 조직 재배치"
       },
       {
-        "id": "20260514-7250862205",
+        "id": "20260514-d853b22519",
         "date": "2026-05-14",
         "collected_date": "2026-05-20",
-        "time": "13:38",
-        "cat": "outflow",
+        "time": "14:58",
+        "cat": "leader",
         "priority": true,
-        "urgency": "mid",
-        "company": "딜리버리히어로",
-        "signal": "인재 유출 가능성 · 매각 추진",
+        "urgency": "low",
+        "company": "쿠팡",
+        "signal": "리더 이동 신호 · 사임",
         "level": "B",
-        "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
-        "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
-        "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
-        "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
-        "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
-        "subcategory": "인재 유출",
+        "title": "쿠팡 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+        "body": "쿠팡에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 쿠팡 매각 이슈.",
+        "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 쿠팡의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+        "action": "쿠팡 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+        "contact_strategy": "쿠팡 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+        "subcategory": "리더 이탈",
         "tags": [
-          "인재 유출",
-          "매각 추진",
-          "score:105"
+          "리더 이탈",
+          "사임",
+          "score:122"
         ],
         "sources": [
           {
             "name": "네이버뉴스",
-            "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793",
+            "url": "https://www.businesspost.co.kr/BP?command=article_view&num=437801",
             "level": "B",
             "verified": true,
             "verify_note": "HTTP 200",
             "http_status": 200,
-            "original_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793"
+            "original_url": "https://www.businesspost.co.kr/BP?command=article_view&num=437801"
           }
         ],
-        "raw_title": "배달의민족 또 팔린다... 딜리버리히어로 , 8조원에 매각 추진"
+        "raw_title": "[오늘Who] 쿠팡이츠 '이익 낼 체력' 만들기 집중, 김명규 '배민 매각설'..."
       },
       {
         "id": "20260517-81c8453e03",
@@ -150,7 +150,7 @@
         "raw_title": "성장률 하락 경고…삼성 노사는 '비메모리 성과..."
       },
       {
-        "id": "20260520-carry-5-20260520-carry-5-20260520-carry-1-e_0517_a",
+        "id": "20260520-carry-5-20260520-carry-5-20260520-carry-5-20260520-carry-1-e_0517_a",
         "date": "2026-05-17",
         "time": "09:00",
         "cat": "outflow",
