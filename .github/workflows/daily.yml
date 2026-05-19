@@ -1,6 +1,15 @@
 ﻿name: Daily Recruit Intelligence
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'web/index.html'
+      - 'crawler/**'
+      - 'scripts/**'
+      - 'requirements.txt'
+      - '.github/workflows/daily.yml'
   schedule:
     - cron: '0 0 * * *' # 09:00 KST, including weekends
   workflow_dispatch:
