@@ -1,50 +1,50 @@
 {
-  "date": "2026-05-17",
-  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
+  "date": "2026-05-20",
+  "summary": "신규 수집 정보와 최근 7일 이내 실제 URL 검증 정보를 합쳐 3건을 표시합니다.",
   "contact_targets": [
-    "데브시스터즈",
-    "배달의민족",
-    "딜리버리히어로"
+    "메타",
+    "배달의민족"
   ],
   "items": [
     {
-      "id": "20260511-6ebf8f2c65",
-      "date": "2026-05-11",
-      "collected_date": "2026-05-17",
-      "time": "14:34",
+      "id": "20260520-carry-1-20260520-carry-1-20260519-08121b977c",
+      "date": "2026-05-19",
+      "collected_date": "2026-05-20",
+      "time": "08:45",
       "cat": "outflow",
       "priority": true,
       "urgency": "high",
-      "company": "데브시스터즈",
-      "signal": "인재 유출 가능성 · 희망퇴직",
+      "company": "메타",
+      "signal": "인재 유출 가능성 · 감원",
       "level": "B",
-      "title": "전사 희망퇴직 실시…경영 위기 극복할까",
-      "body": "데브시스터즈에서 희망퇴직 이슈가 포착됐습니다. 전사 희망퇴직 실시…경영 위기 극복할까. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
-      "insight": "데브시스터즈의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
-      "action": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
-      "contact_strategy": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
-      "subcategory": "희망퇴직",
+      "title": "10% 감원 통보… 직원 7천명 AI 조직 재배치",
+      "body": "메타에서 감원 이슈가 포착됐습니다. 10% 감원 통보… 직원 7천명 AI 조직 재배치. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+      "insight": "메타의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+      "action": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+      "contact_strategy": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+      "subcategory": "인재 유출",
       "tags": [
         "인재 유출",
-        "희망퇴직",
-        "score:118"
+        "감원",
+        "score:128",
+        "최근 검증 정보"
       ],
       "sources": [
         {
-          "name": "굿모닝경제",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5&hl=en-US&gl=US&ceid=US:en",
           "level": "B",
           "verified": true,
           "verify_note": "HTTP 200",
           "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5"
+          "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5"
         }
       ]
     },
     {
-      "id": "20260514-99513862a7",
+      "id": "20260520-carry-2-20260520-carry-2-20260514-99513862a7",
       "date": "2026-05-14",
-      "collected_date": "2026-05-17",
+      "collected_date": "2026-05-20",
       "time": "11:10",
       "cat": "outflow",
       "priority": true,
@@ -61,7 +61,8 @@
       "tags": [
         "인재 유출",
         "매각 추진",
-        "score:110"
+        "score:105",
+        "최근 검증 정보"
       ],
       "sources": [
         {
@@ -76,9 +77,9 @@
       ]
     },
     {
-      "id": "20260517-de0057b1a6",
+      "id": "20260520-carry-3-20260520-carry-3-20260517-de0057b1a6",
       "date": "2026-05-17",
-      "collected_date": "2026-05-17",
+      "collected_date": "2026-05-20",
       "time": "12:58",
       "cat": "hiring",
       "priority": false,
@@ -95,7 +96,8 @@
       "tags": [
         "채용 확대",
         "인재 확보",
-        "score:110"
+        "score:105",
+        "최근 검증 정보"
       ],
       "sources": [
         {
@@ -106,40 +108,6 @@
           "verify_note": "HTTP 200",
           "http_status": 200,
           "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
-        }
-      ]
-    },
-    {
-      "id": "20260513-1696677763",
-      "date": "2026-05-13",
-      "collected_date": "2026-05-17",
-      "time": "15:00",
-      "cat": "leader",
-      "priority": true,
-      "urgency": "mid",
-      "company": "딜리버리히어로",
-      "signal": "리더 이동 신호 · 공동 창업자",
-      "level": "B",
-      "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까",
-      "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
-      "insight": "딜리버리히어로의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요.",
-      "action": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
-      "contact_strategy": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
-      "subcategory": "리더 이탈",
-      "tags": [
-        "리더 이탈",
-        "공동 창업자",
-        "score:100"
-      ],
-      "sources": [
-        {
-          "name": "전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "level": "B",
-          "verified": true,
-          "verify_note": "HTTP 200",
-          "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
         }
       ]
     }

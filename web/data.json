@@ -1,15 +1,130 @@
 [
   {
+    "date": "2026-05-20",
+    "summary": "신규 수집 정보와 최근 7일 이내 실제 URL 검증 정보를 합쳐 3건을 표시합니다.",
+    "contact_targets": [
+      "메타",
+      "배달의민족"
+    ],
+    "items": [
+      {
+        "id": "20260520-carry-1-20260520-carry-1-20260519-08121b977c",
+        "date": "2026-05-19",
+        "collected_date": "2026-05-20",
+        "time": "08:45",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "메타",
+        "signal": "인재 유출 가능성 · 감원",
+        "level": "B",
+        "title": "10% 감원 통보… 직원 7천명 AI 조직 재배치",
+        "body": "메타에서 감원 이슈가 포착됐습니다. 10% 감원 통보… 직원 7천명 AI 조직 재배치. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "메타의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "감원",
+          "score:128",
+          "최근 검증 정보"
+        ],
+        "sources": [
+          {
+            "name": "IT조선",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5"
+          }
+        ]
+      },
+      {
+        "id": "20260520-carry-2-20260520-carry-2-20260514-99513862a7",
+        "date": "2026-05-14",
+        "collected_date": "2026-05-20",
+        "time": "11:10",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "mid",
+        "company": "배달의민족",
+        "signal": "인재 유출 가능성 · 매각 추진",
+        "level": "B",
+        "title": "8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유",
+        "body": "배달의민족에서 매각 추진 이슈가 포착됐습니다. 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "배달의민족의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "매각 추진",
+          "score:105",
+          "최근 검증 정보"
+        ],
+        "sources": [
+          {
+            "name": "뉴닉",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
+          }
+        ]
+      },
+      {
+        "id": "20260520-carry-3-20260520-carry-3-20260517-de0057b1a6",
+        "date": "2026-05-17",
+        "collected_date": "2026-05-20",
+        "time": "12:58",
+        "cat": "hiring",
+        "priority": false,
+        "urgency": "mid",
+        "company": "쿠팡",
+        "signal": "공격적 채용 신호 · 인재 확보",
+        "level": "B",
+        "title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
+        "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력. 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
+        "insight": "쿠팡의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요.",
+        "action": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
+        "contact_strategy": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
+        "subcategory": "인재 확보",
+        "tags": [
+          "채용 확대",
+          "인재 확보",
+          "score:105",
+          "최근 검증 정보"
+        ],
+        "sources": [
+          {
+            "name": "뉴스핌",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-05-19",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
     "contact_targets": [
       "메타",
       "배달의민족",
-      "DH"
+      "딜리버리히어로"
     ],
     "items": [
       {
-        "id": "20260519-694c5ec0b9",
+        "id": "20260519-08121b977c",
         "date": "2026-05-19",
         "collected_date": "2026-05-19",
         "time": "08:45",
@@ -19,14 +134,13 @@
         "company": "메타",
         "signal": "인재 유출 가능성 · 감원",
         "level": "B",
-        "title": "메타, 10% 감원 통보… 직원 7천명 AI 조직 재배치",
-        "body": "메타, 10% 감원 통보… 직원 7천명 AI 조직 재배치 IT조선",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "10% 감원 통보… 직원 7천명 AI 조직 재배치",
+        "body": "메타에서 감원 이슈가 포착됐습니다. 10% 감원 통보… 직원 7천명 AI 조직 재배치. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "메타의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "메타 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "인재 유출",
         "tags": [
-          "인재 유출",
           "인재 유출",
           "감원",
           "score:128"
@@ -41,14 +155,10 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
-        "id": "20260514-26f20feef7",
+        "id": "20260514-99513862a7",
         "date": "2026-05-14",
         "collected_date": "2026-05-19",
         "time": "11:10",
@@ -58,14 +168,13 @@
         "company": "배달의민족",
         "signal": "인재 유출 가능성 · 매각 추진",
         "level": "B",
-        "title": "배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵",
-        "body": "배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵 뉴닉",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유",
+        "body": "배달의민족에서 매각 추진 이슈가 포착됐습니다. 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "배달의민족의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "인재 유출",
         "tags": [
-          "인재 유출",
           "인재 유출",
           "매각 추진",
           "score:105"
@@ -80,14 +189,10 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
-        "id": "20260517-b0ca8aa3a1",
+        "id": "20260517-de0057b1a6",
         "date": "2026-05-17",
         "collected_date": "2026-05-19",
         "time": "12:58",
@@ -97,15 +202,14 @@
         "company": "쿠팡",
         "signal": "공격적 채용 신호 · 인재 확보",
         "level": "B",
-        "title": "쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
-        "body": "쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력 뉴스핌",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+        "title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
+        "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력. 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
+        "insight": "쿠팡의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요.",
+        "action": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
+        "contact_strategy": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
         "subcategory": "인재 확보",
         "tags": [
           "채용 확대",
-          "인재 확보",
           "인재 확보",
           "score:105"
         ],
@@ -119,70 +223,26 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
-        "id": "20260517-db191e8e51",
-        "date": "2026-05-17",
-        "collected_date": "2026-05-19",
-        "time": "10:08",
-        "cat": "hiring",
-        "priority": false,
-        "urgency": "mid",
-        "company": "쿠팡",
-        "signal": "공격적 채용 신호 · 인재 확보",
-        "level": "B",
-        "title": "쿠팡풀필먼트서비스, ‘CFS 채용 페스타’로 지역 인재 확보 나서",
-        "body": "쿠팡풀필먼트서비스, ‘CFS 채용 페스타’로 지역 인재 확보 나서 직썰",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "subcategory": "인재 확보",
-        "tags": [
-          "채용 확대",
-          "인재 확보",
-          "인재 확보",
-          "score:105"
-        ],
-        "sources": [
-          {
-            "name": "직썰",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260513-8b56c3a5c0",
+        "id": "20260513-1696677763",
         "date": "2026-05-13",
         "collected_date": "2026-05-19",
         "time": "15:00",
         "cat": "leader",
         "priority": true,
         "urgency": "mid",
-        "company": "DH",
+        "company": "딜리버리히어로",
         "signal": "리더 이동 신호 · 공동 창업자",
         "level": "B",
         "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까",
-        "body": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까 전자신문",
-        "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
-        "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
-        "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+        "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
+        "insight": "딜리버리히어로의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요.",
+        "action": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
+        "contact_strategy": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
         "subcategory": "리더 이탈",
         "tags": [
-          "리더 이탈",
           "리더 이탈",
           "공동 창업자",
           "score:100"
@@ -197,50 +257,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260512-ade3234db2",
-        "date": "2026-05-12",
-        "collected_date": "2026-05-19",
-        "time": "05:12",
-        "cat": "outflow",
-        "priority": false,
-        "urgency": "low",
-        "company": "시장 동향",
-        "signal": "인재 유출 가능성 · 생존 경고등",
-        "level": "B",
-        "title": "필수인 투자중개 인가땐 '금융업' 분류…스타트업, VC 투자 못받아 생존 경고등",
-        "body": "필수인 투자중개 인가땐 '금융업' 분류…스타트업, VC 투자 못받아 생존 경고등 이데일리",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "subcategory": "투자/생존 리스크",
-        "tags": [
-          "인재 유출",
-          "투자/생존 리스크",
-          "생존 경고등",
-          "score:97"
-        ],
-        "sources": [
-          {
-            "name": "이데일리",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       }
     ]
   },
@@ -250,7 +267,7 @@
     "contact_targets": [
       "데브시스터즈",
       "배달의민족",
-      "DH"
+      "딜리버리히어로"
     ],
     "items": [
       {
@@ -264,15 +281,14 @@
         "company": "데브시스터즈",
         "signal": "인재 유출 가능성 · 희망퇴직",
         "level": "B",
-        "title": "데브시스터즈, 경영진 무보수·전사 희망퇴직 실시…경영 위기 극복할까 - 굿모닝경제",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5\" target=\"_blank\">데브시스터즈, 경영진 무보수·전사 희망",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "전사 희망퇴직 실시…경영 위기 극복할까",
+        "body": "데브시스터즈에서 희망퇴직 이슈가 포착됐습니다. 전사 희망퇴직 실시…경영 위기 극복할까. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "데브시스터즈의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "희망퇴직",
         "tags": [
           "인재 유출",
-          "희망퇴직",
           "희망퇴직",
           "score:118"
         ],
@@ -286,11 +302,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260517-de0057b1a6",
@@ -303,15 +315,14 @@
         "company": "쿠팡",
         "signal": "공격적 채용 신호 · 인재 확보",
         "level": "B",
-        "title": "쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력 - 뉴스핌",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5\" target=\"_blank\">쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력</a",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+        "title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
+        "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력. 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
+        "insight": "쿠팡의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요.",
+        "action": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
+        "contact_strategy": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
         "subcategory": "인재 확보",
         "tags": [
           "채용 확대",
-          "인재 확보",
           "인재 확보",
           "score:110"
         ],
@@ -325,50 +336,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260517-06a7daa43a",
-        "date": "2026-05-17",
-        "collected_date": "2026-05-18",
-        "time": "10:08",
-        "cat": "hiring",
-        "priority": false,
-        "urgency": "mid",
-        "company": "쿠팡",
-        "signal": "공격적 채용 신호 · 인재 확보",
-        "level": "B",
-        "title": "쿠팡풀필먼트서비스, ‘CFS 채용 페스타’로 지역 인재 확보 나서 - 직썰",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "subcategory": "인재 확보",
-        "tags": [
-          "채용 확대",
-          "인재 확보",
-          "인재 확보",
-          "score:110"
-        ],
-        "sources": [
-          {
-            "name": "직썰",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260514-99513862a7",
@@ -381,14 +349,13 @@
         "company": "배달의민족",
         "signal": "인재 유출 가능성 · 매각 추진",
         "level": "B",
-        "title": "배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵 - 뉴닉",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5\" target=\"_blank\">배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵</a>  <fon",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유",
+        "body": "배달의민족에서 매각 추진 이슈가 포착됐습니다. 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "배달의민족의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "인재 유출",
         "tags": [
-          "인재 유출",
           "인재 유출",
           "매각 추진",
           "score:105"
@@ -403,11 +370,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260513-1696677763",
@@ -417,17 +380,16 @@
         "cat": "leader",
         "priority": true,
         "urgency": "mid",
-        "company": "DH",
+        "company": "딜리버리히어로",
         "signal": "리더 이동 신호 · 공동 창업자",
         "level": "B",
-        "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까 - 전자신문",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5\" target=\"_blank\">DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까</a>  <font color=\"#6f6f6f\">전",
-        "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
-        "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
-        "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+        "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까",
+        "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
+        "insight": "딜리버리히어로의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요.",
+        "action": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
+        "contact_strategy": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
         "subcategory": "리더 이탈",
         "tags": [
-          "리더 이탈",
           "리더 이탈",
           "공동 창업자",
           "score:100"
@@ -442,50 +404,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260512-bfbd483945",
-        "date": "2026-05-12",
-        "collected_date": "2026-05-18",
-        "time": "05:12",
-        "cat": "outflow",
-        "priority": false,
-        "urgency": "low",
-        "company": "시장 동향",
-        "signal": "인재 유출 가능성 · 생존 경고등",
-        "level": "B",
-        "title": "라이선스 받으면 투자 끊긴다…STO 스타트업 ‘생존 경고등’ - 이데일리",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5\" target=\"_",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "subcategory": "투자/생존 리스크",
-        "tags": [
-          "인재 유출",
-          "투자/생존 리스크",
-          "생존 경고등",
-          "score:97"
-        ],
-        "sources": [
-          {
-            "name": "이데일리",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       }
     ]
   },
@@ -495,7 +414,7 @@
     "contact_targets": [
       "데브시스터즈",
       "배달의민족",
-      "DH"
+      "딜리버리히어로"
     ],
     "items": [
       {
@@ -509,15 +428,14 @@
         "company": "데브시스터즈",
         "signal": "인재 유출 가능성 · 희망퇴직",
         "level": "B",
-        "title": "데브시스터즈, 경영진 무보수·전사 희망퇴직 실시…경영 위기 극복할까",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5\" target=\"_blank\">데브시스터즈, 경영진 무보수·전사 희망",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "전사 희망퇴직 실시…경영 위기 극복할까",
+        "body": "데브시스터즈에서 희망퇴직 이슈가 포착됐습니다. 전사 희망퇴직 실시…경영 위기 극복할까. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "데브시스터즈의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "데브시스터즈 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "희망퇴직",
         "tags": [
           "인재 유출",
-          "희망퇴직",
           "희망퇴직",
           "score:118"
         ],
@@ -531,11 +449,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByQ0hNLTBEUjBNN0xIWkJQNVBLaGgzTEFCS25ITE42S1h3aVkzVDBGTVFBbUQyOXdmVU5TelJFMjFMbHhPT2RpUS1wR1hQWW9EMFpZcHVpdVB1bk9IaVRRdlNtbTBteGxjZXVCdg?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260514-99513862a7",
@@ -548,14 +462,13 @@
         "company": "배달의민족",
         "signal": "인재 유출 가능성 · 매각 추진",
         "level": "B",
-        "title": "배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5\" target=\"_blank\">배달의민족, 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유 🛵</a>  <fon",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
+        "title": "8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유",
+        "body": "배달의민족에서 매각 추진 이슈가 포착됐습니다. 8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+        "insight": "배달의민족의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+        "action": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+        "contact_strategy": "배달의민족 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
         "subcategory": "인재 유출",
         "tags": [
-          "인재 유출",
           "인재 유출",
           "매각 추진",
           "score:110"
@@ -570,11 +483,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260517-de0057b1a6",
@@ -587,15 +496,14 @@
         "company": "쿠팡",
         "signal": "공격적 채용 신호 · 인재 확보",
         "level": "B",
-        "title": "쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5\" target=\"_blank\">쿠팡풀필먼트서비스, 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력</a",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
+        "title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
+        "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력. 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
+        "insight": "쿠팡의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요.",
+        "action": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
+        "contact_strategy": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
         "subcategory": "인재 확보",
         "tags": [
           "채용 확대",
-          "인재 확보",
           "인재 확보",
           "score:110"
         ],
@@ -609,50 +517,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260517-06a7daa43a",
-        "date": "2026-05-17",
-        "collected_date": "2026-05-17",
-        "time": "10:08",
-        "cat": "hiring",
-        "priority": false,
-        "urgency": "mid",
-        "company": "쿠팡",
-        "signal": "공격적 채용 신호 · 인재 확보",
-        "level": "B",
-        "title": "쿠팡풀필먼트서비스, ‘CFS 채용 페스타’로 지역 인재 확보 나서 - 직썰",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1",
-        "insight": "공격적으로 채용을 확대하는 기업은 후보자 경쟁 강도를 높입니다. 동일 직군의 보상·메시지·접촉 속도를 점검하세요.",
-        "action": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "contact_strategy": "해당 기업이 채용 중인 직군과 우리 채용 포지션의 후보자 풀이 겹치는지 확인하고, 경쟁 메시지를 보강하세요.",
-        "subcategory": "인재 확보",
-        "tags": [
-          "채용 확대",
-          "인재 확보",
-          "인재 확보",
-          "score:110"
-        ],
-        "sources": [
-          {
-            "name": "직썰",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViU9IBbEFVX3lxTE8tTWdKR1pfb0dOVmtpRUUza1lXYVU4V1NZVkc3T19WVVprWFMyX2t6RkJTWVNjZkw2eEExMDczLU5SWGZISjYtYkJyb0paaDhQLVU2UnJ3cmo1Y0FXeVVPYmxxOUVIdWpKb1ViUw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       },
       {
         "id": "20260513-1696677763",
@@ -662,17 +527,16 @@
         "cat": "leader",
         "priority": true,
         "urgency": "mid",
-        "company": "DH",
+        "company": "딜리버리히어로",
         "signal": "리더 이동 신호 · 공동 창업자",
         "level": "B",
-        "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까 - 전자신문",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5\" target=\"_blank\">DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까</a>  <font color=\"#6f6f6f\">전",
-        "insight": "대표·임원급 이동은 후속 조직개편과 연쇄 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직과 핵심 실무 리더를 함께 추적하세요.",
-        "action": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
-        "contact_strategy": "기사에 언급된 리더의 이전 조직과 이동 회사, 직속 팀을 follow-up하고 후속 이탈 가능성이 있는 핵심 인재 리스트를 만드세요.",
+        "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까",
+        "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
+        "insight": "딜리버리히어로의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요.",
+        "action": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
+        "contact_strategy": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
         "subcategory": "리더 이탈",
         "tags": [
-          "리더 이탈",
           "리더 이탈",
           "공동 창업자",
           "score:100"
@@ -687,50 +551,7 @@
             "http_status": 200,
             "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
           }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
-      },
-      {
-        "id": "20260512-bfbd483945",
-        "date": "2026-05-12",
-        "collected_date": "2026-05-17",
-        "time": "05:12",
-        "cat": "outflow",
-        "priority": false,
-        "urgency": "low",
-        "company": "시장 동향",
-        "signal": "인재 유출 가능성 · 생존 경고등",
-        "level": "B",
-        "title": "라이선스 받으면 투자 끊긴다…STO 스타트업 ‘생존 경고등’ - 이데일리",
-        "body": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5\" target=\"_",
-        "insight": "경영난·구조조정·인력 효율화 신호는 핵심 인재의 이직 탐색 가능성을 높일 수 있습니다. 해당 기업의 직군별 핵심 인력을 우선 매핑하세요.",
-        "action": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "contact_strategy": "LinkedIn·리멤버에서 해당 기업의 개발, 데이터, 커머스, 플랫폼 운영, 영업 리더 후보군을 우선 확인하고 24~48시간 내 접촉 대상을 선별하세요.",
-        "subcategory": "투자/생존 리스크",
-        "tags": [
-          "인재 유출",
-          "투자/생존 리스크",
-          "생존 경고등",
-          "score:97"
-        ],
-        "sources": [
-          {
-            "name": "이데일리",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5&hl=en-US&gl=US&ceid=US:en",
-            "level": "B",
-            "verified": true,
-            "verify_note": "HTTP 200",
-            "http_status": 200,
-            "original_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdzd5LWJ1TjJmbEVoc0NfZ0Z6RmZuajUxemZLemZhSUwyWmZxVk0zc3FuVVl3LTRfZlVVSWJlS2NNcFpKWWJnTllhdlNzZHlvVTM3eTdDZHFuNVBGbzVzNDlpa3JjT0I5eVRiYVN3ZmMxUkFMT053ZTNoRUx1a3RKbw?oc=5"
-          }
-        ],
-        "ai_audit": {
-          "status": "failed",
-          "reason": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBUsgns21XZPPaqJaU-IjJMkzAswCmgx2A"
-        }
+        ]
       }
     ]
   }

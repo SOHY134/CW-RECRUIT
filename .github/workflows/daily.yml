@@ -35,7 +35,7 @@ jobs:
       MAX_AGE_DAYS: '7'
       MIN_DISPLAY_ITEMS: '3'
       MAX_ITEMS: '6'
-      AUDIT_POOL_SIZE: '12'
+      QUALITY_POOL_SIZE: '18'
       MAX_FEEDS: '50'
       ENTRIES_PER_FEED: '10'
       MAX_CANDIDATES: '80'
@@ -43,9 +43,6 @@ jobs:
       HISTORY_LIMIT: '90'
       NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
       NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GEMINI_MODEL: gemini-2.0-flash
-      GEMINI_TIMEOUT: '45'
 
     steps:
       - name: Checkout

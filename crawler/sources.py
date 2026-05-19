@@ -12,6 +12,9 @@ RSS_QUERIES = {
         "홈플러스 법정관리 구조조정 인력 이탈",
         "11번가 희망퇴직 구조조정 감원",
         "롯데온 SSG닷컴 이커머스 희망퇴직 조직개편",
+        "커머스 플랫폼 법정관리 회생 매각 인력 구조조정",
+        "스타트업 런웨이 부족 투자 실패 인력 감축",
+        "대기업 계열사 조직개편 희망퇴직 IT 인력",
     ],
     "leader": [
         "CEO 교체 대표 사임 임원 교체 커머스 플랫폼",
@@ -19,6 +22,8 @@ RSS_QUERIES = {
         "대표이사 사임 신임 대표 선임 스타트업",
         "창업자 사임 공동창업자 사임 경영진 개편",
         "딜리버리히어로 DH CEO 사임 배달의민족",
+        "대표 퇴임 창업자 사임 최고기술책임자 이직",
+        "CFO CISO CHRO CTO 선임 사임 스타트업",
     ],
     "hiring": [
         "대규모 채용 채용 확대 공채 스타트업",
@@ -26,11 +31,14 @@ RSS_QUERIES = {
         "토스 대규모 채용 채널톡 채용 플랫폼 채용",
         "인재 확보 외부인력 수혈 채용 공고 증가",
         "쿠팡 채용 드라이브 물류 인재 확보",
+        "세 자릿수 채용 개발자 PM 데이터 채용",
+        "스타트업 투자유치 채용 확대 인재 영입",
     ],
     "foreign": [
         "mass layoff tech workforce reduction hiring freeze",
         "global hiring AI tech acquisition merger",
         "Meta layoff Amazon layoff Google layoff SpaceX acquisition",
+        "tech layoffs ecommerce acquisition Korea impact",
     ],
     "hr": [
         "근로기준법 노동법 개정 최저임금",
@@ -38,6 +46,8 @@ RSS_QUERIES = {
         "포괄임금제 주4일제 재택근무 파업",
         "노조 파업 긴급조정 단체교섭",
         "삼성전자 파업 긴급조정 노사 교섭",
+        "육아휴직 제도 개정 채용 근로조건",
+        "노동절 근로자의 날 유급휴일 수당",
     ],
 }
 
@@ -48,6 +58,9 @@ NAVER_FOCUSED_QUERIES = [
     "site:n.news.naver.com 근로기준법 육아휴직 최저임금",
     "site:n.news.naver.com 삼성전자 파업 긴급조정",
     "site:n.news.naver.com 홈플러스 법정관리 인력 이탈",
+    "site:n.news.naver.com 스타트업 투자 실패 감원",
+    "site:n.news.naver.com 커머스 플랫폼 매각 추진",
+    "site:n.news.naver.com 세 자릿수 채용 개발자",
 ]
 
 COMPETITOR_SIGNAL_TERMS = [

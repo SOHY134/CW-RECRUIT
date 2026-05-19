@@ -14,9 +14,9 @@ from dateutil import parser as date_parser
 
 from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, is_public_entity, priority_from_score, strip_source_suffix
 from crawler.dedupe import is_duplicate
-from crawler.gemini_audit import audit_cards
 from crawler.insight import make_card
 from crawler.keywords import CATEGORY_ORDER, FALLBACK_CATEGORIES
+from crawler.quality import dedupe_cards
 from crawler.sources import RSS_QUERIES, build_feed_urls
 from crawler.validator import fetch_meta, source_level
 
@@ -25,7 +25,7 @@ MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "7"))
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "6"))
 MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "3"))
 MAX_CANDIDATES = int(os.environ.get("MAX_CANDIDATES", "80"))
-AUDIT_POOL_SIZE = int(os.environ.get("AUDIT_POOL_SIZE", "12"))
+QUALITY_POOL_SIZE = int(os.environ.get("QUALITY_POOL_SIZE", os.environ.get("AUDIT_POOL_SIZE", "18")))
 ENTRIES_PER_FEED = int(os.environ.get("ENTRIES_PER_FEED", "10"))
 MAX_FEEDS = int(os.environ.get("MAX_FEEDS", "50"))
 FEED_TIMEOUT = int(os.environ.get("FEED_TIMEOUT", "6"))
@@ -146,8 +146,9 @@ def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
         return None
     final_url = meta.get("url") or url
     level = source_level(final_url)
-    competitor = detect_competitor(title)
-    company = detect_company(title)
+    text_for_company = " ".join([title, candidate.get("description", ""), meta.get("description", "")])
+    competitor = detect_competitor(text_for_company)
+    company = detect_company(text_for_company)
     if category == "leader" and not company:
         return None
     if category in {"outflow", "leader"} and is_public_entity(company):
@@ -218,9 +219,9 @@ def collect_cards(report_date: str | None = None) -> dict:
         normalized.append(item)
         titles.append(title)
 
-    selected = select_final_items(normalized, AUDIT_POOL_SIZE)
+    selected = select_final_items(normalized, QUALITY_POOL_SIZE)
     cards = [make_card(item, report_date) for item in selected]
-    cards = audit_cards(cards)[:MAX_ITEMS]
+    cards = dedupe_cards(cards, MAX_ITEMS)
     summary = f"최근 {MAX_AGE_DAYS}일 이내 실제 URL이 확인된 채용시장 신호 {len(cards)}건을 수집했습니다."
     contact_targets = [c["company"] for c in cards if c.get("priority")][:5]
     return {"date": report_date, "summary": summary, "contact_targets": contact_targets, "items": cards}

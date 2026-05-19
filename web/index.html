@@ -1301,7 +1301,7 @@ function renderUrgent(){
   //   - cat=leader, priority=true (리더이탈 → 팀이탈 연쇄 가능)
   //   - cat=outflow, priority=true, urgency=high (대규모 권고사직·구조조정)
   // 정렬: 최신 날짜 우선 → 같은 날짜면 점수 순
-  const pool=ENTRIES
+  const pool=getFiltered()
     .filter(e=>{
       if(!e.priority) return false;
       if(e.cat==='leader') return true;
@@ -1384,7 +1384,7 @@ function renderFeed(){
 function renderRanks(){
   // 인재 유출: 기업별 최고 점수 항목만
   const outflowMap=new Map();
-  ENTRIES.filter(e=>e.cat==='outflow').forEach(e=>{
+  getFiltered().filter(e=>e.cat==='outflow').forEach(e=>{
     const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
     if(!outflowMap.has(key)||calcScore(e)>calcScore(outflowMap.get(key)))
       outflowMap.set(key,e);
@@ -1400,7 +1400,7 @@ function renderRanks(){
 
   // 리더 이탈: 기업별 최고 점수 항목만
   const leaderMap=new Map();
-  ENTRIES.filter(e=>e.cat==='leader').forEach(e=>{
+  getFiltered().filter(e=>e.cat==='leader').forEach(e=>{
     const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
     if(!leaderMap.has(key)||calcScore(e)>calcScore(leaderMap.get(key)))
       leaderMap.set(key,e);

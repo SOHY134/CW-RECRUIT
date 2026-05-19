@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from crawler.collect_news import collect_cards  # noqa: E402
+from crawler.quality import dedupe_cards, normalize_card  # noqa: E402
 
 KST = ZoneInfo("Asia/Seoul")
 HISTORY_LIMIT = int(os.environ.get("HISTORY_LIMIT", "90"))
@@ -27,6 +28,18 @@ def read_history(path: Path) -> list[dict]:
         return data if isinstance(data, list) else []
     except Exception:
         return []
+
+
+def normalize_report(report: dict) -> dict:
+    clean = dict(report)
+    clean["items"] = dedupe_cards(clean.get("items", []), MAX_ITEMS)
+    clean["contact_targets"] = [
+        item.get("company") for item in clean["items"]
+        if item.get("priority") and item.get("company") and item.get("company") != "시장 동향"
+    ][:5]
+    if clean.get("items"):
+        clean["summary"] = clean.get("summary") or f"실제 URL 기반 채용시장 신호 {len(clean['items'])}건을 표시합니다."
+    return clean
 
 
 def write_json(path: Path, data) -> None:
@@ -46,7 +59,7 @@ def item_date(item: dict) -> datetime | None:
 
 
 def fill_with_recent_verified_items(report: dict, history: list[dict], today: str) -> dict:
-    items = list(report.get("items", []))
+    items = dedupe_cards(report.get("items", []), MAX_ITEMS)
     if len(items) >= MIN_DISPLAY_ITEMS:
         report["items"] = items[:MAX_ITEMS]
         return report
@@ -63,11 +76,12 @@ def fill_with_recent_verified_items(report: dict, history: list[dict], today: st
             urls = [source.get("url") for source in old_item.get("sources", []) if source.get("url")]
             if not urls or old_item.get("id") in seen_ids or any(url in seen_urls for url in urls):
                 continue
-            carry = dict(old_item)
+            carry = normalize_card(old_item)
             carry["collected_date"] = today
             carry["id"] = f"{today.replace('-', '')}-carry-{len(items)+1}-{old_item.get('id', 'item')}"
             carry["tags"] = list(carry.get("tags", [])) + ["최근 검증 정보"]
             items.append(carry)
+            items = dedupe_cards(items, MAX_ITEMS)
             seen_ids.add(carry["id"])
             seen_urls.update(urls)
             if len(items) >= MIN_DISPLAY_ITEMS:
@@ -87,8 +101,10 @@ def main() -> int:
     report = collect_cards(today)
 
     web_data = ROOT / "web" / "data.json"
-    history = read_history(web_data)
+    history = [normalize_report(row) for row in read_history(web_data)]
+    report = normalize_report(report)
     report = fill_with_recent_verified_items(report, history, today)
+    report = normalize_report(report)
 
     # Do not let a transient source outage replace a working dashboard with
     # an empty daily report. Keep the previous web/data.json intact, but write

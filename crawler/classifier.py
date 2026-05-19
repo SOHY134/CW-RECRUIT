@@ -7,15 +7,29 @@ from crawler.keywords import CATEGORY_KEYWORDS
 
 BASE_SCORE = {"outflow": 80, "leader": 75, "hiring": 45, "foreign": 35, "hr": 25}
 URGENCY_BONUS = {"high": 25, "mid": 12, "low": 4}
-NEWS_SOURCE_SUFFIX = re.compile(r"\s[-–—]\s[^-–—]{2,30}$")
+NEWS_SOURCE_SUFFIX = re.compile(
+    r"\s[-–—]\s[가-힣A-Za-z0-9 .·&]{2,24}"
+    r"(뉴스|경제|신문|일보|방송|저널|투데이|데일리|타임즈|미디어|News|Daily|Times)?\s*$",
+    re.IGNORECASE,
+)
 LEADING_COMPANY = re.compile(r"^\s*([A-Za-z0-9&.\-가-힣·]+(?:\s?[A-Za-z0-9&.\-가-힣·]+){0,3})\s*[,，]")
 PUBLIC_ENTITY_SUFFIXES = ("시", "도", "군", "구", "정부", "중기부", "고용노동부")
+MEDIA_NAMES = {
+    "전자신문", "경향신문", "서울경제", "서울경제TV", "기계신문", "뉴스핌", "굿모닝경제",
+    "뉴닉", "이데일리", "IT조선", "약업신문", "직썰", "연합뉴스", "한국경제", "매일경제",
+    "조선비즈", "ZDNet Korea", "블로터", "딜사이트", "뉴스1", "머니투데이",
+}
 KNOWN_COMPANY_ALIASES = [
     "쿠팡풀필먼트서비스",
     "쿠팡",
+    "CFS",
+    "메타",
+    "Meta",
     "HLB",
     "DH",
+    "Delivery Hero",
     "딜리버리히어로",
+    "배민",
     "배달의민족",
     "우아한형제들",
     "LG전자",
@@ -88,7 +102,7 @@ def detect_company(text: str) -> str | None:
     match = LEADING_COMPANY.match(cleaned)
     if match:
         candidate = match.group(1).strip(" '\"“”‘’")
-        if not is_internal_company(candidate):
+        if candidate not in MEDIA_NAMES and not is_internal_company(candidate) and len(candidate) <= 18:
             return candidate
     return None
 
