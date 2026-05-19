@@ -1,0 +1,218 @@
+{
+  "date": "2026-05-11",
+  "summary": "당일 및 최근 검증 정보를 합쳐 실제 URL 기반 채용시장 신호 5건을 표시합니다.",
+  "contact_targets": [
+    "홈플러스",
+    "네이버웹툰"
+  ],
+  "items": [
+    {
+      "id": "e_0511_a",
+      "date": "2026-05-11",
+      "time": "11:00",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "홈플러스",
+      "signal": "37개 매장 영업중단 + 익스프레스 희망퇴직 — 2만명 인력 이동",
+      "level": "B",
+      "title": "홈플러스 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "홈플러스에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 홈플러스 인력 조정.",
+      "insight": "홈플러스의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "홈플러스",
+        "유통",
+        "구조조정",
+        "영업중단",
+        "희망퇴직"
+      ],
+      "sources": [
+        {
+          "name": "서울경제",
+          "url": "https://www.sedaily.com/article/20042666",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.sedaily.com/article/20042666"
+        },
+        {
+          "name": "뉴스1",
+          "url": "https://www.news1.kr/industry/distribution/6160738",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.news1.kr/industry/distribution/6160738"
+        },
+        {
+          "name": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2583863",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.etoday.co.kr/news/view/2583863"
+        }
+      ],
+      "raw_title": "홈플러스 37개 매장 5/10 영업중단 + 익스프레스 희망퇴직",
+      "contact_strategy": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요."
+    },
+    {
+      "id": "e_0511_b",
+      "date": "2026-05-11",
+      "time": "12:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "mid",
+      "company": "원티드랩",
+      "signal": "하이파이브 2026 HR 데이 내일 개막(5/12) — 글로벌 HR 연사 총집결",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "tags": [
+        "원티드",
+        "하이파이브2026",
+        "HR컨퍼런스",
+        "AI채용",
+        "HRtech"
+      ],
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20260223000082",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.etnews.com/20260223000082"
+        },
+        {
+          "name": "ZDNet Korea",
+          "url": "https://zdnet.co.kr/view/?no=20260405103303",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://zdnet.co.kr/view/?no=20260405103303"
+        }
+      ],
+      "raw_title": "원티드 하이파이브 2026 내일 개막(5/12 코엑스) — MS·CJ올리브영·틱톡·SK하이닉스 HR 연사",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요."
+    },
+    {
+      "id": "20260511-carry-3-e_0510_a",
+      "date": "2026-05-10",
+      "time": "10:10",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "high",
+      "company": "네이버웹툰",
+      "signal": "AI 리더십 공백 후속 — 팀 이탈 가속",
+      "level": "B",
+      "title": "네이버웹툰 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "네이버웹툰의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 네이버웹툰 리더십 변화.",
+      "insight": "네이버웹툰 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "네이버웹툰의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "tags": [
+        "네이버웹툰",
+        "AI",
+        "리더이탈",
+        "추천시스템",
+        "팀이탈",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "서울경제TV",
+          "url": "https://www.sentv.co.kr/article/view/sentv202604160111",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.sentv.co.kr/article/view/sentv202604160111"
+        }
+      ],
+      "raw_title": "네이버웹툰 AI 리더십 공백 후속",
+      "contact_strategy": "네이버웹툰의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "collected_date": "2026-05-11"
+    },
+    {
+      "id": "20260511-carry-4-e_0429_a",
+      "date": "2026-04-29",
+      "time": "09:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "low",
+      "company": "고용노동부·사람인",
+      "signal": "2026 채용시장 전망 — 수시채용 70% 돌파, 공채 완전 쇠퇴",
+      "level": "B",
+      "title": "고용노동부·사람인 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "고용노동부·사람인의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 사람인 채용 확대.",
+      "insight": "고용노동부·사람인의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "고용노동부·사람인 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "tags": [
+        "수시채용",
+        "공채쇠퇴",
+        "아웃바운드소싱",
+        "경력직",
+        "채용트렌드",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "서치라이트AI",
+          "url": "https://blog.searchright.net/2026-hiring-market-outlook/",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://blog.searchright.net/2026-hiring-market-outlook/"
+        }
+      ],
+      "raw_title": "2026 채용시장 수시채용 70% 돌파 — 공채 쇠퇴, 경력직 다이렉트소싱이 표준",
+      "contact_strategy": "고용노동부·사람인 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "collected_date": "2026-05-11"
+    },
+    {
+      "id": "20260511-carry-5-e_0416_b",
+      "date": "2026-04-16",
+      "time": "09:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "low",
+      "company": "브런치·한국노동연구원",
+      "signal": "2026 HR 트렌드 — AI가 찢어놓은 전통적 인사관리",
+      "level": "B",
+      "title": "브런치·한국노동연구원 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "브런치·한국노동연구원의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 한국노동연구원 채용 확대.",
+      "insight": "브런치·한국노동연구원의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "브런치·한국노동연구원 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "tags": [
+        "채용트렌드",
+        "수시채용",
+        "AI채용",
+        "HR전략",
+        "공채폐지",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "브런치",
+          "url": "https://brunch.co.kr/@career/1040",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://brunch.co.kr/@career/1040"
+        }
+      ],
+      "raw_title": "AI가 바꾸는 2026 인사관리",
+      "contact_strategy": "브런치·한국노동연구원 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "collected_date": "2026-05-11"
+    }
+  ]
+}

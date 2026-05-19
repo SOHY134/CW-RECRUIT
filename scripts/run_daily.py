@@ -17,7 +17,7 @@ KST = ZoneInfo("Asia/Seoul")
 HISTORY_LIMIT = int(os.environ.get("HISTORY_LIMIT", "90"))
 MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "7"))
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "6"))
-MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "3"))
+MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "5"))
 
 
 def read_history(path: Path) -> list[dict]:

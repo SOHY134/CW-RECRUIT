@@ -23,7 +23,7 @@ from crawler.validator import fetch_meta, source_level
 KST = ZoneInfo("Asia/Seoul")
 MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "7"))
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "6"))
-MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "3"))
+MIN_DISPLAY_ITEMS = int(os.environ.get("MIN_DISPLAY_ITEMS", "5"))
 MAX_CANDIDATES = int(os.environ.get("MAX_CANDIDATES", "80"))
 QUALITY_POOL_SIZE = int(os.environ.get("QUALITY_POOL_SIZE", os.environ.get("AUDIT_POOL_SIZE", "18")))
 ENTRIES_PER_FEED = int(os.environ.get("ENTRIES_PER_FEED", "10"))

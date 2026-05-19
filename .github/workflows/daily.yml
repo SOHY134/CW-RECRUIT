@@ -33,7 +33,7 @@ jobs:
     env:
       TZ: Asia/Seoul
       MAX_AGE_DAYS: '7'
-      MIN_DISPLAY_ITEMS: '3'
+      MIN_DISPLAY_ITEMS: '5'
       MAX_ITEMS: '6'
       QUALITY_POOL_SIZE: '18'
       MAX_FEEDS: '50'

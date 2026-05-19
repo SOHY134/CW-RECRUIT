@@ -1,0 +1,268 @@
+{
+  "date": "2026-05-09",
+  "summary": "당일 및 최근 검증 정보를 합쳐 실제 URL 기반 채용시장 신호 6건을 표시합니다.",
+  "contact_targets": [
+    "엑스엘게임즈",
+    "KT",
+    "쿠팡·G마켓·11번가·SSG·놀유니버스 등",
+    "놀유니버스·야놀자"
+  ],
+  "items": [
+    {
+      "id": "e_0509_a",
+      "date": "2026-05-09",
+      "time": "09:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "mid",
+      "company": "원티드랩",
+      "signal": "하이파이브 2026 컨퍼런스 — 5/12~13 코엑스 HR 데이",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "tags": [
+        "원티드",
+        "하이파이브2026",
+        "HR컨퍼런스",
+        "AI채용",
+        "HRtech"
+      ],
+      "sources": [
+        {
+          "name": "ZDNet Korea",
+          "url": "https://zdnet.co.kr/view/?no=20260405103303",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://zdnet.co.kr/view/?no=20260405103303"
+        },
+        {
+          "name": "이지경제",
+          "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=235254",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.ezyeconomy.com/news/articleView.html?idxno=235254"
+        }
+      ],
+      "raw_title": "원티드 하이파이브 2026 (5/12~13 코엑스)",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요."
+    },
+    {
+      "id": "20260509-carry-2-e_0508_a",
+      "date": "2026-05-08",
+      "time": "10:11",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "엑스엘게임즈",
+      "signal": "경영난 — 희망퇴직 검토",
+      "level": "B",
+      "title": "엑스엘게임즈 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "엑스엘게임즈에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 엑스엘게임즈 인력 조정.",
+      "insight": "엑스엘게임즈의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "엑스엘게임즈 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "게임",
+        "희망퇴직",
+        "개발자",
+        "카카오게임즈",
+        "엑스엘게임즈",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260508054900017",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.yna.co.kr/view/AKR20260508054900017"
+        }
+      ],
+      "raw_title": "경영난으로 희망퇴직 검토",
+      "contact_strategy": "엑스엘게임즈 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "collected_date": "2026-05-09"
+    },
+    {
+      "id": "20260509-carry-3-e_0423_a",
+      "date": "2026-04-23",
+      "time": "17:34",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "high",
+      "company": "KT",
+      "signal": "CTO·CAIO 리더십 변화 — 전자신문·더벨 보도",
+      "level": "B",
+      "title": "KT 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "KT의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: KT 리더십 변화.",
+      "insight": "KT 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "KT의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "tags": [
+        "KT",
+        "CTO",
+        "AI",
+        "클라우드",
+        "리더이탈",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "전자신문",
+          "url": "https://www.etnews.com/20260327000206",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.etnews.com/20260327000206"
+        },
+        {
+          "name": "더벨",
+          "url": "https://www.thebell.co.kr/front/newsview.asp?key=202603271524584120102029",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.thebell.co.kr/front/newsview.asp?key=202603271524584120102029"
+        }
+      ],
+      "raw_title": "AI 리더십 변화",
+      "contact_strategy": "KT의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "collected_date": "2026-05-09"
+    },
+    {
+      "id": "20260509-carry-4-e_0427_a",
+      "date": "2026-04-27",
+      "time": "12:00",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "mid",
+      "company": "쿠팡·G마켓·11번가·SSG·놀유니버스 등",
+      "signal": "공정위 이커머스 7개사 불공정 약관 11건 적발",
+      "level": "A",
+      "title": "쿠팡·G마켓·11번가·SSG·놀유니버스 등 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "쿠팡·G마켓·11번가·SSG·놀유니버스 등에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: G마켓·11번가·SSG·놀유니버스 등 인력 조정.",
+      "insight": "쿠팡·G마켓·11번가·SSG·놀유니버스 등의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "쿠팡·G마켓·11번가·SSG·놀유니버스 등 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "공정위",
+        "이커머스",
+        "쿠팡",
+        "G마켓",
+        "11번가",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "이코노밍글",
+          "url": "https://econmingle.com/news/coupang-naver-open-market-unfair-terms-kftc/",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://econmingle.com/news/coupang-naver-open-market-unfair-terms-kftc/"
+        },
+        {
+          "name": "폴리뉴스",
+          "url": "https://www.polinews.co.kr/news/articleView.html?idxno=729710",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.polinews.co.kr/news/articleView.html?idxno=729710"
+        }
+      ],
+      "raw_title": "이커머스 7개사 불공정 약관 11건 시정",
+      "contact_strategy": "쿠팡·G마켓·11번가·SSG·놀유니버스 등 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "collected_date": "2026-05-09"
+    },
+    {
+      "id": "20260509-carry-5-e_0421_a",
+      "date": "2026-04-21",
+      "time": "12:18",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "놀유니버스·야놀자",
+      "signal": "조직개편·핵심 인력 이동",
+      "level": "B",
+      "title": "놀유니버스·야놀자 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "놀유니버스·야놀자에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 야놀자 인력 조정.",
+      "insight": "놀유니버스·야놀자의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "놀유니버스·야놀자 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "야놀자",
+        "놀유니버스",
+        "조직개편",
+        "인재유출",
+        "플랫폼",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "EBN",
+          "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1706080",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.ebn.co.kr/news/articleView.html?idxno=1706080"
+        }
+      ],
+      "raw_title": "야놀자 조직개편",
+      "contact_strategy": "놀유니버스·야놀자 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "collected_date": "2026-05-09"
+    },
+    {
+      "id": "20260509-carry-6-e_0507_a",
+      "date": "2026-05-07",
+      "time": "09:00",
+      "cat": "outflow",
+      "priority": false,
+      "urgency": "mid",
+      "company": "5대 시중은행",
+      "signal": "희망퇴직 2,326명 — 전년비 17% 증가",
+      "level": "B",
+      "title": "5대 시중은행 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "5대 시중은행에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 5대 시중은행 인력 조정.",
+      "insight": "5대 시중은행의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "5대 시중은행 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "은행권",
+        "희망퇴직",
+        "금융",
+        "데이터",
+        "AI",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "녹색경제신문",
+          "url": "https://greened.kr/news/articleView.html?idxno=334927",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://greened.kr/news/articleView.html?idxno=334927"
+        },
+        {
+          "name": "매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12039469",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.mk.co.kr/news/economy/12039469"
+        }
+      ],
+      "raw_title": "326명",
+      "contact_strategy": "5대 시중은행 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "collected_date": "2026-05-09"
+    }
+  ]
+}

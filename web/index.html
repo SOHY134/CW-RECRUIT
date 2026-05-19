@@ -1250,7 +1250,7 @@ function getThirtyDayPool(){
 }
 
 function ensureMinimumDailyItems(list){
-  if(selRange.type!=='daily'||list.length>=3) return list;
+  if(selRange.type!=='daily'||list.length>=5) return list;
   const seen=new Set(list.map(e=>e.id));
   const start=addDays(selRange.start,-7);
   const extras=ENTRIES
@@ -1258,7 +1258,7 @@ function ensureMinimumDailyItems(list){
     .filter(e=>!seen.has(e.id))
     .filter(e=>(e.sources||[]).some(s=>s.url))
     .sort((a,b)=>calcScore(b)-calcScore(a)||b.date.localeCompare(a.date));
-  return list.concat(extras.slice(0,3-list.length));
+  return list.concat(extras.slice(0,5-list.length));
 }
 
 /* ── FILTER (중요도 정렬) ── */

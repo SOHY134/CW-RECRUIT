@@ -1,115 +1,270 @@
 {
   "date": "2026-05-19",
-  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
+  "summary": "당일 및 최근 검증 정보를 합쳐 실제 URL 기반 채용시장 신호 6건을 표시합니다.",
   "contact_targets": [
-    "메타",
-    "배달의민족"
+    "홈플러스",
+    "네이버웹툰",
+    "삼성전자",
+    "홈플러스",
+    "딜리버리히어로"
   ],
   "items": [
     {
-      "id": "20260519-08121b977c",
-      "date": "2026-05-19",
-      "collected_date": "2026-05-19",
-      "time": "08:45",
+      "id": "20260519-carry-1-e_0517_a",
+      "date": "2026-05-17",
+      "time": "09:00",
       "cat": "outflow",
       "priority": true,
       "urgency": "high",
-      "company": "메타",
-      "signal": "인재 유출 가능성 · 감원",
+      "company": "홈플러스",
+      "signal": "홈플러스 회생 가결 시한 D-47(7/3) — 인력 유출 가속",
       "level": "B",
-      "title": "메타 인력 조정 - 핵심 인재 이동 가능성 확대",
-      "body": "메타에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 메타 인력 조정.",
-      "insight": "메타의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
-      "action": "메타 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
-      "contact_strategy": "메타 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
-      "subcategory": "인재 유출",
+      "title": "홈플러스 경영 리스크 - 조직 안정성 저하와 인재 이탈 가능성 점검",
+      "body": "홈플러스의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다. 원문 이슈: 홈플러스 경영 리스크.",
+      "insight": "홈플러스의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+      "action": "홈플러스의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
       "tags": [
-        "인재 유출",
-        "감원",
-        "score:128"
+        "홈플러스",
+        "유통",
+        "인재유출",
+        "MD",
+        "온라인커머스",
+        "최근 검증 정보"
       ],
       "sources": [
         {
-          "name": "IT조선",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "경향신문",
+          "url": "https://www.khan.co.kr/article/202605121556011",
           "level": "B",
           "verified": true,
-          "verify_note": "HTTP 200",
-          "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5"
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.khan.co.kr/article/202605121556011"
+        },
+        {
+          "name": "헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10736208",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://biz.heraldcorp.com/article/10736208"
         }
       ],
-      "raw_title": "10% 감원 통보… 직원 7천명 AI 조직 재배치"
+      "raw_title": "홈플러스 회생 가결 시한 D-47",
+      "contact_strategy": "홈플러스의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+      "collected_date": "2026-05-19"
     },
     {
-      "id": "20260514-99513862a7",
+      "id": "20260519-carry-2-e_0510_a",
+      "date": "2026-05-10",
+      "time": "10:10",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "high",
+      "company": "네이버웹툰",
+      "signal": "AI 리더십 공백 후속 — 팀 이탈 가속",
+      "level": "B",
+      "title": "네이버웹툰 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "네이버웹툰의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 네이버웹툰 리더십 변화.",
+      "insight": "네이버웹툰 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "네이버웹툰의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "tags": [
+        "네이버웹툰",
+        "AI",
+        "리더이탈",
+        "추천시스템",
+        "팀이탈",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "서울경제TV",
+          "url": "https://www.sentv.co.kr/article/view/sentv202604160111",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.sentv.co.kr/article/view/sentv202604160111"
+        }
+      ],
+      "raw_title": "네이버웹툰 AI 리더십 공백 후속",
+      "contact_strategy": "네이버웹툰의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "collected_date": "2026-05-19"
+    },
+    {
+      "id": "20260519-carry-3-e_0513_a",
+      "date": "2026-05-13",
+      "time": "16:43",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "사후조정 결렬 — 5/21 총파업 D-8, 하루 1조 손실 예상",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "tags": [
+        "삼성전자",
+        "총파업",
+        "노사분쟁",
+        "성과급",
+        "반도체",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "딜사이트",
+          "url": "https://dealsite.co.kr/articles/161786/068020",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://dealsite.co.kr/articles/161786/068020"
+        },
+        {
+          "name": "네이트뉴스",
+          "url": "https://news.nate.com/view/20260513n10699",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://news.nate.com/view/20260513n10699"
+        }
+      ],
+      "raw_title": "삼성전자 노사 사후조정 최종 결렬 — 5/21 총파업 초읽기, DS 부문 인재 소싱 적기",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "collected_date": "2026-05-19"
+    },
+    {
+      "id": "20260519-carry-4-e_0511_a",
+      "date": "2026-05-11",
+      "time": "11:00",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "홈플러스",
+      "signal": "37개 매장 영업중단 + 익스프레스 희망퇴직 — 2만명 인력 이동",
+      "level": "B",
+      "title": "홈플러스 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "홈플러스에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 홈플러스 인력 조정.",
+      "insight": "홈플러스의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "tags": [
+        "홈플러스",
+        "유통",
+        "구조조정",
+        "영업중단",
+        "희망퇴직",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "서울경제",
+          "url": "https://www.sedaily.com/article/20042666",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.sedaily.com/article/20042666"
+        },
+        {
+          "name": "뉴스1",
+          "url": "https://www.news1.kr/industry/distribution/6160738",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.news1.kr/industry/distribution/6160738"
+        },
+        {
+          "name": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2583863",
+          "level": "B",
+          "verified": true,
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.etoday.co.kr/news/view/2583863"
+        }
+      ],
+      "raw_title": "홈플러스 37개 매장 5/10 영업중단 + 익스프레스 희망퇴직",
+      "contact_strategy": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "collected_date": "2026-05-19"
+    },
+    {
+      "id": "20260519-carry-5-20260520-carry-2-20260520-carry-5-20260520-carry-2-20260520-carry-2-20260514-7250862205",
       "date": "2026-05-14",
       "collected_date": "2026-05-19",
-      "time": "11:10",
+      "time": "13:38",
       "cat": "outflow",
       "priority": true,
       "urgency": "mid",
-      "company": "배달의민족",
+      "company": "딜리버리히어로",
       "signal": "인재 유출 가능성 · 매각 추진",
       "level": "B",
-      "title": "배달의민족 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
-      "body": "배달의민족에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 배달의민족 매각 이슈.",
-      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 배달의민족의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
-      "action": "배달의민족 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
-      "contact_strategy": "배달의민족 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
       "subcategory": "인재 유출",
       "tags": [
         "인재 유출",
         "매각 추진",
-        "score:105"
+        "score:105",
+        "최근 검증 정보"
       ],
       "sources": [
         {
-          "name": "뉴닉",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "네이버뉴스",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793",
           "level": "B",
           "verified": true,
           "verify_note": "HTTP 200",
           "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vQ01XU1FXMUR3REZuVGstQWZ4TWhGSmdMSUkzUG1tejhTS0FkeGFVMHJtaVNodmJLTVhVc0U2U0F6eGw5TXlrM1RsbndjUXVITDVz?oc=5"
+          "original_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793"
         }
       ],
-      "raw_title": "8조 원에 매각 추진? 국내외 대기업들이 인수 후보로 떠오른 이유"
+      "raw_title": "배달의민족 또 팔린다... 딜리버리히어로 , 8조원에 매각 추진"
     },
     {
-      "id": "20260517-de0057b1a6",
-      "date": "2026-05-17",
-      "collected_date": "2026-05-19",
-      "time": "12:58",
-      "cat": "hiring",
-      "priority": false,
-      "urgency": "mid",
-      "company": "쿠팡",
-      "signal": "공격적 채용 신호 · 인재 확보",
+      "id": "20260519-carry-6-e_0515_a",
+      "date": "2026-05-15",
+      "time": "09:00",
+      "cat": "hr",
+      "priority": true,
+      "urgency": "high",
+      "company": "메타",
+      "signal": "AI로 3만2천 일자리 감축 — AI 역량자는 공급 3.2배 부족",
       "level": "B",
-      "title": "쿠팡 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
-      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 쿠팡 채용 확대.",
-      "insight": "쿠팡의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
-      "action": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
-      "contact_strategy": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
-      "subcategory": "인재 확보",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
       "tags": [
-        "채용 확대",
-        "인재 확보",
-        "score:105"
+        "AI채용",
+        "HR트렌드",
+        "AI전환",
+        "채용시장",
+        "인력재편",
+        "최근 검증 정보"
       ],
       "sources": [
         {
-          "name": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "전국인력신문",
+          "url": "https://www.kjob.news/news/487771",
           "level": "B",
           "verified": true,
-          "verify_note": "HTTP 200",
-          "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
+          "verify_note": "",
+          "http_status": null,
+          "original_url": "https://www.kjob.news/news/487771"
         }
       ],
-      "raw_title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력"
+      "raw_title": "2026년 5월 AI가 일자리 3만2천개 삼켜",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "collected_date": "2026-05-19"
     }
   ]
 }

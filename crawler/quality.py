@@ -25,6 +25,8 @@ MEDIA_NAMES = {
     "전자신문", "경향신문", "서울경제", "서울경제TV", "기계신문", "뉴스핌", "굿모닝경제",
     "뉴닉", "이데일리", "IT조선", "약업신문", "직썰", "연합뉴스", "한국경제", "매일경제",
     "조선비즈", "ZDNet Korea", "블로터", "딜사이트", "뉴스1", "머니투데이",
+    "전국인력신문", "AI Weekly", "인포집합소", "네이트뉴스", "헤럴드경제", "이투데이",
+    "문화일보", "파이낸셜뉴스",
 }
 
 COMPANY_ALIASES = {
@@ -36,6 +38,8 @@ COMPANY_ALIASES = {
     "쿠팡풀필먼트서비스": "쿠팡",
     "Meta": "메타",
     "메타": "메타",
+    "삼성전자": "삼성전자",
+    "홈플러스": "홈플러스",
 }
 
 CAT_LABEL = {
@@ -145,6 +149,9 @@ def source_names(card: dict) -> list[str]:
 def canonical_company(value: str | None) -> str:
     name = clean_text(value or "")
     name = MEDIA_SUFFIX.sub("", name).strip(" -–—·|")
+    parts = [part.strip() for part in re.split(r"[·,/|]", name) if part.strip()]
+    if parts and all(part in MEDIA_NAMES for part in parts):
+        return ""
     for alias, canonical in COMPANY_ALIASES.items():
         if alias.lower().replace(" ", "") == name.lower().replace(" ", ""):
             return canonical
