@@ -1,8 +1,9 @@
 {
   "date": "2026-05-20",
-  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 4건을 수집했습니다.",
+  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 6건을 수집했습니다.",
   "contact_targets": [
     "메타",
+    "딜리버리히어로",
     "배달의민족",
     "딜리버리히어로"
   ],
@@ -42,6 +43,40 @@
       ]
     },
     {
+      "id": "20260514-7250862205",
+      "date": "2026-05-14",
+      "collected_date": "2026-05-20",
+      "time": "13:38",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "mid",
+      "company": "딜리버리히어로",
+      "signal": "인재 유출 가능성 · 매각 추진",
+      "level": "B",
+      "title": "배달의민족 또 팔린다... 딜리버리히어로 , 8조원에 매각 추진",
+      "body": "딜리버리히어로에서 매각 추진 이슈가 포착됐습니다. 배달의민족 또 팔린다... 딜리버리히어로 , 8조원에 매각 추진. 핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다.",
+      "insight": "딜리버리히어로의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요.",
+      "action": "딜리버리히어로 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+      "contact_strategy": "딜리버리히어로 재직/퇴직 예정자를 리멤버·LinkedIn에서 직군별로 매핑하고, 개발·PM·커머스 운영·영업 핵심 후보자에게 24~48시간 내 1차 접촉하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "매각 추진",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=665793"
+        }
+      ]
+    },
+    {
       "id": "20260514-26f20feef7",
       "date": "2026-05-14",
       "collected_date": "2026-05-20",
@@ -76,7 +111,7 @@
       ]
     },
     {
-      "id": "20260517-b0ca8aa3a1",
+      "id": "20260517-81c8453e03",
       "date": "2026-05-17",
       "collected_date": "2026-05-20",
       "time": "12:58",
@@ -86,8 +121,8 @@
       "company": "쿠팡",
       "signal": "공격적 채용 신호 · 인재 확보",
       "level": "B",
-      "title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력",
-      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브…평택·대구서 물류 인재 확보 총력. 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
+      "title": "전국 채용 드라이브 …평택·대구서 물류 인재 확보 ...",
+      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 전국 채용 드라이브 …평택·대구서 물류 인재 확보 .... 동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다.",
       "insight": "쿠팡의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요.",
       "action": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
       "contact_strategy": "쿠팡가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
@@ -99,29 +134,29 @@
       ],
       "sources": [
         {
-          "name": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "네이버뉴스",
+          "url": "https://www.newspim.com/news/view/20260517000077",
           "level": "B",
           "verified": true,
           "verify_note": "HTTP 200",
           "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VQ1Z1bFJHREFsUllqb1BvN1d2LUhhMkNVb3U5b3ZqQ01kV200NjhXSVZCUXBwOXNBNFl4LVhuSldDNVFsZE9YWndjczRwZ1VQWXZaVHJ6akZadVJE?oc=5"
+          "original_url": "https://www.newspim.com/news/view/20260517000077"
         }
       ]
     },
     {
-      "id": "20260513-8b56c3a5c0",
-      "date": "2026-05-13",
+      "id": "20260514-dbb5940975",
+      "date": "2026-05-14",
       "collected_date": "2026-05-20",
-      "time": "15:00",
+      "time": "00:44",
       "cat": "leader",
       "priority": true,
       "urgency": "mid",
       "company": "딜리버리히어로",
       "signal": "리더 이동 신호 · 공동 창업자",
       "level": "B",
-      "title": "DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까",
-      "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. DH 공동 창업자 CEO서 사임한다…배민 매각 영향 미칠까. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
+      "title": "우버에 의향 타진",
+      "body": "딜리버리히어로의 리더십 변동 신호가 확인됐습니다. 우버에 의향 타진. 후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다.",
       "insight": "딜리버리히어로의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요.",
       "action": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
       "contact_strategy": "딜리버리히어로의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
@@ -133,13 +168,48 @@
       ],
       "sources": [
         {
-          "name": "전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/015/0005286728?sid=101",
           "level": "B",
           "verified": true,
           "verify_note": "HTTP 200",
           "http_status": 200,
-          "original_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0S0I3ajljTnVXcFhWbHk5Z0pTLTVVR0lra0hQcUhpaUt5c1IxSTdRYVVKcVM5Q0JSTGxQRi1jY3ZSbVB0cFY4cUczNkNBUQ?oc=5"
+          "original_url": "https://n.news.naver.com/mnews/article/015/0005286728?sid=101"
+        }
+      ]
+    },
+    {
+      "id": "20260519-636739fbf3",
+      "date": "2026-05-19",
+      "collected_date": "2026-05-20",
+      "time": "18:24",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "박용진 \"두당 6억 줘, 삼전 노조 국민 부아... 파업 , 이재용은 책임 없나...",
+      "body": "HR·노무 관련 변화가 확인됐습니다. 박용진 \"두당 6억 줘, 삼전 노조 국민 부아... 파업 , 이재용은 책임 없나.... 채용 운영과 후보자 안내에 반영할 실무 체크포인트를 정리하세요.",
+      "insight": "HR·노무·제도 변화는 채용 조건 안내와 후보자 커뮤니케이션에 직접 영향을 줄 수 있습니다. 실무 적용 항목을 빠르게 정리하세요.",
+      "action": "제도 변화가 채용 운영, 근로조건 안내, 후보자 FAQ에 미칠 영향을 정리해 내부 채용 커뮤니케이션에 반영하세요.",
+      "contact_strategy": "제도 변화가 채용 운영, 근로조건 안내, 후보자 FAQ에 미칠 영향을 정리해 내부 채용 커뮤니케이션에 반영하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/660/0000109670?sid=100",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/660/0000109670?sid=100"
         }
       ]
     }
