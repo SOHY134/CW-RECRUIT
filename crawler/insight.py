@@ -1,4 +1,6 @@
-﻿from __future__ import annotations
+from __future__ import annotations
+
+from crawler.classifier import strip_source_suffix
 
 CAT_LABEL = {"outflow": "인재 유출", "leader": "리더 이탈", "hiring": "채용 확대", "foreign": "해외/외국계", "hr": "HR NEWS"}
 
@@ -54,7 +56,7 @@ def subcategory_for(keyword: str | None, category: str) -> str:
 
 def make_card(raw: dict, report_date: str) -> dict:
     category = raw["category"]
-    title = raw["title"]
+    title = strip_source_suffix(raw["title"])
     company = raw.get("company") or raw.get("competitor") or "시장 동향"
     keyword = raw.get("keyword") or CAT_LABEL.get(category, "채용 인텔리전스")
     published_date = raw.get("published_date") or report_date

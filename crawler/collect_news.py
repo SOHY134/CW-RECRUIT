@@ -3,6 +3,7 @@
 import hashlib
 import html
 import os
+import re
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
@@ -11,7 +12,7 @@ import feedparser
 import requests
 from dateutil import parser as date_parser
 
-from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, is_public_entity, priority_from_score
+from crawler.classifier import calculate_score, detect_category, detect_company, detect_competitor, is_internal_company, is_public_entity, priority_from_score, strip_source_suffix
 from crawler.dedupe import is_duplicate
 from crawler.gemini_audit import audit_cards
 from crawler.insight import make_card
@@ -50,7 +51,9 @@ def parse_published(entry) -> datetime | None:
 
 
 def clean_text(value: str) -> str:
-    return html.unescape(value or "").replace("<b>", "").replace("</b>", "").strip()
+    text = html.unescape(value or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def stable_id(title: str, url: str, date: str) -> str:
@@ -126,7 +129,7 @@ def collect_from_google_rss(base_time: datetime) -> list[dict]:
 
 
 def normalize_candidate(candidate: dict, base_time: datetime) -> dict | None:
-    title = candidate.get("title", "").strip()
+    title = strip_source_suffix(candidate.get("title", "").strip())
     url = candidate.get("url", "").strip()
     published = candidate.get("published")
     if not title or not url or not published:

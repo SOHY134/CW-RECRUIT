@@ -103,7 +103,7 @@ a{color:inherit;text-decoration:none}
   background:rgba(255,255,255,.75);border-radius:8px;padding:7px 10px;
   text-align:left;cursor:pointer;width:100%;transition:background .1s}
 .urgent-item:hover{background:rgba(255,255,255,.95)}
-.urgent-co{font-weight:800;color:#741a13;min-width:110px;font-size:12px;flex-shrink:0}
+.urgent-co{font-weight:800;color:#741a13;min-width:110px;max-width:150px;font-size:12px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .urgent-ttl{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .urgent-lv{font-size:9px;font-weight:900;color:var(--red);background:#fde;
   border-radius:5px;padding:1px 5px;flex-shrink:0}
@@ -147,11 +147,11 @@ a{color:inherit;text-decoration:none}
 .lv-b{background:#eefaf2;color:#0e4a22;border:1px solid #bce4cc}
 .lv-c{background:#fff9ec;color:#5a3800;border:1px solid #f0d9a0}
 .card-time{font-family:'DM Mono';font-size:10px;color:var(--sub)}
-.card h3{font-size:13.5px;font-weight:700;margin-bottom:4px;line-height:1.4}
-.card p{color:var(--muted);font-size:11.5px;line-height:1.5}
+.card h3{font-size:13.5px;font-weight:700;margin-bottom:4px;line-height:1.4;overflow-wrap:anywhere}
+.card p{color:var(--muted);font-size:11.5px;line-height:1.5;overflow-wrap:anywhere}
 .hashes{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}
 .hash{background:var(--surf2);border-radius:999px;padding:2px 7px;
-  color:var(--muted);font-size:10px;border:1px solid var(--line)}
+  color:var(--muted);font-size:10px;border:1px solid var(--line);max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .empty-state{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px}
 
 /* Aside */
@@ -185,7 +185,7 @@ a{color:inherit;text-decoration:none}
 .modal-head{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);
   padding:17px 20px;z-index:1;display:flex;align-items:flex-start;gap:10px}
 .modal-head-info{flex:1}
-.modal-head h2{font-size:17px;font-weight:800;line-height:1.35}
+.modal-head h2{font-size:17px;font-weight:800;line-height:1.35;overflow-wrap:anywhere}
 .modal-head .modal-meta{display:flex;align-items:center;gap:5px;margin-top:5px;flex-wrap:wrap}
 .close-btn{border:1px solid var(--line2);background:#fff;border-radius:8px;
   padding:5px 10px;cursor:pointer;font-size:12px;font-weight:700;flex-shrink:0}
@@ -209,6 +209,7 @@ a{color:inherit;text-decoration:none}
 .src-link:hover{border-color:var(--blu);background:var(--blu-bg)}
 .src-link:last-child{margin-bottom:0}
 .src-arrow{font-size:14px;color:var(--blu);flex-shrink:0}
+.src-info{min-width:0}
 .src-info b{display:block;font-size:12px;margin-bottom:2px}
 .src-info small{font-size:10px;color:var(--sub)}
 
@@ -1264,6 +1265,35 @@ const CAT_LABEL={leader:'리더 이탈',outflow:'인재 유출',hiring:'채용 �
 const LV_CLS={A:'lv-a',B:'lv-b',C:'lv-c'};
 const URG_COLOR={high:'var(--red)',mid:'var(--amb)',low:'var(--sub)'};
 
+function escapeRegExp(v){
+  return String(v||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+}
+function escapeHtml(v){
+  return String(v??'').replace(/[&<>"']/g,ch=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[ch]));
+}
+function cleanBodyText(v){
+  const el=document.createElement('div');
+  el.innerHTML=String(v||'');
+  return el.textContent.replace(/\s+/g,' ').trim();
+}
+function cleanDisplayTitle(title,company='',sources=[]){
+  let t=String(title||'').trim();
+  (sources||[]).map(s=>s&&s.name).filter(Boolean).forEach(name=>{
+    t=t.replace(new RegExp('\\s[-–—]\\s'+escapeRegExp(name)+'\\s*$','i'),'').trim();
+  });
+  t=t.replace(/\s[-–—]\s[가-힣A-Za-z0-9 .·&]{2,24}(뉴스|경제|신문|일보|방송|저널|투데이|데일리|타임즈|미디어|News|Daily|Times)?\s*$/i,'').trim();
+  const c=String(company||'').trim();
+  if(c){
+    t=t.replace(new RegExp('^'+escapeRegExp(c)+'\\s*[,，:：·]\\s*','i'),'').trim();
+  }
+  return t;
+}
+function displayTitle(e){
+  return cleanDisplayTitle(e.title,e.company,e.sources)||e.title||e.signal||'';
+}
+
 /* ── 즉시주목 (기업 중복 제거) ── */
 function renderUrgent(){
   // 즉시주목 = "인재 이탈 가능성이 높은 기업 — 컨택 권장"
@@ -1293,8 +1323,8 @@ function renderUrgent(){
     ? '<div style="font-size:12px;color:var(--muted);padding:4px 0">현재 즉시 주목 이슈 없음</div>'
     : list.map(e=>`
     <button type="button" class="urgent-item" onclick="event.preventDefault();openModal('${e.id}');return false;">
-      <span class="urgent-co">${e.company}</span>
-      <span class="urgent-ttl">${e.title}</span>
+      <span class="urgent-co">${escapeHtml(e.company)}</span>
+      <span class="urgent-ttl">${escapeHtml(displayTitle(e))}</span>
       <span style="font-size:9px;color:var(--sub);flex-shrink:0">${e.date.slice(5)}</span>
     </button>`).join('');
 }
@@ -1329,6 +1359,7 @@ function renderFeed(){
   }
   let html='';
   list.forEach(e=>{
+    const title=escapeHtml(displayTitle(e));
     const urgBadge=e.urgency==='high'
       ?'<span style="font-size:9px;font-weight:800;color:var(--red);background:var(--red-bg);padding:1px 5px;border-radius:4px">긴급</span>'
       :e.urgency==='mid'
@@ -1341,9 +1372,9 @@ function renderFeed(){
         <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level}</span>
         <span class="card-time">${e.date} ${e.time}</span>
       </div>
-      <h3>${e.company} · ${e.title}</h3>
-      <p>${e.body}</p>
-      <div class="hashes">${(e.tags||[]).map(t=>'<span class="hash">#'+t+'</span>').join('')}</div>
+      <h3>${escapeHtml(e.company)} · ${title}</h3>
+      <p>${escapeHtml(cleanBodyText(e.body))}</p>
+      <div class="hashes">${(e.tags||[]).map(t=>'<span class="hash">#'+escapeHtml(t)+'</span>').join('')}</div>
     </article>`;
   });
   el.innerHTML=html;
@@ -1397,7 +1428,7 @@ function renderComp(){
 /* ── MODAL ── */
 function openModal(id){
   const e=ENTRIES.find(x=>x.id===id);if(!e)return;
-  document.getElementById('mTitle').textContent=`${e.company} · ${e.title}`;
+  document.getElementById('mTitle').textContent=`${e.company} · ${displayTitle(e)}`;
   document.getElementById('mMeta').innerHTML=`
     <span class="tag cat-${e.cat}">${CAT_LABEL[e.cat]}</span>
     <span class="tag ${LV_CLS[e.level]}">신뢰도 ${e.level}</span>
@@ -1428,23 +1459,23 @@ function openModal(id){
     </div>
     <div class="info-block">
       <h4>📋 이슈 요약</h4>
-      <p>${e.body}</p>
+      <p>${escapeHtml(cleanBodyText(e.body))}</p>
     </div>
     <div class="info-block insight">
       <h4>💡 채용 담당자 인사이트</h4>
-      <p>${e.insight}</p>
+      <p>${escapeHtml(e.insight)}</p>
     </div>
     <div class="info-block action">
       <h4>✅ 추천 액션</h4>
-      <p>${e.action}</p>
+      <p>${escapeHtml(e.action)}</p>
     </div>
     <div class="info-block sources">
       <h4>🔗 출처 — 클릭하면 원문으로 이동해요</h4>
       ${e.sources.map(s=>`
-        <a class="src-link" href="${s.url}" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+        <a class="src-link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation();">
           <span class="src-arrow">↗</span>
           <div class="src-info">
-            <b>${s.name}</b>
+            <b>${escapeHtml(s.name)}</b>
             <small>신뢰도 ${s.level} · ${{A:'공시·공식자료',B:'주요 언론·전문지',C:'커뮤니티·검색 — 2차 확인 권장'}[s.level]||''}</small>
           </div>
         </a>`).join('')}
@@ -1501,6 +1532,7 @@ async function loadLatestData(){
       const items = report.items || [];
       for(const item of items){
         if(existingIds.has(item.id)) continue;
+        const sources=(item.sources||[]).filter(s=>s.url&&!s.url.includes('search.naver.com'));
         // data.json 필드 → ENTRIES 필드 매핑
         ENTRIES.push({
           id:      item.id,
@@ -1512,12 +1544,12 @@ async function loadLatestData(){
           company: item.company||'',
           signal:  item.signal||'',
           level:   item.level||'B',
-          title:   item.title||'',
-          body:    item.body||'',
+          title:   cleanDisplayTitle(item.title||'',item.company||'',sources),
+          body:    cleanBodyText(item.body||''),
           insight: item.insight||'',
           action:  item.action||'',
           tags:    item.tags||[],
-          sources: (item.sources||[]).filter(s=>s.url&&!s.url.includes('search.naver.com'))
+          sources
         });
         existingIds.add(item.id);
         added++;
