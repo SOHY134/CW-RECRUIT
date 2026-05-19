@@ -51,8 +51,75 @@ ACTION_BY_CAT = {
     "leader": "{company}의 리더십 변동 후속 조직개편 가능성을 보고, 해당 리더 직속 조직과 핵심 실무 리더의 이동 경로를 추적하세요.",
     "hiring": "{company}가 선점하려는 직군을 확인하고, 우리 채용 포지션과 겹치는 후보자군의 제안 메시지와 보상 경쟁력을 점검하세요.",
     "foreign": "국내 유사 직군에 미칠 영향을 분리해 보고, 외국계·글로벌 플랫폼 출신 후보자 풀을 모니터링하세요.",
-    "hr": "제도 변화가 채용 운영, 근로조건 안내, 후보자 FAQ에 미칠 영향을 정리해 내부 채용 커뮤니케이션에 반영하세요.",
+    "hr": "노사·노무·제도 변화가 조직 안정성과 근로조건 커뮤니케이션에 미칠 영향을 정리하고 관련 실무 리스크를 점검하세요.",
 }
+
+EVENT_RULES = [
+    {
+        "needles": ["희망퇴직", "권고사직", "구조조정", "감원", "인력 감축", "정리해고"],
+        "event": "{company} 인력 조정",
+        "subtitle": "핵심 인재 이동 가능성 확대",
+        "summary": "{company}에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다.",
+        "insight": "{company}의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+        "action": "{company} 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+    },
+    {
+        "needles": ["매각", "인수", "M&A", "인수합병"],
+        "event": "{company} 매각 이슈",
+        "subtitle": "조직 불확실성에 따른 이탈 리스크 주시",
+        "summary": "{company}에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다.",
+        "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. {company}의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+        "action": "{company} 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+    },
+    {
+        "needles": ["회생", "법정관리", "워크아웃", "유동성", "경영난", "생존 경고등", "실적 부진", "적자"],
+        "event": "{company} 경영 리스크",
+        "subtitle": "조직 안정성 저하와 인재 이탈 가능성 점검",
+        "summary": "{company}의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다.",
+        "insight": "{company}의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+        "action": "{company}의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+    },
+    {
+        "needles": ["CEO", "대표", "대표이사", "CTO", "CPO", "CISO", "CFO", "CHRO", "창업자", "공동 창업자", "공동창업자", "임원"],
+        "event": "{company} 리더십 변화",
+        "subtitle": "후속 조직개편과 직속 조직 이동 주시",
+        "summary": "{company}의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다.",
+        "insight": "{company} 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+        "action": "{company}의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+    },
+    {
+        "needles": ["대규모 채용", "채용 확대", "채용 드라이브", "인재 확보", "공채", "세 자릿수 채용", "두 자릿수 채용"],
+        "event": "{company} 채용 확대",
+        "subtitle": "동일 직군 후보자 확보 경쟁 심화",
+        "summary": "{company}의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다.",
+        "insight": "{company}의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+        "action": "{company} 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+    },
+    {
+        "needles": ["파업", "노사갈등", "임금협상", "단체교섭", "긴급조정"],
+        "event": "{company} 노사갈등",
+        "subtitle": "조직 안정성 및 핵심 인력 이탈 가능성 점검",
+        "summary": "{company}의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다.",
+        "insight": "{company}의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+        "action": "{company} 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+    },
+    {
+        "needles": ["육아휴직", "최저임금", "근로기준법", "노동법", "포괄임금", "근로자의 날", "노동절", "공휴일", "주4일제"],
+        "event": "HR 제도 변화",
+        "subtitle": "근로조건 커뮤니케이션 업데이트 필요",
+        "summary": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다.",
+        "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+        "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+    },
+    {
+        "needles": ["layoff", "job cuts", "workforce reduction", "hiring freeze"],
+        "event": "{company} 글로벌 인력 조정",
+        "subtitle": "국내 유사 직군 영향 모니터링",
+        "summary": "{company}의 글로벌 인력 조정 이슈가 확인됐습니다. 국내 직접 영향은 별도 확인이 필요하지만 유사 직군 수급 변화 가능성은 모니터링할 만합니다.",
+        "insight": "글로벌 인력 조정은 외국계와 플랫폼 직군의 후보자 이동성을 높일 수 있습니다. 국내 지사와 유사 직군 채용 흐름을 함께 확인하세요.",
+        "action": "국내 지사, 외국계 출신 후보자, 글로벌 플랫폼 경험자의 이동 신호를 분리해 추적하고 관련 포지션 후보자 풀을 갱신하세요.",
+    },
+]
 
 
 def clean_text(value: str) -> str:
@@ -118,47 +185,66 @@ def infer_company(card: dict) -> str:
     return detected or "시장 동향"
 
 
+def context_text(card: dict) -> str:
+    return " ".join([
+        clean_text(card.get("company", "")),
+        clean_text(card.get("title", "")),
+        clean_text(card.get("body", "")),
+        clean_text(card.get("signal", "")),
+        " ".join(clean_text(tag) for tag in card.get("tags", [])),
+    ]).lower()
+
+
+def direct_rule(card: dict) -> dict:
+    company = infer_company(card)
+    text = context_text(card)
+    for rule in EVENT_RULES:
+        if any(needle.lower() in text for needle in rule["needles"]):
+            return rule
+    cat = card.get("cat")
+    if cat == "leader":
+        return EVENT_RULES[3]
+    if cat == "hiring":
+        return EVENT_RULES[4]
+    if cat == "foreign":
+        return EVENT_RULES[7]
+    if cat == "hr":
+        return EVENT_RULES[6]
+    return EVENT_RULES[0]
+
+
+def render_template(template: str, company: str) -> str:
+    if company == "시장 동향":
+        return template.replace("{company} ", "").replace("{company}", "시장")
+    return template.format(company=company)
+
+
+def intelligence_title(card: dict) -> str:
+    company = infer_company(card)
+    rule = direct_rule(card)
+    main = render_template(rule["event"], company)
+    sub = render_template(rule["subtitle"], company)
+    return f"{main} - {sub}"[:86]
+
+
 def compact_summary(card: dict) -> str:
     company = infer_company(card)
-    title = clean_title(card.get("title", ""), company, card.get("sources", []))
-    signal = clean_text(card.get("signal", ""))
-    keyword = signal.split("·")[-1].strip() if "·" in signal else signal
-    if card.get("cat") == "outflow":
-        lead = f"{company}에서 {keyword or '인력 변동'} 이슈가 포착됐습니다."
-        tail = "핵심 인재의 이직 탐색 가능성을 열어두고 관련 직군을 확인할 필요가 있습니다."
-    elif card.get("cat") == "leader":
-        lead = f"{company}의 리더십 변동 신호가 확인됐습니다."
-        tail = "후속 조직개편이나 직속 조직의 연쇄 이동 가능성을 함께 추적해야 합니다."
-    elif card.get("cat") == "hiring":
-        lead = f"{company}의 채용 확대 움직임이 확인됐습니다."
-        tail = "동일 후보자 풀에서 경쟁이 커질 수 있어 채용 메시지와 접촉 속도 점검이 필요합니다."
-    elif card.get("cat") == "foreign":
-        lead = "해외·외국계 채용시장 변화가 확인됐습니다."
-        tail = "국내 유사 직군과 외국계 후보자 수급에 미칠 영향을 모니터링하세요."
-    else:
-        lead = "HR·노무 관련 변화가 확인됐습니다."
-        tail = "채용 운영과 후보자 안내에 반영할 실무 체크포인트를 정리하세요."
-    return f"{lead} {title}. {tail}"[:230]
+    rule = direct_rule(card)
+    original = clean_title(card.get("title", ""), company, card.get("sources", []))
+    summary = render_template(rule["summary"], company)
+    if original:
+        summary = f"{summary} 원문 이슈: {original}."
+    return summary[:230]
 
 
 def insight_for(card: dict) -> str:
     company = infer_company(card)
-    cat = card.get("cat", "hr")
-    if cat == "outflow":
-        return f"{company}의 구조조정·매각·실적 악화 신호는 핵심 인재가 이직 탐색을 시작할 가능성을 높입니다. 동일 업권의 개발, PM, 커머스 운영 인재를 우선 추적하세요."
-    if cat == "leader":
-        return f"{company}의 대표·임원급 이동은 후속 조직개편과 팀 단위 이탈의 선행 신호가 될 수 있습니다. 리더 직속 조직의 핵심 실무자를 함께 확인하세요."
-    if cat == "hiring":
-        return f"{company}의 채용 확대는 동일 후보자 풀 경쟁을 키울 수 있습니다. 우리 포지션과 겹치는 직군의 제안 속도와 메시지를 점검하세요."
-    if cat == "foreign":
-        return "글로벌 감원·M&A·채용 변화는 국내 외국계 및 유사 직군 수급에 후행 영향을 줄 수 있습니다. 한국 시장 영향 가능성을 별도로 모니터링하세요."
-    return "HR·노무·제도 변화는 채용 조건 안내와 후보자 커뮤니케이션에 직접 영향을 줄 수 있습니다. 실무 적용 항목을 빠르게 정리하세요."
+    return render_template(direct_rule(card)["insight"], company)[:220]
 
 
 def action_for(card: dict) -> str:
     company = infer_company(card)
-    template = ACTION_BY_CAT.get(card.get("cat"), ACTION_BY_CAT["hr"])
-    return template.format(company=company)[:220]
+    return render_template(direct_rule(card)["action"], company)[:220]
 
 
 def quality_key(card: dict) -> str:
@@ -183,7 +269,8 @@ def normalize_card(card: dict) -> dict:
     out = deepcopy(card)
     out.pop("ai" + "_audit", None)
     out["company"] = infer_company(out)
-    out["title"] = clean_title(out.get("title", ""), out["company"], out.get("sources", []))
+    out["raw_title"] = clean_title(out.get("raw_title") or out.get("title", ""), out["company"], out.get("sources", []))
+    out["title"] = intelligence_title(out)
     out["body"] = compact_summary(out)
     out["insight"] = insight_for(out)
     out["action"] = action_for(out)
