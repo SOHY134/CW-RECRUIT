@@ -1223,6 +1223,32 @@ function addDays(ds,days){
   return new Intl.DateTimeFormat('sv-SE',{timeZone:KST}).format(d);
 }
 
+function latestDataDate(){
+  return DATA_DATES[DATA_DATES.length-1]||LAST_DATE;
+}
+function itemKey(e){
+  const title=displayTitle(e).replace(/\s-\s.+$/,'').replace(/[^\w가-힣]+/g,'').slice(0,28);
+  return [e.cat,e.company.replace(/\s/g,''),title].join('|');
+}
+function companyKey(e){
+  return e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,12);
+}
+function getThirtyDayPool(){
+  const end=latestDataDate();
+  const start=addDays(end,-30);
+  const seen=new Set();
+  return ENTRIES
+    .filter(e=>e.date>=start&&e.date<=end)
+    .filter(e=>(e.sources||[]).some(s=>s.url))
+    .sort((a,b)=>calcScore(b)-calcScore(a)||b.date.localeCompare(a.date))
+    .filter(e=>{
+      const key=itemKey(e);
+      if(seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
 function ensureMinimumDailyItems(list){
   if(selRange.type!=='daily'||list.length>=3) return list;
   const seen=new Set(list.map(e=>e.id));
@@ -1301,7 +1327,7 @@ function renderUrgent(){
   //   - cat=leader, priority=true (리더이탈 → 팀이탈 연쇄 가능)
   //   - cat=outflow, priority=true, urgency=high (대규모 권고사직·구조조정)
   // 정렬: 최신 날짜 우선 → 같은 날짜면 점수 순
-  const pool=getFiltered()
+  const pool=getThirtyDayPool()
     .filter(e=>{
       if(!e.priority) return false;
       if(e.cat==='leader') return true;
@@ -1314,7 +1340,7 @@ function renderUrgent(){
     );
   const seen=new Set(), list=[];
   for(const e of pool){
-    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+    const key=companyKey(e);
     if(seen.has(key)) continue;
     seen.add(key); list.push(e);
     if(list.length>=6) break;
@@ -1384,8 +1410,8 @@ function renderFeed(){
 function renderRanks(){
   // 인재 유출: 기업별 최고 점수 항목만
   const outflowMap=new Map();
-  getFiltered().filter(e=>e.cat==='outflow').forEach(e=>{
-    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+  getThirtyDayPool().filter(e=>e.cat==='outflow').forEach(e=>{
+    const key=companyKey(e);
     if(!outflowMap.has(key)||calcScore(e)>calcScore(outflowMap.get(key)))
       outflowMap.set(key,e);
   });
@@ -1394,14 +1420,14 @@ function renderRanks(){
     ?outflow.map((e,i)=>`
     <button type="button" onclick="event.preventDefault();openModal('${e.id}');return false;">
       <span class="rk">${i+1}</span>
-      <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
+      <span style="flex:1"><div class="rank-co">${escapeHtml(e.company)}</div><div class="rank-sig">${escapeHtml(displayTitle(e))}</div></span>
     </button>`).join('')
     :'<div style="font-size:11px;color:var(--muted);padding:6px">수집된 데이터 없음</div>';
 
   // 리더 이탈: 기업별 최고 점수 항목만
   const leaderMap=new Map();
-  getFiltered().filter(e=>e.cat==='leader').forEach(e=>{
-    const key=e.company.split(/[··]/)[0].replace(/\s/g,'').slice(0,8);
+  getThirtyDayPool().filter(e=>e.cat==='leader').forEach(e=>{
+    const key=companyKey(e);
     if(!leaderMap.has(key)||calcScore(e)>calcScore(leaderMap.get(key)))
       leaderMap.set(key,e);
   });
@@ -1410,7 +1436,7 @@ function renderRanks(){
     ?leaders.map((e,i)=>`
     <button type="button" onclick="event.preventDefault();openModal('${e.id}');return false;">
       <span class="rk">${i+1}</span>
-      <span style="flex:1"><div class="rank-co">${e.company}</div><div class="rank-sig">${e.signal}</div></span>
+      <span style="flex:1"><div class="rank-co">${escapeHtml(e.company)}</div><div class="rank-sig">${escapeHtml(displayTitle(e))}</div></span>
     </button>`).join('')
     :'<div style="font-size:11px;color:var(--muted);padding:6px">수집된 데이터 없음</div>';
 }

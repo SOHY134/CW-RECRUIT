@@ -254,6 +254,13 @@ def quality_key(card: dict) -> str:
     return f"{card.get('cat')}|{company}|{tokens[:48]}"
 
 
+def event_key(card: dict) -> str:
+    company = infer_company(card)
+    rule = direct_rule(card)
+    event = render_template(rule["event"], company)
+    return f"{card.get('cat')}|{company}|{event}"
+
+
 def is_meaningful(card: dict) -> bool:
     title = clean_title(card.get("title", ""), card.get("company", ""), card.get("sources", []))
     if len(title) < 8:
@@ -291,7 +298,7 @@ def host_label(url: str) -> str:
 def dedupe_cards(cards: list[dict], limit: int | None = None) -> list[dict]:
     selected: list[dict] = []
     seen_urls: set[str] = set()
-    seen_comp_cat: set[tuple[str, str]] = set()
+    seen_events: set[str] = set()
     seen_titles: list[str] = []
     for raw in cards:
         card = normalize_card(raw)
@@ -299,16 +306,16 @@ def dedupe_cards(cards: list[dict], limit: int | None = None) -> list[dict]:
             continue
         urls = {src.get("url") for src in card.get("sources", []) if src.get("url")}
         title = card.get("title", "")
-        comp_cat = (card.get("company", ""), card.get("cat", ""))
+        event = event_key(card)
         if urls & seen_urls:
             continue
-        if comp_cat in seen_comp_cat and card.get("cat") in {"outflow", "leader", "hiring"}:
+        if event in seen_events:
             continue
         if any(fuzz.token_set_ratio(title, old) >= 88 for old in seen_titles):
             continue
         selected.append(card)
         seen_urls.update(urls)
-        seen_comp_cat.add(comp_cat)
+        seen_events.add(event)
         seen_titles.append(title)
         if limit and len(selected) >= limit:
             break
