@@ -114,10 +114,10 @@
         "raw_title": "전국 채용 드라이브 …평택·대구서 물류 인재 확보 ..."
       },
       {
-        "id": "20260519-f8417a92f3",
-        "date": "2026-05-19",
+        "id": "20260520-dad6cf1d8f",
+        "date": "2026-05-20",
         "collected_date": "2026-05-20",
-        "time": "17:46",
+        "time": "19:01",
         "cat": "hr",
         "priority": false,
         "urgency": "high",
@@ -139,18 +139,18 @@
         "sources": [
           {
             "name": "네이버뉴스",
-            "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=841187",
+            "url": "https://n.news.naver.com/mnews/article/003/0013957897?sid=100",
             "level": "B",
             "verified": true,
             "verify_note": "HTTP 200",
             "http_status": 200,
-            "original_url": "https://www.newsworks.co.kr/news/articleView.html?idxno=841187"
+            "original_url": "https://n.news.naver.com/mnews/article/003/0013957897?sid=100"
           }
         ],
-        "raw_title": "성장률 하락 경고…삼성 노사는 '비메모리 성과..."
+        "raw_title": "삼성 파업 위기에 \" 노조 이익 관철 적정선 있어\" 제동… 긴급 ..."
       },
       {
-        "id": "20260520-carry-5-20260520-carry-5-20260520-carry-5-20260520-carry-1-e_0517_a",
+        "id": "20260520-carry-5-20260520-carry-5-20260520-carry-5-20260520-carry-5-20260520-carry-1-e_0517_a",
         "date": "2026-05-17",
         "time": "09:00",
         "cat": "outflow",
