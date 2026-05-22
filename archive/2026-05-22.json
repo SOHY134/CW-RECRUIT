@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-22",
+  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
+  "contact_targets": [
+    "메타",
+    "딜리버리히어로"
+  ],
+  "items": [
+    {
+      "id": "20260519-694c5ec0b9",
+      "date": "2026-05-19",
+      "collected_date": "2026-05-22",
+      "time": "08:45",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "메타",
+      "signal": "인재 유출 가능성 · 감원",
+      "level": "B",
+      "title": "메타 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "메타에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 메타 인력 조정.",
+      "insight": "메타의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "메타 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "메타 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "감원",
+        "score:123"
+      ],
+      "sources": [
+        {
+          "name": "IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51MXJ2OEJDTEhyOGM5WjFmamhZQngwLUtuOHpINW84bVlTRWYtN0NEeDZpMWhVZ08xQ0xYZ0c0S2N0OUttUG54N3Q0Y0E1TjZsUzNBMV9GTlFPOWkzbjU3dG1sWDdzUTZXTDRhMmRYbmPSAXRBVV95cUxOdFdoaHhPV0czS3dWdzN3Y05yODVmekwxY3lnQldzeDZTWG4wS2plc1BYSHpUTmlUZjJDaXBjc3pBb19aRUQ3VUNwX0U1eURTbWxDckNvU2dSTXNuNU5xdGgtSEtwNDFlQVdSTklqbVNUdHoxSg?oc=5"
+        }
+      ],
+      "raw_title": "10% 감원 통보… 직원 7천명 AI 조직 재배치"
+    },
+    {
+      "id": "20260522-ac5dc8b3e3",
+      "date": "2026-05-22",
+      "collected_date": "2026-05-22",
+      "time": "07:02",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "low",
+      "company": "딜리버리히어로",
+      "signal": "리더 이동 신호 · 사임",
+      "level": "B",
+      "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "사임",
+        "score:102"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.investchosun.com/site/data/html_dir/2026/05/21/2026052180169.html",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.investchosun.com/site/data/html_dir/2026/05/21/2026052180169.html"
+        }
+      ],
+      "raw_title": "[Invest]모회사로 떠난 우버, 네이버도 굳이?…동력 약해진 배민 매각"
+    },
+    {
+      "id": "20260517-81c8453e03",
+      "date": "2026-05-17",
+      "collected_date": "2026-05-22",
+      "time": "12:58",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "쿠팡",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "쿠팡 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 쿠팡 채용 확대.",
+      "insight": "쿠팡의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "score:100"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.newspim.com/news/view/20260517000077",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.newspim.com/news/view/20260517000077"
+        }
+      ],
+      "raw_title": "전국 채용 드라이브 …평택·대구서 물류 인재 확보 ..."
+    },
+    {
+      "id": "20260522-e208e30811",
+      "date": "2026-05-22",
+      "collected_date": "2026-05-22",
+      "time": "06:34",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=234542",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.labortoday.co.kr/news/articleView.html?idxno=234542"
+        }
+      ],
+      "raw_title": "[삼성전자 임협] 성과급 중심 임금, 무 노조 역사가 '부메랑'으로"
+    },
+    {
+      "id": "20260521-51e3d89500",
+      "date": "2026-05-21",
+      "collected_date": "2026-05-22",
+      "time": "18:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "삼성전자의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 삼성전자 리더십 변화.",
+      "insight": "삼성전자 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "삼성전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "삼성전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260521010006517",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.asiatoday.co.kr/kn/view.php?key=20260521010006517"
+        }
+      ],
+      "raw_title": "'진보= 노조 편' 공식 깼다…李, 실용주의로 노사 합의 지원사격"
+    }
+  ]
+}
