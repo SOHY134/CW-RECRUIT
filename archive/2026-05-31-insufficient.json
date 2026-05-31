@@ -1,0 +1,151 @@
+{
+  "date": "2026-05-31",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "딜리버리히어로"
+  ],
+  "items": [
+    {
+      "id": "20260528-8203787a7b",
+      "date": "2026-05-28",
+      "collected_date": "2026-05-31",
+      "time": "15:24",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "딜리버리히어로",
+      "signal": "리더 이동 신호 · 공동 창업자",
+      "level": "B",
+      "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "공동 창업자",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/030/0003432337?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/030/0003432337?sid=101"
+        }
+      ],
+      "raw_title": "투자동력 꺼지나"
+    },
+    {
+      "id": "20260527-669cd9f865",
+      "date": "2026-05-27",
+      "collected_date": "2026-05-31",
+      "time": "08:44",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "잡코리아 AI 잡스",
+      "signal": "공격적 채용 신호 · AI 인재",
+      "level": "B",
+      "title": "잡코리아 AI 잡스 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "잡코리아 AI 잡스의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 잡코리아 AI 잡스 채용 확대.",
+      "insight": "잡코리아 AI 잡스의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "잡코리아 AI 잡스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "잡코리아 AI 잡스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "AI 인재 경쟁",
+      "tags": [
+        "채용 확대",
+        "AI 인재 경쟁",
+        "AI 인재",
+        "score:70"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.beyondpost.co.kr/view.php?ud=20260527083944730846a9e4dd7f_30",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.beyondpost.co.kr/view.php?ud=20260527083944730846a9e4dd7f_30"
+        }
+      ],
+      "raw_title": "누적 지원 800만건 기록"
+    },
+    {
+      "id": "20260528-3093149edb",
+      "date": "2026-05-28",
+      "collected_date": "2026-05-31",
+      "time": "19:34",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "카카오페이",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "카카오페이 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "카카오페이의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 카카오페이 노사갈등.",
+      "insight": "카카오페이의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:98"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.kyeongin.com/article/1764498",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.kyeongin.com/article/1764498"
+        }
+      ],
+      "raw_title": "카카오노조 결국 파업 카드… ‘성과급 전쟁’ 번졌다"
+    },
+    {
+      "id": "20260527-6f14d61800",
+      "date": "2026-05-27",
+      "collected_date": "2026-05-31",
+      "time": "10:02",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://news.inochong.org/detail.php?number=6469&thread=14",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://news.inochong.org/detail.php?number=6469&thread=14"
+        }
+      ],
+      "raw_title": "도급제 노동자 등 확대 방안"
+    }
+  ]
+}
