@@ -41,75 +41,76 @@
       "raw_title": "투자동력 꺼지나"
     },
     {
-      "id": "20260528-3093149edb",
-      "date": "2026-05-28",
+      "id": "20260604-b4024f67c1",
+      "date": "2026-06-04",
       "collected_date": "2026-06-04",
-      "time": "19:34",
+      "time": "13:35",
       "cat": "hr",
       "priority": false,
       "urgency": "high",
-      "company": "카카오페이",
-      "signal": "HR/노무 변화 · 파업",
-      "level": "B",
-      "title": "카카오페이 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
-      "body": "카카오페이의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 카카오페이 노사갈등.",
-      "insight": "카카오페이의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
-      "action": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
-      "contact_strategy": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
-      "subcategory": "노무 리스크",
-      "tags": [
-        "HR NEWS",
-        "노무 리스크",
-        "파업",
-        "score:93"
-      ],
-      "sources": [
-        {
-          "name": "네이버뉴스",
-          "url": "https://www.kyeongin.com/article/1764498",
-          "level": "B",
-          "verified": true,
-          "verify_note": "HTTP 200",
-          "http_status": 200,
-          "original_url": "https://www.kyeongin.com/article/1764498"
-        }
-      ],
-      "raw_title": "카카오노조 결국 파업 카드… ‘성과급 전쟁’ 번졌다"
-    },
-    {
-      "id": "20260602-9800d6dc36",
-      "date": "2026-06-02",
-      "collected_date": "2026-06-04",
-      "time": "15:00",
-      "cat": "hr",
-      "priority": false,
-      "urgency": "low",
       "company": "시장 동향",
-      "signal": "HR/노무 변화 · 노조",
+      "signal": "HR/노무 변화 · 근로기준법 개정",
       "level": "B",
       "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
       "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
       "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
       "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
       "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
-      "subcategory": "HR NEWS",
+      "subcategory": "제도 변화",
       "tags": [
         "HR NEWS",
-        "노조",
-        "score:47"
+        "제도 변화",
+        "근로기준법 개정",
+        "score:73"
       ],
       "sources": [
         {
           "name": "네이버뉴스",
-          "url": "https://n.news.naver.com/mnews/article/003/0013982357?sid=102",
+          "url": "https://n.news.naver.com/mnews/article/003/0013987092?sid=102",
           "level": "B",
           "verified": true,
           "verify_note": "HTTP 200",
           "http_status": 200,
-          "original_url": "https://n.news.naver.com/mnews/article/003/0013982357?sid=102"
+          "original_url": "https://n.news.naver.com/mnews/article/003/0013987092?sid=102"
         }
       ],
-      "raw_title": "[李정부 1년]산재사망·체불 동반 감소…'노란봉투법' 안착은 숙제"
+      "raw_title": "\"배달라이더도 최저임금 을\"…민주노총, 노동부 앞서 농성"
+    },
+    {
+      "id": "20260603-994699795b",
+      "date": "2026-06-03",
+      "collected_date": "2026-06-04",
+      "time": "21:01",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/024/0000105984?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/024/0000105984?sid=101"
+        }
+      ],
+      "raw_title": "반도체 ‘잭팟’…행복의 나라?"
     }
   ]
 }
