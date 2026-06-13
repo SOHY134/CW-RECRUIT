@@ -1,0 +1,150 @@
+{
+  "date": "2026-06-13",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "정용진"
+  ],
+  "items": [
+    {
+      "id": "20260608-b3f6687211",
+      "date": "2026-06-08",
+      "collected_date": "2026-06-13",
+      "time": "16:40",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "정용진",
+      "signal": "리더 이동 신호 · 대표이사",
+      "level": "B",
+      "title": "정용진 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "정용진의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 정용진 리더십 변화.",
+      "insight": "정용진 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "정용진의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "정용진의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "대표이사",
+        "score:100"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://dealsite.co.kr/articles/163167",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://dealsite.co.kr/articles/163167"
+        }
+      ],
+      "raw_title": "13년 만에 등기 이사 복귀…정면돌파 택했다"
+    },
+    {
+      "id": "20260611-43b9d6280b",
+      "date": "2026-06-11",
+      "collected_date": "2026-06-13",
+      "time": "15:26",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "삼성전자",
+      "signal": "공격적 채용 신호 · 개발자 채용",
+      "level": "B",
+      "title": "삼성전자 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "삼성전자의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 삼성전자 채용 확대.",
+      "insight": "삼성전자의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "삼성전자 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "삼성전자 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "개발자 채용",
+        "score:75"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.econonews.co.kr/news/articleView.html?idxno=439569",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.econonews.co.kr/news/articleView.html?idxno=439569"
+        }
+      ],
+      "raw_title": "대학생 SW 인재 찾는다…'SCPC 2026' 참가자 모집"
+    },
+    {
+      "id": "20260610-a97b41ff22",
+      "date": "2026-06-10",
+      "collected_date": "2026-06-13",
+      "time": "11:18",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "카카오페이",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "카카오페이 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "카카오페이의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 카카오페이 노사갈등.",
+      "insight": "카카오페이의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "카카오페이 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:98"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.insight.co.kr/news/557882",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.insight.co.kr/news/557882"
+        }
+      ],
+      "raw_title": "1천만원 성과급 요구에 판교 행진...소상공인·파트너..."
+    },
+    {
+      "id": "20260612-1888cf9fbb",
+      "date": "2026-06-12",
+      "collected_date": "2026-06-13",
+      "time": "11:12",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=313486",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.wolyo.co.kr/news/articleView.html?idxno=313486"
+        }
+      ],
+      "raw_title": "민주노총 \" 최저임금 위, 870만 특고·플랫폼 노동자 외면\""
+    }
+  ]
+}
