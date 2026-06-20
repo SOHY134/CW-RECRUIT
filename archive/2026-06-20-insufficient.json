@@ -1,0 +1,149 @@
+{
+  "date": "2026-06-20",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260617-380e8c88d4",
+      "date": "2026-06-17",
+      "collected_date": "2026-06-20",
+      "time": "09:15",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "쿠팡",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "쿠팡 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 쿠팡 채용 확대.",
+      "insight": "쿠팡의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "통신일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xY0RPemZHbHpWQzFDNzlVMXZBenpTVklnQ3V6eTl3OXFseGpSZDdSOGs1aTN0WUt4WFBZS3hocFZyUi1pUXR0T2xPVDZaOUR3clBPc0ZuU1Yzam83YTJRWlVZMXp1UQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xY0RPemZHbHpWQzFDNzlVMXZBenpTVklnQ3V6eTl3OXFseGpSZDdSOGs1aTN0WUt4WFBZS3hocFZyUi1pUXR0T2xPVDZaOUR3clBPc0ZuU1Yzam83YTJRWlVZMXp1UQ?oc=5"
+        }
+      ],
+      "raw_title": "··청년 인재 확보 추진"
+    },
+    {
+      "id": "20260619-06a71e3713",
+      "date": "2026-06-19",
+      "collected_date": "2026-06-20",
+      "time": "11:06",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "ILO",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "ILO 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "ILO의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: ILO 노사갈등.",
+      "insight": "ILO의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "ILO 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "ILO 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.worklaw.co.kr/main2022/view/view.asp?accessSite=Naver&accessMethod=Search&accessMenu=News&in_cate=124&in_cate2=0&gopage=1&bi_pidx=39271",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.worklaw.co.kr/view/view.asp?accessSite=Naver&accessMethod=Search&accessMenu=News&in_cate=124&in_cate2=0&gopage=1&bi_pidx=39271"
+        }
+      ],
+      "raw_title": "플랫폼 노동 보호 첫 국제 기준 채택…국내 비준 가능성은?"
+    },
+    {
+      "id": "20260617-8a699c5d92",
+      "date": "2026-06-17",
+      "collected_date": "2026-06-20",
+      "time": "17:52",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "모두를 위한 최저임금 인천운동본부",
+      "signal": "HR/노무 변화 · 근로기준법 개정",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "제도 변화",
+      "tags": [
+        "HR NEWS",
+        "제도 변화",
+        "근로기준법 개정",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://worknworld.kctu.org/news/articleView.html?idxno=509451",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://worknworld.kctu.org/news/articleView.html?idxno=509451"
+        }
+      ],
+      "raw_title": "\"월급 빼고 다 올랐다! 올려라 최..."
+    },
+    {
+      "id": "20260616-0ccd936600",
+      "date": "2026-06-16",
+      "collected_date": "2026-06-20",
+      "time": "06:34",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "삼성전자의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 삼성전자 리더십 변화.",
+      "insight": "삼성전자 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "삼성전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "삼성전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=235117",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.labortoday.co.kr/news/articleView.html?idxno=235117"
+        }
+      ],
+      "raw_title": "저렴한 정치"
+    }
+  ]
+}
