@@ -1,0 +1,152 @@
+{
+  "date": "2026-06-28",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "홍석현"
+  ],
+  "items": [
+    {
+      "id": "20260622-f812b834f0",
+      "date": "2026-06-22",
+      "collected_date": "2026-06-28",
+      "time": "09:28",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "AI 인재 채용",
+      "signal": "공격적 채용 신호 · AI 인재",
+      "level": "B",
+      "title": "AI 인재 채용 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "AI 인재 채용의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: AI 인재 채용 채용 확대.",
+      "insight": "AI 인재 채용의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "AI 인재 채용 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "AI 인재 채용 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "AI 인재 경쟁",
+      "tags": [
+        "채용 확대",
+        "AI 인재 경쟁",
+        "AI 인재",
+        "score:70"
+      ],
+      "sources": [
+        {
+          "name": "테크42",
+          "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOeXZwV3VWbkhaaWlMbnV2YXRmai1oWlF3QzhfLWNpQWszUHg5dzFnTkpPc0NvOEpNQllHbTdPU3B4UW9NN2tlM2xYeExlTEFGakE2dEhxcy1EMGwxWi1DRHZxLXlUaVZqX1pMWVpzUWJ1MkNsajNtZjQ3MXJIcU9HZ3Zsd1E2ZGZTbDN5bE9LTi14RFd3cTl3MW1jWGJ5SjhjazY2Z0hTSlBzRUM5VkdEbXVnWkVfanhoa2U1OVFRZTNiM3g1WnNHRVNPSjZCel9EYm8yQklHcFVaMkF0Z1pQNVlFYTN3ekRxS1JScW9lYklVdEcyUWV5Tjl3R240ZUY5Vy11X3JJQW12WFFSUnJvenpsQ2NwbHN2ekhLUVUwa3FxUE8xYllFcWx3QVVjMjN3ZVRDcmluVlNac00?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOeXZwV3VWbkhaaWlMbnV2YXRmai1oWlF3QzhfLWNpQWszUHg5dzFnTkpPc0NvOEpNQllHbTdPU3B4UW9NN2tlM2xYeExlTEFGakE2dEhxcy1EMGwxWi1DRHZxLXlUaVZqX1pMWVpzUWJ1MkNsajNtZjQ3MXJIcU9HZ3Zsd1E2ZGZTbDN5bE9LTi14RFd3cTl3MW1jWGJ5SjhjazY2Z0hTSlBzRUM5VkdEbXVnWkVfanhoa2U1OVFRZTNiM3g1WnNHRVNPSjZCel9EYm8yQklHcFVaMkF0Z1pQNVlFYTN3ekRxS1JScW9lYklVdEcyUWV5Tjl3R240ZUY5Vy11X3JJQW12WFFSUnJvenpsQ2NwbHN2ekhLUVUwa3FxUE8xYllFcWx3QVVjMjN3ZVRDcmluVlNac00?oc=5"
+        }
+      ],
+      "raw_title": "IT 울타리 넘어 전 산업으로 확산…교육·미디어·디자인 업종 수요 급증"
+    },
+    {
+      "id": "20260624-0bef48d637",
+      "date": "2026-06-24",
+      "collected_date": "2026-06-28",
+      "time": "20:36",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/028/0002811227?sid=102",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/028/0002811227?sid=102"
+        }
+      ],
+      "raw_title": "“실용 앞세우느라 구조개혁 제자리” 평가"
+    },
+    {
+      "id": "20260624-9f5d878747",
+      "date": "2026-06-24",
+      "collected_date": "2026-06-28",
+      "time": "06:34",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 육아휴직",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "육아휴직",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=235283",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.labortoday.co.kr/news/articleView.html?idxno=235283"
+        }
+      ],
+      "raw_title": "배우자 출산휴가도 업무분담 지원금 받는다"
+    },
+    {
+      "id": "20260628-carry-4-20260622-159314ceb2",
+      "date": "2026-06-22",
+      "collected_date": "2026-06-28",
+      "time": "18:08",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "홍석현",
+      "signal": "인재 유출 가능성 · 회생절차",
+      "level": "B",
+      "title": "홍석현 경영 리스크 - 조직 안정성 저하와 인재 이탈 가능성 점검",
+      "body": "홍석현의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다. 원문 이슈: 홍석현 경영 리스크.",
+      "insight": "홍석현의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+      "action": "홍석현의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+      "contact_strategy": "홍석현의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "회생절차",
+        "score:128",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.sjsori.com/news/articleView.html?idxno=86912",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.sjsori.com/news/articleView.html?idxno=86912"
+        }
+      ],
+      "raw_title": "누나 홍라희에 300억 차입 정황…중앙홀딩스에 1190억 사재 투입..."
+    }
+  ]
+}
