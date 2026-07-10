@@ -1,5 +1,190 @@
 [
   {
+    "date": "2026-07-10",
+    "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
+    "contact_targets": [
+      "채널톡",
+      "홈플러스"
+    ],
+    "items": [
+      {
+        "id": "20260703-e46eb26808",
+        "date": "2026-07-03",
+        "collected_date": "2026-07-10",
+        "time": "09:44",
+        "cat": "leader",
+        "priority": true,
+        "urgency": "low",
+        "company": "채널톡",
+        "signal": "리더 이동 신호 · 영입",
+        "level": "B",
+        "title": "채널톡 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+        "body": "채널톡의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 채널톡 리더십 변화.",
+        "insight": "채널톡 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+        "action": "채널톡의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "contact_strategy": "채널톡의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "subcategory": "리더 이탈",
+        "tags": [
+          "리더 이탈",
+          "영입",
+          "score:122"
+        ],
+        "sources": [
+          {
+            "name": "ER 이코노믹리뷰",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UNnRNd2F2NV9kbDRZLUFKX2EyamRMZjFXRi1JOTFqdzZKaTF4OVdVNDNKNFZybUstOHYzQ2JSVVdqbHptTGwyZm5kZ0E5UnRWUXZ5R1ZuMkdxU1VHM0tMVjdoS3hVdUtnd0dNaw?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UNnRNd2F2NV9kbDRZLUFKX2EyamRMZjFXRi1JOTFqdzZKaTF4OVdVNDNKNFZybUstOHYzQ2JSVVdqbHptTGwyZm5kZ0E5UnRWUXZ5R1ZuMkdxU1VHM0tMVjdoS3hVdUtnd0dNaw?oc=5"
+          }
+        ],
+        "raw_title": "\"AI 채용 줄이는 시대에 되레 사람 뽑는다\"…채널톡, 5인방 영입으로 승부수"
+      },
+      {
+        "id": "20260703-bdf8e67ca5",
+        "date": "2026-07-03",
+        "collected_date": "2026-07-10",
+        "time": "11:33",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "홈플러스",
+        "signal": "인재 유출 가능성 · 회생절차",
+        "level": "B",
+        "title": "홈플러스 경영 리스크 - 조직 안정성 저하와 인재 이탈 가능성 점검",
+        "body": "홈플러스의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다. 원문 이슈: 홈플러스 경영 리스크.",
+        "insight": "홈플러스의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+        "action": "홈플러스의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+        "contact_strategy": "홈플러스의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "회생절차",
+          "score:118"
+        ],
+        "sources": [
+          {
+            "name": "청년일보",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zMHBtdjZScGFQQnhvUVVBM3VjZzZXanRqR1RYN1RjQnJkSmM1ZFlxTjZ0MEtGcGdIV2p1alBHUE9ubm1YYlpoNGszdkctSllMWFZZNjFaY2lFYlJpeTA4RGNjTU1NWVU?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zMHBtdjZScGFQQnhvUVVBM3VjZzZXanRqR1RYN1RjQnJkSmM1ZFlxTjZ0MEtGcGdIV2p1alBHUE9ubm1YYlpoNGszdkctSllMWFZZNjFaY2lFYlJpeTA4RGNjTU1NWVU?oc=5"
+          }
+        ],
+        "raw_title": "홈플러스 회생절차 폐지…\"회생계획 수행 가능성 낮다\""
+      },
+      {
+        "id": "20260707-a2fd0b9b8d",
+        "date": "2026-07-07",
+        "collected_date": "2026-07-10",
+        "time": "15:08",
+        "cat": "hiring",
+        "priority": false,
+        "urgency": "mid",
+        "company": "솔트룩스",
+        "signal": "공격적 채용 신호 · 인재 채용",
+        "level": "B",
+        "title": "솔트룩스 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+        "body": "솔트룩스의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 솔트룩스 채용 확대.",
+        "insight": "솔트룩스의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+        "action": "솔트룩스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "contact_strategy": "솔트룩스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "subcategory": "채용 확대",
+        "tags": [
+          "채용 확대",
+          "인재 채용",
+          "score:75"
+        ],
+        "sources": [
+          {
+            "name": "데일리경제",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6SlVVVUJHMmh6OUVVOHc5MmtwRUNKMWhZcXpQLXVPNEVaTmZIT050Z3VoQkhKNWVKMFU5MWYyV1lWLWdSUldnamxpNVFuYkwyOXg2R3NiUmkyRUlWa1MzcWVBODVTNVpCU2R5eg?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6SlVVVUJHMmh6OUVVOHc5MmtwRUNKMWhZcXpQLXVPNEVaTmZIT050Z3VoQkhKNWVKMFU5MWYyV1lWLWdSUldnamxpNVFuYkwyOXg2R3NiUmkyRUlWa1MzcWVBODVTNVpCU2R5eg?oc=5"
+          }
+        ],
+        "raw_title": "글로벌 FDE 경쟁 속 AI 에이전트ㆍ생성형 AI 사업 확대에 맞춰 신입ㆍ경력 인재 채용"
+      },
+      {
+        "id": "20260703-b520ddf8aa",
+        "date": "2026-07-03",
+        "collected_date": "2026-07-10",
+        "time": "18:00",
+        "cat": "foreign",
+        "priority": false,
+        "urgency": "high",
+        "company": "채널톡",
+        "signal": "글로벌 채용시장 영향 · M&A",
+        "level": "B",
+        "title": "채널톡 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+        "body": "채널톡에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 채널톡 매각 이슈.",
+        "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 채널톡의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+        "action": "채널톡 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+        "contact_strategy": "채널톡 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+        "subcategory": "해외/외국계",
+        "tags": [
+          "해외/외국계",
+          "M&A",
+          "score:103"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://n.news.naver.com/mnews/article/008/0005381287?sid=101",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://n.news.naver.com/mnews/article/008/0005381287?sid=101"
+          }
+        ],
+        "raw_title": "세일즈포스 출신 리더 5명 영입 …'AI 승부수'"
+      },
+      {
+        "id": "20260709-a5015cb809",
+        "date": "2026-07-09",
+        "collected_date": "2026-07-10",
+        "time": "09:51",
+        "cat": "hr",
+        "priority": false,
+        "urgency": "high",
+        "company": "삼성전자",
+        "signal": "HR/노무 변화 · 최저임금",
+        "level": "B",
+        "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+        "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+        "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+        "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "subcategory": "HR NEWS",
+        "tags": [
+          "HR NEWS",
+          "최저임금",
+          "score:73"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://n.news.naver.com/mnews/article/047/0002521980?sid=102",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://n.news.naver.com/mnews/article/047/0002521980?sid=102"
+          }
+        ],
+        "raw_title": "주4.5일제가 노동시간 양극화로 이어지지 않으려면"
+      }
+    ]
+  },
+  {
     "date": "2026-07-09",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
     "contact_targets": [
