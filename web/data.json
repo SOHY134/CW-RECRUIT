@@ -1,5 +1,192 @@
 [
   {
+    "date": "2026-07-15",
+    "summary": "신규 수집 정보와 최근 7일 이내 실제 URL 검증 정보를 합쳐 5건을 표시합니다.",
+    "contact_targets": [
+      "중앙일보",
+      "중앙일보",
+      "MBX 바이오사이언시스"
+    ],
+    "items": [
+      {
+        "id": "20260711-aa8da4a20d",
+        "date": "2026-07-11",
+        "collected_date": "2026-07-15",
+        "time": "12:44",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "중앙일보",
+        "signal": "인재 유출 가능성 · 회생절차",
+        "level": "B",
+        "title": "중앙일보 경영 리스크 - 조직 안정성 저하와 인재 이탈 가능성 점검",
+        "body": "중앙일보의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다. 원문 이슈: 중앙일보 경영 리스크.",
+        "insight": "중앙일보의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+        "action": "중앙일보의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+        "contact_strategy": "중앙일보의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "회생절차",
+          "score:118"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=849710",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=849710"
+          }
+        ],
+        "raw_title": "워크아웃 개시…채권자 75% 동의 확보"
+      },
+      {
+        "id": "20260710-5f86e25298",
+        "date": "2026-07-10",
+        "collected_date": "2026-07-15",
+        "time": "11:10",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "중앙일보",
+        "signal": "인재 유출 가능성 · 구조조정",
+        "level": "B",
+        "title": "중앙일보 인력 조정 - 핵심 인재 이동 가능성 확대",
+        "body": "중앙일보에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 중앙일보 인력 조정.",
+        "insight": "중앙일보의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+        "action": "중앙일보 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+        "contact_strategy": "중앙일보 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+        "subcategory": "구조조정",
+        "tags": [
+          "인재 유출",
+          "구조조정",
+          "score:118"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1273468",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1273468"
+          }
+        ],
+        "raw_title": "워크아웃 개시 여부 오늘 결정"
+      },
+      {
+        "id": "20260714-4021681ef7",
+        "date": "2026-07-14",
+        "collected_date": "2026-07-15",
+        "time": "10:49",
+        "cat": "leader",
+        "priority": true,
+        "urgency": "mid",
+        "company": "MBX 바이오사이언시스",
+        "signal": "리더 이동 신호 · CFO",
+        "level": "B",
+        "title": "MBX 바이오사이언시스 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+        "body": "MBX 바이오사이언시스의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: MBX 바이오사이언시스 리더십 변화.",
+        "insight": "MBX 바이오사이언시스 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+        "action": "MBX 바이오사이언시스의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "contact_strategy": "MBX 바이오사이언시스의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "subcategory": "리더 이탈",
+        "tags": [
+          "리더 이탈",
+          "CFO",
+          "score:110"
+        ],
+        "sources": [
+          {
+            "name": "데이터투자",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wcWdWNWJCVkZEUnZLb3ZzVDI5MXFReXRUSkdlOVZkZ0E3Mm42bm5td2JxcFJkZ0pSOG5QSmtkV2owekpfUmxHYmdpMnA5LWRLd1lQR0hIY1hudTU2czJjcXFXZVRaekNqYUU2R1B4VFVWVHM?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wcWdWNWJCVkZEUnZLb3ZzVDI5MXFReXRUSkdlOVZkZ0E3Mm42bm5td2JxcFJkZ0pSOG5QSmtkV2owekpfUmxHYmdpMnA5LWRLd1lQR0hIY1hudTU2czJjcXFXZVRaekNqYUU2R1B4VFVWVHM?oc=5"
+          }
+        ],
+        "raw_title": "CFO 동시 교체…신임 CEO에 스티븐 호터 의장 임명"
+      },
+      {
+        "id": "20260710-0aa80ee409",
+        "date": "2026-07-10",
+        "collected_date": "2026-07-15",
+        "time": "20:30",
+        "cat": "hr",
+        "priority": false,
+        "urgency": "high",
+        "company": "시장 동향",
+        "signal": "HR/노무 변화 · 최저임금",
+        "level": "B",
+        "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+        "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+        "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+        "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "subcategory": "HR NEWS",
+        "tags": [
+          "HR NEWS",
+          "최저임금",
+          "score:63"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41129",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41129"
+          }
+        ],
+        "raw_title": "[위클립] 7월 2주"
+      },
+      {
+        "id": "20260715-carry-5-20260709-2498ae58ae",
+        "date": "2026-07-09",
+        "collected_date": "2026-07-15",
+        "time": "03:56",
+        "cat": "hiring",
+        "priority": false,
+        "urgency": "mid",
+        "company": "쿠팡",
+        "signal": "공격적 채용 신호 · 인재 확보",
+        "level": "B",
+        "title": "쿠팡 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+        "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 쿠팡 채용 확대.",
+        "insight": "쿠팡의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+        "action": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "contact_strategy": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "subcategory": "인재 확보",
+        "tags": [
+          "채용 확대",
+          "인재 확보",
+          "score:100",
+          "최근 검증 정보"
+        ],
+        "sources": [
+          {
+            "name": "MSN",
+            "url": "https://news.google.com/rss/articles/CBMiigVBVV95cUxQREpUakNNUGNZeWRfRF9jUTc5SklVb0JFZ0x0Y2ZaUHdQaFNnTXp3eFhiZHI3b2ZxQ19vS2pCYVpFQXQ1UjFkUXVmbkw0aXZGR0pkcjVKbkY4UmdpcUFKVWpvNnl5TTNOTHc2NHM4eHBkV0U5aExxZ3duNnNqTEJnSkxXUjY0VG1qNHNOTlk0ZVByWFYzWmR3Tl9kUmVJSTJFRld1cDVMV2UwQUVHLXZYWldoRERCNGlieE1aa1RxTE53MHRsSkwxc0tua0pseFh2dFU0ZzBRRVFXVS1OLWNjajQxSTRNUzlZdDU1T0tQa3AwN1ZrX1hxN2RkYjRWM1pmWm1NN19wUXZvQUNKakFKWlZvYlN0Ry02bEpNbEI2Y2p2MF8zLVpXUVh3MUNCT0RjT3VXNkUxTUFYdFMtUnVKblJDS2xfb2RTUXQyeXhva0N5V2pUUzRIUFpESWNiZ2RhUGdrR3JkNndDcFlsT0RLRUZKc2xnVF91WC1JeWhOS2d2RTJUMWZSd0U2ZFkxMzJjWm9aSkFMbkhVZmdtTmYyeGFtNzFVVzh4SGdwa05TMnB5eHZ4WW5JdGVjVXJ5dEdJWGNxdU9tejlvWW5GTWxPMTIxWWRrRG5hUVBaQklJWjlmWlF6aXRFUW9zMUt4dWpabTZQOVc1V203NGs0MFVRWU1wNzlzZ2szY3VXQTljMm1ySmVwME1naGIwQWU4UFhYSE9XUDVpbVdibGJHT2hsQWc5UERJT0NUN0REZ0FkTHZ4VWRRMzVtSlhRZFNuUEV6SWZKTDV0VGc5bFgwVzV2d0tFcGhLWmpCNzNhY0J5UUd5ZFhZb2pHTm9ObHV6MnN2TE9IU01nNExmdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://news.google.com/rss/articles/CBMiigVBVV95cUxQREpUakNNUGNZeWRfRF9jUTc5SklVb0JFZ0x0Y2ZaUHdQaFNnTXp3eFhiZHI3b2ZxQ19vS2pCYVpFQXQ1UjFkUXVmbkw0aXZGR0pkcjVKbkY4UmdpcUFKVWpvNnl5TTNOTHc2NHM4eHBkV0U5aExxZ3duNnNqTEJnSkxXUjY0VG1qNHNOTlk0ZVByWFYzWmR3Tl9kUmVJSTJFRld1cDVMV2UwQUVHLXZYWldoRERCNGlieE1aa1RxTE53MHRsSkwxc0tua0pseFh2dFU0ZzBRRVFXVS1OLWNjajQxSTRNUzlZdDU1T0tQa3AwN1ZrX1hxN2RkYjRWM1pmWm1NN19wUXZvQUNKakFKWlZvYlN0Ry02bEpNbEI2Y2p2MF8zLVpXUVh3MUNCT0RjT3VXNkUxTUFYdFMtUnVKblJDS2xfb2RTUXQyeXhva0N5V2pUUzRIUFpESWNiZ2RhUGdrR3JkNndDcFlsT0RLRUZKc2xnVF91WC1JeWhOS2d2RTJUMWZSd0U2ZFkxMzJjWm9aSkFMbkhVZmdtTmYyeGFtNzFVVzh4SGdwa05TMnB5eHZ4WW5JdGVjVXJ5dEdJWGNxdU9tejlvWW5GTWxPMTIxWWRrRG5hUVBaQklJWjlmWlF6aXRFUW9zMUt4dWpabTZQOVc1V203NGs0MFVRWU1wNzlzZ2szY3VXQTljMm1ySmVwME1naGIwQWU4UFhYSE9XUDVpbVdibGJHT2hsQWc5UERJT0NUN0REZ0FkTHZ4VWRRMzVtSlhRZFNuUEV6SWZKTDV0VGc5bFgwVzV2d0tFcGhLWmpCNzNhY0J5UUd5ZFhZb2pHTm9ObHV6MnN2TE9IU01nNExmdw?oc=5"
+          }
+        ],
+        "raw_title": "전국 채용 드라이브…평택·대구서 물류 인재 확보 총력"
+      }
+    ]
+  },
+  {
     "date": "2026-07-14",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
     "contact_targets": [
