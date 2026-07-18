@@ -1,0 +1,151 @@
+{
+  "date": "2026-07-18",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "중앙일보",
+    "MBX 바이오사이언시스"
+  ],
+  "items": [
+    {
+      "id": "20260711-aa8da4a20d",
+      "date": "2026-07-11",
+      "collected_date": "2026-07-18",
+      "time": "12:44",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "중앙일보",
+      "signal": "인재 유출 가능성 · 회생절차",
+      "level": "B",
+      "title": "중앙일보 경영 리스크 - 조직 안정성 저하와 인재 이탈 가능성 점검",
+      "body": "중앙일보의 경영 리스크가 확인됐습니다. 재무·사업 안정성 저하는 핵심 인재의 이탈 검토와 조직 불안정으로 이어질 수 있습니다. 원문 이슈: 중앙일보 경영 리스크.",
+      "insight": "중앙일보의 경영 리스크는 단기적으로 핵심 인재의 외부 기회 탐색을 자극할 수 있습니다. 직군별 시장 유입 가능성을 선제적으로 확인하세요.",
+      "action": "중앙일보의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+      "contact_strategy": "중앙일보의 개발, 커머스 운영, 영업, 재무·전략 직군을 우선 분류하고 이직 의향이 생길 가능성이 높은 후보자를 추적하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "회생절차",
+        "score:118"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=849710",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=849710"
+        }
+      ],
+      "raw_title": "워크아웃 개시…채권자 75% 동의 확보"
+    },
+    {
+      "id": "20260716-79ef3f8814",
+      "date": "2026-07-16",
+      "collected_date": "2026-07-18",
+      "time": "19:14",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "딜리버리히어로",
+      "signal": "리더 이동 신호 · 사임",
+      "level": "B",
+      "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "사임",
+        "score:97"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://sports.hankooki.com/news/articleView.html?idxno=6936587",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://sports.hankooki.com/news/articleView.html?idxno=6936587"
+        }
+      ],
+      "raw_title": "딜리버리히어로 인수…배민 품는다"
+    },
+    {
+      "id": "20260715-858aad695f",
+      "date": "2026-07-15",
+      "collected_date": "2026-07-18",
+      "time": "20:41",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "민주노총",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "민주노총 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "민주노총의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 민주노총 노사갈등.",
+      "insight": "민주노총의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "민주노총 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "민주노총 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/047/0002522674?sid=102",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/047/0002522674?sid=102"
+        }
+      ],
+      "raw_title": "7.15 총파업 \"원청 교섭\" 촉구"
+    },
+    {
+      "id": "20260718-carry-4-20260717-carry-5-20260714-4021681ef7",
+      "date": "2026-07-14",
+      "collected_date": "2026-07-18",
+      "time": "10:49",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "MBX 바이오사이언시스",
+      "signal": "리더 이동 신호 · CFO",
+      "level": "B",
+      "title": "MBX 바이오사이언시스 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "MBX 바이오사이언시스의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: MBX 바이오사이언시스 리더십 변화.",
+      "insight": "MBX 바이오사이언시스 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "MBX 바이오사이언시스의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "MBX 바이오사이언시스의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "CFO",
+        "score:105",
+        "최근 검증 정보"
+      ],
+      "sources": [
+        {
+          "name": "데이터투자",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wcWdWNWJCVkZEUnZLb3ZzVDI5MXFReXRUSkdlOVZkZ0E3Mm42bm5td2JxcFJkZ0pSOG5QSmtkV2owekpfUmxHYmdpMnA5LWRLd1lQR0hIY1hudTU2czJjcXFXZVRaekNqYUU2R1B4VFVWVHM?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wcWdWNWJCVkZEUnZLb3ZzVDI5MXFReXRUSkdlOVZkZ0E3Mm42bm5td2JxcFJkZ0pSOG5QSmtkV2owekpfUmxHYmdpMnA5LWRLd1lQR0hIY1hudTU2czJjcXFXZVRaekNqYUU2R1B4VFVWVHM?oc=5"
+        }
+      ],
+      "raw_title": "CFO 동시 교체…신임 CEO에 스티븐 호터 의장 임명"
+    }
+  ]
+}
