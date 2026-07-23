@@ -1,0 +1,187 @@
+{
+  "date": "2026-07-23",
+  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
+  "contact_targets": [
+    "은행권청년창업재단",
+    "디캠프 이사 회"
+  ],
+  "items": [
+    {
+      "id": "20260722-0e5c6ac626",
+      "date": "2026-07-22",
+      "collected_date": "2026-07-23",
+      "time": "18:00",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "high",
+      "company": "은행권청년창업재단",
+      "signal": "리더 이동 신호 · 대표 사임",
+      "level": "B",
+      "title": "은행권청년창업재단 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "은행권청년창업재단의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 은행권청년창업재단 리더십 변화.",
+      "insight": "은행권청년창업재단 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "은행권청년창업재단의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "은행권청년창업재단의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 사임",
+      "tags": [
+        "리더 이탈",
+        "리더 사임",
+        "대표 사임",
+        "score:123"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.seoulfn.com/news/articleView.html?idxno=633915",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.seoulfn.com/news/articleView.html?idxno=633915"
+        }
+      ],
+      "raw_title": "대표 사임 후 신임 대표 선임 착수"
+    },
+    {
+      "id": "20260722-eeadf98bc2",
+      "date": "2026-07-22",
+      "collected_date": "2026-07-23",
+      "time": "16:45",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "디캠프 이사 회",
+      "signal": "리더 이동 신호 · 신임 대표",
+      "level": "B",
+      "title": "디캠프 이사 회 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "디캠프 이사 회의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 디캠프 이사 회 리더십 변화.",
+      "insight": "디캠프 이사 회 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "디캠프 이사 회의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "디캠프 이사 회의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 선임",
+      "tags": [
+        "리더 이탈",
+        "리더 선임",
+        "신임 대표",
+        "score:110"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/018/0006334833?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/018/0006334833?sid=101"
+        }
+      ],
+      "raw_title": "박영훈 대표 사표 수리… 신임 대표 선임 절차 신속 진행"
+    },
+    {
+      "id": "20260720-be859b0d46",
+      "date": "2026-07-20",
+      "collected_date": "2026-07-23",
+      "time": "17:01",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "AI 스타트업 링크알파",
+      "signal": "리더 이동 신호 · 영입",
+      "level": "B",
+      "title": "AI 스타트업 링크알파 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "AI 스타트업 링크알파의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: AI 스타트업 링크알파 리더십 변화.",
+      "insight": "AI 스타트업 링크알파 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "AI 스타트업 링크알파의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "AI 스타트업 링크알파의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "영입",
+        "score:97"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/050/0000108746?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/050/0000108746?sid=101"
+        }
+      ],
+      "raw_title": "엔지니어링 직군을 중심으로 한 'Tech 집중채..."
+    },
+    {
+      "id": "20260718-14fa121e49",
+      "date": "2026-07-18",
+      "collected_date": "2026-07-23",
+      "time": "13:24",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "딜리버리히어로",
+      "signal": "리더 이동 신호 · 사임",
+      "level": "B",
+      "title": "딜리버리히어로 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "딜리버리히어로에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 딜리버리히어로 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 딜리버리히어로의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "딜리버리히어로 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "사임",
+        "score:92"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=244284",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.safetimes.co.kr/news/articleView.html?idxno=244284"
+        }
+      ],
+      "raw_title": "배민 품는다 … 국내 배달 앱 시장 '지각변동'"
+    },
+    {
+      "id": "20260720-9309407926",
+      "date": "2026-07-20",
+      "collected_date": "2026-07-23",
+      "time": "09:00",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "코치 코리아",
+      "signal": "공격적 채용 신호 · 공개채용",
+      "level": "B",
+      "title": "코치 코리아 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "코치 코리아의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 코치 코리아 채용 확대.",
+      "insight": "코치 코리아의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "코치 코리아 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "코치 코리아 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공개채용",
+        "score:88"
+      ],
+      "sources": [
+        {
+          "name": "잡포스트",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ra2g2NHFBTXNpYlpuNEotY3MzN21Qb05pOGJncWdtTTc2OGFPU1VIS0I4cmEyZmpnajJWQWNzaVJsd1p6enBidTA0c04wQVhfU05GWGc4TjRQV3NkUWQ2WjV2bXhnMnlhenl3NWxn0gFyQVVfeXFMTWdfNzR0SVVaZ195NWN5UHR5RkExNFo0QTVMN2x6VzlwdGo1Y09Oam5XV0o5QWMxSkdOVDRpMk0ycFY4Wk1QUlV0MjdsMWtNSTI3R1l5TVowU2N4UkhpYWh0d3BHRjNXWmN5MF9OS05XaUdB?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ra2g2NHFBTXNpYlpuNEotY3MzN21Qb05pOGJncWdtTTc2OGFPU1VIS0I4cmEyZmpnajJWQWNzaVJsd1p6enBidTA0c04wQVhfU05GWGc4TjRQV3NkUWQ2WjV2bXhnMnlhenl3NWxn0gFyQVVfeXFMTWdfNzR0SVVaZ195NWN5UHR5RkExNFo0QTVMN2x6VzlwdGo1Y09Oam5XV0o5QWMxSkdOVDRpMk0ycFY4Wk1QUlV0MjdsMWtNSTI3R1l5TVowU2N4UkhpYWh0d3BHRjNXWmN5MF9OS05XaUdB?oc=5"
+        }
+      ],
+      "raw_title": "리테일 전 부문 공개채용… 전국 매장 인재 확보 나서"
+    }
+  ]
+}
