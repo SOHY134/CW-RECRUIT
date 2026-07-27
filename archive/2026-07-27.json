@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-27",
+  "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
+  "contact_targets": [
+    "AI 앞세운 우버",
+    "은행권청년창업재단",
+    "새 대표 찾는 디캠프"
+  ],
+  "items": [
+    {
+      "id": "20260724-ad3ee6e7b0",
+      "date": "2026-07-24",
+      "collected_date": "2026-07-27",
+      "time": "00:43",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "AI 앞세운 우버",
+      "signal": "인재 유출 가능성 · 정리해고",
+      "level": "B",
+      "title": "AI 앞세운 우버 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "AI 앞세운 우버에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: AI 앞세운 우버 인력 조정.",
+      "insight": "AI 앞세운 우버의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "AI 앞세운 우버 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "AI 앞세운 우버 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "정리해고",
+        "score:123"
+      ],
+      "sources": [
+        {
+          "name": "Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQMC1fb2RzNTMtY0dRUm01MUVKdmFKbTIyMUFUbi1JYThyWGFCR1ZHYUViOTY3cUFPQmV0ekNnUjMxTENtYnlWN1ZlaVF3NE9XVWxSZVVWRG5aeWxDS2Z1dC1qcDNsLWtsS3VYUld1Y2M3YU1Tdl93SzFUWVQ1QkZvWHBDS1g0c1hpZ3V2OEJuOEowVU53OE9YWWg2UU5YeGtEZGs3OWFNaVRNb0pmNHc0bS11Y3g2a1FMdXQwbU9USThWeU04Vk5tM0ZmSVUwSGdUR2NJUGtJOVlZeTRpLWRZQXBvQ05nR1JrM2hYOW94TEhKeTR6M0Vkc3lKTUNRd3NCS09OOWRpajhCVmJaQ0NGUHdpbGpRZ2s4V1Z1aU5PWXFFV181QVBEXzhtcGVnUVowQ1R2ZW0xZTZEeTlkQkhJ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQMC1fb2RzNTMtY0dRUm01MUVKdmFKbTIyMUFUbi1JYThyWGFCR1ZHYUViOTY3cUFPQmV0ekNnUjMxTENtYnlWN1ZlaVF3NE9XVWxSZVVWRG5aeWxDS2Z1dC1qcDNsLWtsS3VYUld1Y2M3YU1Tdl93SzFUWVQ1QkZvWHBDS1g0c1hpZ3V2OEJuOEowVU53OE9YWWg2UU5YeGtEZGs3OWFNaVRNb0pmNHc0bS11Y3g2a1FMdXQwbU9USThWeU04Vk5tM0ZmSVUwSGdUR2NJUGtJOVlZeTRpLWRZQXBvQ05nR1JrM2hYOW94TEhKeTR6M0Vkc3lKTUNRd3NCS09OOWRpajhCVmJaQ0NGUHdpbGpRZ2s4V1Z1aU5PWXFFV181QVBEXzhtcGVnUVowQ1R2ZW0xZTZEeTlkQkhJ?oc=5"
+        }
+      ],
+      "raw_title": "고객 지원 인력 10% 정리해고…“조직 단순화·생성형 기술 전환”"
+    },
+    {
+      "id": "20260722-0e5c6ac626",
+      "date": "2026-07-22",
+      "collected_date": "2026-07-27",
+      "time": "18:00",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "high",
+      "company": "은행권청년창업재단",
+      "signal": "리더 이동 신호 · 대표 사임",
+      "level": "B",
+      "title": "은행권청년창업재단 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "은행권청년창업재단의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 은행권청년창업재단 리더십 변화.",
+      "insight": "은행권청년창업재단 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "은행권청년창업재단의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "은행권청년창업재단의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 사임",
+      "tags": [
+        "리더 이탈",
+        "리더 사임",
+        "대표 사임",
+        "score:113"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.seoulfn.com/news/articleView.html?idxno=633915",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.seoulfn.com/news/articleView.html?idxno=633915"
+        }
+      ],
+      "raw_title": "대표 사임 후 신임 대표 선임 착수"
+    },
+    {
+      "id": "20260724-3f3f15072c",
+      "date": "2026-07-24",
+      "collected_date": "2026-07-27",
+      "time": "18:40",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "새 대표 찾는 디캠프",
+      "signal": "리더 이동 신호 · 신임 대표",
+      "level": "B",
+      "title": "새 대표 찾는 디캠프 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "새 대표 찾는 디캠프의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 새 대표 찾는 디캠프 리더십 변화.",
+      "insight": "새 대표 찾는 디캠프 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "새 대표 찾는 디캠프의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "새 대표 찾는 디캠프의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 선임",
+      "tags": [
+        "리더 이탈",
+        "리더 선임",
+        "신임 대표",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://platum.kr/archives/291383",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://platum.kr/archives/291383"
+        }
+      ],
+      "raw_title": "초기 지원과 스케일업 사이"
+    },
+    {
+      "id": "20260720-be859b0d46",
+      "date": "2026-07-20",
+      "collected_date": "2026-07-27",
+      "time": "17:01",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "AI 스타트업 링크알파",
+      "signal": "리더 이동 신호 · 영입",
+      "level": "B",
+      "title": "AI 스타트업 링크알파 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "AI 스타트업 링크알파의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: AI 스타트업 링크알파 리더십 변화.",
+      "insight": "AI 스타트업 링크알파 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "AI 스타트업 링크알파의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "AI 스타트업 링크알파의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "영입",
+        "score:92"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/050/0000108746?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/050/0000108746?sid=101"
+        }
+      ],
+      "raw_title": "엔지니어링 직군을 중심으로 한 'Tech 집중채..."
+    },
+    {
+      "id": "20260720-9309407926",
+      "date": "2026-07-20",
+      "collected_date": "2026-07-27",
+      "time": "09:00",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "코치 코리아",
+      "signal": "공격적 채용 신호 · 공개채용",
+      "level": "B",
+      "title": "코치 코리아 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "코치 코리아의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 코치 코리아 채용 확대.",
+      "insight": "코치 코리아의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "코치 코리아 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "코치 코리아 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공개채용",
+        "score:83"
+      ],
+      "sources": [
+        {
+          "name": "잡포스트",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ra2g2NHFBTXNpYlpuNEotY3MzN21Qb05pOGJncWdtTTc2OGFPU1VIS0I4cmEyZmpnajJWQWNzaVJsd1p6enBidTA0c04wQVhfU05GWGc4TjRQV3NkUWQ2WjV2bXhnMnlhenl3NWxn0gFyQVVfeXFMTWdfNzR0SVVaZ195NWN5UHR5RkExNFo0QTVMN2x6VzlwdGo1Y09Oam5XV0o5QWMxSkdOVDRpMk0ycFY4Wk1QUlV0MjdsMWtNSTI3R1l5TVowU2N4UkhpYWh0d3BHRjNXWmN5MF9OS05XaUdB?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ra2g2NHFBTXNpYlpuNEotY3MzN21Qb05pOGJncWdtTTc2OGFPU1VIS0I4cmEyZmpnajJWQWNzaVJsd1p6enBidTA0c04wQVhfU05GWGc4TjRQV3NkUWQ2WjV2bXhnMnlhenl3NWxn0gFyQVVfeXFMTWdfNzR0SVVaZ195NWN5UHR5RkExNFo0QTVMN2x6VzlwdGo1Y09Oam5XV0o5QWMxSkdOVDRpMk0ycFY4Wk1QUlV0MjdsMWtNSTI3R1l5TVowU2N4UkhpYWh0d3BHRjNXWmN5MF9OS05XaUdB?oc=5"
+        }
+      ],
+      "raw_title": "리테일 전 부문 공개채용… 전국 매장 인재 확보 나서"
+    }
+  ]
+}
