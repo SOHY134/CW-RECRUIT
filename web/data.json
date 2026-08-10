@@ -1,5 +1,191 @@
 [
   {
+    "date": "2026-08-10",
+    "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
+    "contact_targets": [
+      "쿠팡",
+      "메타"
+    ],
+    "items": [
+      {
+        "id": "20260807-94541de849",
+        "date": "2026-08-07",
+        "collected_date": "2026-08-10",
+        "time": "10:01",
+        "cat": "outflow",
+        "priority": true,
+        "urgency": "high",
+        "company": "쿠팡",
+        "signal": "인재 유출 가능성 · 감원",
+        "level": "B",
+        "title": "쿠팡 인력 조정 - 핵심 인재 이동 가능성 확대",
+        "body": "쿠팡에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 쿠팡 인력 조정.",
+        "insight": "쿠팡의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+        "action": "쿠팡 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+        "contact_strategy": "쿠팡 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+        "subcategory": "인재 유출",
+        "tags": [
+          "인재 유출",
+          "감원",
+          "score:153"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://n.news.naver.com/mnews/article/011/0004649482?sid=101",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://n.news.naver.com/mnews/article/011/0004649482?sid=101"
+          }
+        ],
+        "raw_title": "첫 승부는 배달…쿠팡이츠와 손잡는다"
+      },
+      {
+        "id": "20260810-e88b5d63c4",
+        "date": "2026-08-10",
+        "collected_date": "2026-08-10",
+        "time": "07:30",
+        "cat": "leader",
+        "priority": true,
+        "urgency": "low",
+        "company": "메타",
+        "signal": "리더 이동 신호 · 영입",
+        "level": "B",
+        "title": "메타 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+        "body": "메타의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 메타 리더십 변화.",
+        "insight": "메타 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+        "action": "메타의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "contact_strategy": "메타의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+        "subcategory": "리더 이탈",
+        "tags": [
+          "리더 이탈",
+          "영입",
+          "score:102"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=691286",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=691286"
+          }
+        ],
+        "raw_title": "[AI핫이슈]빅테크 '코딩 AI' 대공세...中 AI 성능까지 중무장"
+      },
+      {
+        "id": "20260806-b560bacd64",
+        "date": "2026-08-06",
+        "collected_date": "2026-08-10",
+        "time": "08:24",
+        "cat": "hiring",
+        "priority": false,
+        "urgency": "high",
+        "company": "파수 AI",
+        "signal": "공격적 채용 신호 · 공채",
+        "level": "B",
+        "title": "파수 AI 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+        "body": "파수 AI의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 파수 AI 채용 확대.",
+        "insight": "파수 AI의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+        "action": "파수 AI 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "contact_strategy": "파수 AI 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+        "subcategory": "채용 확대",
+        "tags": [
+          "채용 확대",
+          "공채",
+          "score:83"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "http://www.datanews.co.kr/news/article.html?no=145897",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "http://www.datanews.co.kr/news/article.html?no=145897"
+          }
+        ],
+        "raw_title": "19년째 신입 공채…“ AI 시대 인재 직접 키운다”"
+      },
+      {
+        "id": "20260807-bd7a2d3e05",
+        "date": "2026-08-07",
+        "collected_date": "2026-08-10",
+        "time": "14:41",
+        "cat": "hr",
+        "priority": false,
+        "urgency": "high",
+        "company": "시장 동향",
+        "signal": "HR/노무 변화 · 최저임금",
+        "level": "B",
+        "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+        "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+        "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+        "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+        "subcategory": "HR NEWS",
+        "tags": [
+          "HR NEWS",
+          "최저임금",
+          "score:68"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://n.news.naver.com/mnews/article/033/0000051599?sid=102",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://n.news.naver.com/mnews/article/033/0000051599?sid=102"
+          }
+        ],
+        "raw_title": "꿈과 취업과 사기와 임금 체불[한용현의 노동법 새겨보기](64)"
+      },
+      {
+        "id": "20260803-a239b5f517",
+        "date": "2026-08-03",
+        "collected_date": "2026-08-10",
+        "time": "19:12",
+        "cat": "hr",
+        "priority": false,
+        "urgency": "high",
+        "company": "삼성전자",
+        "signal": "HR/노무 변화 · 파업",
+        "level": "B",
+        "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+        "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+        "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+        "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+        "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+        "subcategory": "노무 리스크",
+        "tags": [
+          "HR NEWS",
+          "노무 리스크",
+          "파업",
+          "score:63"
+        ],
+        "sources": [
+          {
+            "name": "네이버뉴스",
+            "url": "https://n.news.naver.com/mnews/article/028/0002816976?sid=102",
+            "level": "B",
+            "verified": true,
+            "verify_note": "HTTP 200",
+            "http_status": 200,
+            "original_url": "https://n.news.naver.com/mnews/article/028/0002816976?sid=102"
+          }
+        ],
+        "raw_title": "이재명 정부의 ‘실용’은 노동권 후퇴인가 [현장에서]"
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "summary": "최근 7일 이내 실제 URL이 확인된 채용시장 신호 5건을 수집했습니다.",
     "contact_targets": [
