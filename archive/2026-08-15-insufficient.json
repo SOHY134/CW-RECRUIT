@@ -1,0 +1,151 @@
+{
+  "date": "2026-08-15",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "메타"
+  ],
+  "items": [
+    {
+      "id": "20260811-1fbccf4453",
+      "date": "2026-08-11",
+      "collected_date": "2026-08-15",
+      "time": "17:30",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "메타",
+      "signal": "리더 이동 신호 · 공동창업자",
+      "level": "B",
+      "title": "메타 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "메타의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 메타 리더십 변화.",
+      "insight": "메타 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "메타의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "메타의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "공동창업자",
+        "score:100"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://it.donga.com/109336/",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://it.donga.com/109336/"
+        }
+      ],
+      "raw_title": "[위클리AI] 오픈AI·앤트로픽·메타, 전략 다변화로 경쟁 새 국면"
+    },
+    {
+      "id": "20260811-eaa33e9e96",
+      "date": "2026-08-11",
+      "collected_date": "2026-08-15",
+      "time": "09:11",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "더파운더즈",
+      "signal": "공격적 채용 신호 · 대규모 채용",
+      "level": "B",
+      "title": "더파운더즈 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "더파운더즈의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 더파운더즈 채용 확대.",
+      "insight": "더파운더즈의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "더파운더즈 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "더파운더즈 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "공격적 채용",
+      "tags": [
+        "채용 확대",
+        "공격적 채용",
+        "대규모 채용",
+        "score:83"
+      ],
+      "sources": [
+        {
+          "name": "패션비즈",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1lR2M5YjVvcEZjU3daQjgtUDU1Ul9zMm1NU2tiUnVEcTFReXYyeDBLTGY4cmxmQkQtc1BlM21qTmJFczcxTmZpREJxNUdGQmxi?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1lR2M5YjVvcEZjU3daQjgtUDU1Ul9zMm1NU2tiUnVEcTFReXYyeDBLTGY4cmxmQkQtc1BlM21qTmJFczcxTmZpREJxNUdGQmxi?oc=5"
+        }
+      ],
+      "raw_title": "세일즈 대규모 채용… 글로벌 성장 인재 확보"
+    },
+    {
+      "id": "20260813-f33e40fb65",
+      "date": "2026-08-13",
+      "collected_date": "2026-08-15",
+      "time": "04:38",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.jbsori.com/news/articleView.html?idxno=17727",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.jbsori.com/news/articleView.html?idxno=17727"
+        }
+      ],
+      "raw_title": "노조에 가입하자 사라진 지금-여기 살아갈 자격: ㈜일강 이주노동자 계..."
+    },
+    {
+      "id": "20260812-ce97ae140c",
+      "date": "2026-08-12",
+      "collected_date": "2026-08-15",
+      "time": "10:00",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/607/0000003443?sid=102",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/607/0000003443?sid=102"
+        }
+      ],
+      "raw_title": "[다큐 뉴스타파]6억, 6백 그리고 0원_ 삼성 반도체 성과급, 보상은 공정했..."
+    }
+  ]
+}
