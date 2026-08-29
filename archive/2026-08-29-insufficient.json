@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-29",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260824-1b5efc1fdd",
+      "date": "2026-08-24",
+      "collected_date": "2026-08-29",
+      "time": "08:53",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "현대차",
+      "signal": "공격적 채용 신호 · 공채",
+      "level": "B",
+      "title": "현대차 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "현대차의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 현대차 채용 확대.",
+      "insight": "현대차의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "현대차 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "현대차 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공채",
+        "score:83"
+      ],
+      "sources": [
+        {
+          "name": "동행미디어 시대",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11SXU5ejh6TWhxSGIybkljemFMUHdGc0ZjZkYwNEozWWlHSkU4aFFZRUtPbkt3YlRvNjRvUTRxbUJHX2JpMTdvREN5N1Q5NlNGalZQMjJadjNtNDNIRVE?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11SXU5ejh6TWhxSGIybkljemFMUHdGc0ZjZkYwNEozWWlHSkU4aFFZRUtPbkt3YlRvNjRvUTRxbUJHX2JpMTdvREN5N1Q5NlNGalZQMjJadjNtNDNIRVE?oc=5"
+        }
+      ],
+      "raw_title": "9월14일까지 하반기 신입사원 공채"
+    },
+    {
+      "id": "20260822-009117463b",
+      "date": "2026-08-22",
+      "collected_date": "2026-08-29",
+      "time": "06:00",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "LG전자",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "LG전자 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "LG전자의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: LG전자 리더십 변화.",
+      "insight": "LG전자 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "LG전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "LG전자의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "score:70"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168603",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://it.chosun.com/news/articleView.html?idxno=2023092168603"
+        }
+      ],
+      "raw_title": "'CEO 직속' 로봇 인재 수혈"
+    },
+    {
+      "id": "20260828-07c1a9c283",
+      "date": "2026-08-28",
+      "collected_date": "2026-08-29",
+      "time": "14:24",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "포스코 노조",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "포스코 노조 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "포스코 노조의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 포스코 노조 노사갈등.",
+      "insight": "포스코 노조의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "포스코 노조 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "포스코 노조 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.snmnews.com/news/articleView.html?idxno=573930",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.snmnews.com/news/articleView.html?idxno=573930"
+        }
+      ],
+      "raw_title": "9월 1일 연장근로 거부…9일 광양·포항 48시간 부분 파업 예..."
+    }
+  ]
+}
