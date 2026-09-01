@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-01",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260831-7402bf38b2",
+      "date": "2026-08-31",
+      "collected_date": "2026-09-01",
+      "time": "15:16",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "LG전자",
+      "signal": "공격적 채용 신호 · 공채",
+      "level": "B",
+      "title": "LG전자 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "LG전자의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: LG전자 채용 확대.",
+      "insight": "LG전자의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "LG전자 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "LG전자 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공채",
+        "score:93"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/469/0000951193?sid=105",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/469/0000951193?sid=105"
+        }
+      ],
+      "raw_title": "국내외 인재 확보전... 대표가 직접 미국 가고, 외국인도 채용"
+    },
+    {
+      "id": "20260831-5b325d42ff",
+      "date": "2026-08-31",
+      "collected_date": "2026-09-01",
+      "time": "18:30",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "서울 시내버스 파업 하나···노사",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "서울 시내버스 파업 하나···노사 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "서울 시내버스 파업 하나···노사의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: ··노사 노사갈등.",
+      "insight": "서울 시내버스 파업 하나···노사의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "서울 시내버스 파업 하나···노사 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "서울 시내버스 파업 하나···노사 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/032/0003467549?sid=102",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/032/0003467549?sid=102"
+        }
+      ],
+      "raw_title": "조정 절차 돌입"
+    },
+    {
+      "id": "20260829-8562cc7c1b",
+      "date": "2026-08-29",
+      "collected_date": "2026-09-01",
+      "time": "14:30",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "기독교 사회선교 단체들",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.incheonin.com/news/articleView.html?idxno=120415",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.incheonin.com/news/articleView.html?idxno=120415"
+        }
+      ],
+      "raw_title": "인천 택시노동자 고공 농성장 앞 현장기도회"
+    }
+  ]
+}
