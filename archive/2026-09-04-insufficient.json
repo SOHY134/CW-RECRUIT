@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-04",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "우버",
+    "발리온 바이오"
+  ],
+  "items": [
+    {
+      "id": "20260903-cf555c02a8",
+      "date": "2026-09-03",
+      "collected_date": "2026-09-04",
+      "time": "21:24",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "우버",
+      "signal": "인재 유출 가능성 · 감원",
+      "level": "B",
+      "title": "우버 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "우버에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 우버 인력 조정.",
+      "insight": "우버의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "우버 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "우버 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "감원",
+        "score:128"
+      ],
+      "sources": [
+        {
+          "name": "ESG비즈니스리뷰",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHTGV2MUVjLWFjT2FzWjRWUUlOdGduM2lsY09mWWxUNjBsQUo5ZlhvcmJZRmU3dXZvOFJiZVF3WmpOVGlFaFRsQzdFX0ZZaDNxSHRkM0lqRkNIQ1hPcGtBUDlBQlRSNGt1dGpRSmM1MnJ0b0E?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHTGV2MUVjLWFjT2FzWjRWUUlOdGduM2lsY09mWWxUNjBsQUo5ZlhvcmJZRmU3dXZvOFJiZVF3WmpOVGlFaFRsQzdFX0ZZaDNxSHRkM0lqRkNIQ1hPcGtBUDlBQlRSNGt1dGpRSmM1MnJ0b0E?oc=5"
+        }
+      ],
+      "raw_title": "직원 10%·3,300명 감원…코로나19 이후 최대 규모"
+    },
+    {
+      "id": "20260904-95fec912d3",
+      "date": "2026-09-04",
+      "collected_date": "2026-09-04",
+      "time": "09:31",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "mid",
+      "company": "쿠팡",
+      "signal": "공격적 채용 신호 · 인재 확보",
+      "level": "B",
+      "title": "쿠팡 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "쿠팡의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 쿠팡 채용 확대.",
+      "insight": "쿠팡의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "쿠팡 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "인재 확보",
+      "tags": [
+        "채용 확대",
+        "인재 확보",
+        "score:110"
+      ],
+      "sources": [
+        {
+          "name": "뉴시안",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aQ3hXQUdfbGhWS2x3Mm5NOTduQ1NjbzNOYVRaWnJSaS10el9ScUF6NTltMVI1V29KQzdISHpnYlZ6elNkOU1CaW1nQi1yU2JJckxEeHFxMFF2NjBuS1BYQXY2bG9mSnlPT0HSAW5BVV95cUxPQzJoTlE5SVBXdWxMNm1WM1V5RzZvaFV2eE1UYnNVai1yYlJKRDJ6U040dXBxSWZUYzRER3pkcGp0TWhubVJkbXlvS2lrYjAzSldfSEtfdGtpS3I0Q2VMVzIyQ2swNFgxNFY3SVAydw?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aQ3hXQUdfbGhWS2x3Mm5NOTduQ1NjbzNOYVRaWnJSaS10el9ScUF6NTltMVI1V29KQzdISHpnYlZ6elNkOU1CaW1nQi1yU2JJckxEeHFxMFF2NjBuS1BYQXY2bG9mSnlPT0HSAW5BVV95cUxPQzJoTlE5SVBXdWxMNm1WM1V5RzZvaFV2eE1UYnNVai1yYlJKRDJ6U040dXBxSWZUYzRER3pkcGp0TWhubVJkbXlvS2lrYjAzSldfSEtfdGtpS3I0Q2VMVzIyQ2swNFgxNFY3SVAydw?oc=5"
+        }
+      ],
+      "raw_title": "하반기 채용문 활짝…쿠팡·GS리테일·에이피알 인재 확보전"
+    },
+    {
+      "id": "20260901-9600dd7ef4",
+      "date": "2026-09-01",
+      "collected_date": "2026-09-04",
+      "time": "19:09",
+      "cat": "leader",
+      "priority": true,
+      "urgency": "mid",
+      "company": "발리온 바이오",
+      "signal": "리더 이동 신호 · CFO",
+      "level": "B",
+      "title": "발리온 바이오 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "발리온 바이오의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 발리온 바이오 리더십 변화.",
+      "insight": "발리온 바이오 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "발리온 바이오의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "발리온 바이오의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "CFO",
+        "score:105"
+      ],
+      "sources": [
+        {
+          "name": "데이터투자",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OekpCVzZ2OGdMeUN1SVNiVWVJakFabFYyNFNfdjN1V2M4amowZnpydU9hNkVYMGxHM2ltbjVyeGVqVDFZUk0tMjJtVGNDRFg4YVJpRVc2T0xMXzlud1RRVUwxWHYzWlF3X3BZZjhLUVN5ZFk?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OekpCVzZ2OGdMeUN1SVNiVWVJakFabFYyNFNfdjN1V2M4amowZnpydU9hNkVYMGxHM2ltbjVyeGVqVDFZUk0tMjJtVGNDRFg4YVJpRVc2T0xMXzlud1RRVUwxWHYzWlF3X3BZZjhLUVN5ZFk?oc=5"
+        }
+      ],
+      "raw_title": "리사 울프 CFO를 사장 겸 COO로 선임…이사회 신규 이사 2인 영입"
+    }
+  ]
+}
