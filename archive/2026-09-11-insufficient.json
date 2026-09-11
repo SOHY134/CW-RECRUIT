@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-11",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260904-27642c821b",
+      "date": "2026-09-04",
+      "collected_date": "2026-09-11",
+      "time": "11:51",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "에코마케팅",
+      "signal": "공격적 채용 신호 · 두 자릿수 채용",
+      "level": "B",
+      "title": "에코마케팅 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "에코마케팅의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 에코마케팅 채용 확대.",
+      "insight": "에코마케팅의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "에코마케팅 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "에코마케팅 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "두 자릿수 채용",
+        "score:83"
+      ],
+      "sources": [
+        {
+          "name": "잡포스트",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TdXE1enhMeWtKS1FDWnhQcV9HYU91RXpIam9pM2c5QmJISk5iZDBKZjJEbk5MU2FES1ZiYUFKRmdiTzJPN1NDX2Q1Y0xKbXA2WG1FUFZGTjZXa0lXajRDVmpGdUZqREhyX1VSeEFn0gFyQVVfeXFMTU1wRS1vbGVFeXdrOVd0QWNoZUpzY082UFg1S2hFbUpSNno5aktUSnI1a1YzWHpOLVNVVk9mYUVRcU1aTE5YMHd5d2VUZHpjNGxxT1Q2MFBwUUFBWUc5dUdLd2gxVlFBbXcwNmstRjc3YWtB?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TdXE1enhMeWtKS1FDWnhQcV9HYU91RXpIam9pM2c5QmJISk5iZDBKZjJEbk5MU2FES1ZiYUFKRmdiTzJPN1NDX2Q1Y0xKbXA2WG1FUFZGTjZXa0lXajRDVmpGdUZqREhyX1VSeEFn0gFyQVVfeXFMTU1wRS1vbGVFeXdrOVd0QWNoZUpzY082UFg1S2hFbUpSNno5aktUSnI1a1YzWHpOLVNVVk9mYUVRcU1aTE5YMHd5d2VUZHpjNGxxT1Q2MFBwUUFBWUc5dUdLd2gxVlFBbXcwNmstRjc3YWtB?oc=5"
+        }
+      ],
+      "raw_title": "하반기 두 자릿수 채용…마케터 넘어 AI·데이터 인재 찾는다"
+    },
+    {
+      "id": "20260908-3ada53a231",
+      "date": "2026-09-08",
+      "collected_date": "2026-09-11",
+      "time": "07:14",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "HR/노무 변화 · 파업",
+      "level": "B",
+      "title": "삼성전자 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "삼성전자의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 삼성전자 노사갈등.",
+      "insight": "삼성전자의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "삼성전자 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "노무 리스크",
+      "tags": [
+        "HR NEWS",
+        "노무 리스크",
+        "파업",
+        "score:68"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/308/0000038731?sid=102",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/308/0000038731?sid=102"
+        }
+      ],
+      "raw_title": "삼전 초기업노조 위원장 “연대 납득할 조합원, 없다”"
+    }
+  ]
+}
