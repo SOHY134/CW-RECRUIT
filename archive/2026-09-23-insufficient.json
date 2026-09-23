@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-23",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260917-ebba5a3078",
+      "date": "2026-09-17",
+      "collected_date": "2026-09-23",
+      "time": "10:57",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "CJ대한통운",
+      "signal": "공격적 채용 신호 · 공채",
+      "level": "B",
+      "title": "CJ대한통운 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "CJ대한통운의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: CJ대한통운 채용 확대.",
+      "insight": "CJ대한통운의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "CJ대한통운 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "CJ대한통운 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공채",
+        "score:113"
+      ],
+      "sources": [
+        {
+          "name": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1DS1RUV1U1WjYtM1pzYnVZcWQzLUF2S09VTlV1X2Y5N1FrRWNMai1MaE4tcDRjTmJUTEVkUE1yYWhNeERYTXlOV2pycDdqNFZsUzUtRQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1DS1RUV1U1WjYtM1pzYnVZcWQzLUF2S09VTlV1X2Y5N1FrRWNMai1MaE4tcDRjTmJUTEVkUE1yYWhNeERYTXlOV2pycDdqNFZsUzUtRQ?oc=5"
+        }
+      ],
+      "raw_title": "[공채 포커스] CJ대한통운·CJ프레시웨이, 하반기 신입 채용... 채용 설명회 개최"
+    },
+    {
+      "id": "20260916-121d084e86",
+      "date": "2026-09-16",
+      "collected_date": "2026-09-23",
+      "time": "21:45",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "히든스카우트",
+      "signal": "리더 이동 신호 · 영입",
+      "level": "B",
+      "title": "히든스카우트 리더십 변화 - 후속 조직개편과 직속 조직 이동 주시",
+      "body": "히든스카우트의 대표·임원급 리더십 변화가 확인됐습니다. 리더 이동은 후속 조직개편과 직속 조직의 연쇄 이동 가능성으로 이어질 수 있습니다. 원문 이슈: 히든스카우트 리더십 변화.",
+      "insight": "히든스카우트 리더십 변화는 팀 방향성, 의사결정 구조, 핵심 인재 유지에 영향을 줄 수 있습니다. 해당 리더 직속 조직을 별도로 추적하세요.",
+      "action": "히든스카우트의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "contact_strategy": "히든스카우트의 리더 직속 조직, 전 소속 팀, 후임 체계 변화를 확인하고 핵심 실무 리더의 이동 가능성을 후보자 맵에 반영하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "영입",
+        "score:92"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.venturesquare.net/1114270/",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.venturesquare.net/1114270/"
+        }
+      ],
+      "raw_title": "중견기업 리더 영입 늘었다…팀장·임원 의뢰..."
+    }
+  ]
+}
