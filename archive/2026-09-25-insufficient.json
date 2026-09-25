@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-25",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260922-e65252902c",
+      "date": "2026-09-22",
+      "collected_date": "2026-09-25",
+      "time": "15:45",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "CJ그룹 CJ제일제당·CJ푸드빌",
+      "signal": "공격적 채용 신호 · 대규모 채용",
+      "level": "B",
+      "title": "CJ그룹 CJ제일제당·CJ푸드빌 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "CJ그룹 CJ제일제당·CJ푸드빌의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: CJ푸드빌 채용 확대.",
+      "insight": "CJ그룹 CJ제일제당·CJ푸드빌의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "CJ그룹 CJ제일제당·CJ푸드빌 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "CJ그룹 CJ제일제당·CJ푸드빌 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "공격적 채용",
+      "tags": [
+        "채용 확대",
+        "공격적 채용",
+        "대규모 채용",
+        "score:88"
+      ],
+      "sources": [
+        {
+          "name": "여성소비자신문",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4S2ZXZkQzY0hWeWdEcXhrbUc0MTQweE9aS3BCbkZPSGRka3c0WWlseUVxMUVueUNYX0FpWGcyOGN3eW9zZjloZ1VNT3Bqbk01clN0RHBybU1PYnI3cENqUTBvOU96UQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4S2ZXZkQzY0hWeWdEcXhrbUc0MTQweE9aS3BCbkZPSGRka3c0WWlseUVxMUVueUNYX0FpWGcyOGN3eW9zZjloZ1VNT3Bqbk01clN0RHBybU1PYnI3cENqUTBvOU96UQ?oc=5"
+        }
+      ],
+      "raw_title": "대규모 채용행사 개최"
+    },
+    {
+      "id": "20260923-349236a530",
+      "date": "2026-09-23",
+      "collected_date": "2026-09-25",
+      "time": "00:02",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "mid",
+      "company": "원청 사용자성",
+      "signal": "HR/노무 변화 · 긴급조정",
+      "level": "B",
+      "title": "원청 사용자성 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "원청 사용자성의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 원청 사용자성 노사갈등.",
+      "insight": "원청 사용자성의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "원청 사용자성 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "원청 사용자성 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "긴급조정",
+        "score:55"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.gjdream.com/news/articleView.html?idxno=672922",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.gjdream.com/news/articleView.html?idxno=672922"
+        }
+      ],
+      "raw_title": "6개월 만에 되돌리기"
+    }
+  ]
+}
