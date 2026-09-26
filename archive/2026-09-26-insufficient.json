@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-26",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20260921-2428b435c6",
+      "date": "2026-09-21",
+      "collected_date": "2026-09-26",
+      "time": "16:58",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "호반그룹",
+      "signal": "공격적 채용 신호 · 공채",
+      "level": "B",
+      "title": "호반그룹 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "호반그룹의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 호반그룹 채용 확대.",
+      "insight": "호반그룹의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "호반그룹 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "호반그룹 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공채",
+        "score:83"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.consumernews.co.kr/news/articleView.html?idxno=764369",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.consumernews.co.kr/news/articleView.html?idxno=764369"
+        }
+      ],
+      "raw_title": "2027년 신입사원 채용 …AI 활용 역량 우대"
+    },
+    {
+      "id": "20260923-349236a530",
+      "date": "2026-09-23",
+      "collected_date": "2026-09-26",
+      "time": "00:02",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "mid",
+      "company": "원청 사용자성",
+      "signal": "HR/노무 변화 · 긴급조정",
+      "level": "B",
+      "title": "원청 사용자성 노사갈등 - 조직 안정성 및 핵심 인력 이탈 가능성 점검",
+      "body": "원청 사용자성의 노사갈등 이슈가 확인됐습니다. 이 이슈는 채용 운영 자체보다 조직 안정성, 직원 정서, 핵심 인력 유지 리스크와 직접 연결됩니다. 원문 이슈: 원청 사용자성 노사갈등.",
+      "insight": "원청 사용자성의 노사갈등은 구성원의 조직 신뢰와 잔류 의사에 영향을 줄 수 있습니다. 관련 사업부의 핵심 인력 이동 가능성을 관찰하세요.",
+      "action": "원청 사용자성 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "contact_strategy": "원청 사용자성 관련 직군의 이직 신호를 모니터링하고, 노사 이슈에 민감한 핵심 인력이 외부 기회를 탐색하는지 확인하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "긴급조정",
+        "score:55"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.gjdream.com/news/articleView.html?idxno=672922",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.gjdream.com/news/articleView.html?idxno=672922"
+        }
+      ],
+      "raw_title": "6개월 만에 되돌리기"
+    }
+  ]
+}
