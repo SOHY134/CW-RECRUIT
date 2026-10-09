@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-09",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "홈플러스"
+  ],
+  "items": [
+    {
+      "id": "20261007-b7dc45d657",
+      "date": "2026-10-07",
+      "collected_date": "2026-10-09",
+      "time": "16:13",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "홈플러스",
+      "signal": "인재 유출 가능성 · 구조조정",
+      "level": "B",
+      "title": "홈플러스 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "홈플러스에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 홈플러스 인력 조정.",
+      "insight": "홈플러스의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "홈플러스 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "구조조정",
+      "tags": [
+        "인재 유출",
+        "구조조정",
+        "score:123"
+      ],
+      "sources": [
+        {
+          "name": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vRVRma2tQSGdnLUpoc0llMU94eHhKM3Fiak1MVGxKR19JU180Z3NDQmVraHhFcXRPNTVCUGRVTGhCR0dRZ1BZNmxIV2gwVDZWcUtnLWI1NFdNVUVYa0JQMy1TbXp1QUE?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vRVRma2tQSGdnLUpoc0llMU94eHhKM3Fiak1MVGxKR19JU180Z3NDQmVraHhFcXRPNTVCUGRVTGhCR0dRZ1BZNmxIV2gwVDZWcUtnLWI1NFdNVUVYa0JQMy1TbXp1QUE?oc=5"
+        }
+      ],
+      "raw_title": "회생 인가 후 희망퇴직 시행…인력 구조조정 본격화"
+    },
+    {
+      "id": "20261006-64fc97a4d3",
+      "date": "2026-10-06",
+      "collected_date": "2026-10-09",
+      "time": "03:02",
+      "cat": "leader",
+      "priority": false,
+      "urgency": "low",
+      "company": "엔비디아 27조원 그록 거래",
+      "signal": "리더 이동 신호 · 영입",
+      "level": "B",
+      "title": "엔비디아 27조원 그록 거래 매각 이슈 - 조직 불확실성에 따른 이탈 리스크 주시",
+      "body": "엔비디아 27조원 그록 거래에서 매각·인수 관련 이슈가 확인됐습니다. 소유구조 변화 가능성은 조직 불확실성을 키워 핵심 인재 이탈 리스크로 이어질 수 있습니다. 원문 이슈: 엔비디아 27조원 그록 거래 매각 이슈.",
+      "insight": "매각 이슈는 보상, 조직개편, 리더십 변화 우려를 만들 수 있습니다. 엔비디아 27조원 그록 거래의 전략, 제품, 개발, 운영 리더급 움직임을 함께 봐야 합니다.",
+      "action": "엔비디아 27조원 그록 거래 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "contact_strategy": "엔비디아 27조원 그록 거래 핵심 조직의 리더와 시니어 실무자를 우선 모니터링하고, 조직 안정성 우려에 반응할 수 있는 후보자군을 선별하세요.",
+      "subcategory": "리더 이탈",
+      "tags": [
+        "리더 이탈",
+        "영입",
+        "score:97"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.g-enews.com/view.php?ud=2026100523444588809a1f309431_1",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.g-enews.com/view.php?ud=2026100523444588809a1f309431_1"
+        }
+      ],
+      "raw_title": "주주 소송 휘말려"
+    },
+    {
+      "id": "20261002-00ce0c3595",
+      "date": "2026-10-02",
+      "collected_date": "2026-10-09",
+      "time": "15:40",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.joongdo.co.kr/web/view.php?key=20261002010000484",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.joongdo.co.kr/web/view.php?key=20261002010000484"
+        }
+      ],
+      "raw_title": "[기고] 노동법 이 달라지고 있다"
+    }
+  ]
+}
