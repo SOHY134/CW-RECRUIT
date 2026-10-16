@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-16",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "삼성전자"
+  ],
+  "items": [
+    {
+      "id": "20261011-143daa1611",
+      "date": "2026-10-11",
+      "collected_date": "2026-10-16",
+      "time": "11:01",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "삼성전자",
+      "signal": "인재 유출 가능성 · 감원",
+      "level": "B",
+      "title": "삼성전자 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "삼성전자에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 삼성전자 인력 조정.",
+      "insight": "삼성전자의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "삼성전자 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "삼성전자 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "인재 유출",
+      "tags": [
+        "인재 유출",
+        "감원",
+        "score:118"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://n.news.naver.com/mnews/article/422/0000914407?sid=101",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://n.news.naver.com/mnews/article/422/0000914407?sid=101"
+        }
+      ],
+      "raw_title": "[기업기상도] 가을 하늘 높은 기업 vs 가을 서리 내린 기업"
+    },
+    {
+      "id": "20261012-68ce633a64",
+      "date": "2026-10-12",
+      "collected_date": "2026-10-16",
+      "time": "14:57",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "토스",
+      "signal": "공격적 채용 신호 · 세 자릿수 채용",
+      "level": "B",
+      "title": "토스 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "토스의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 토스 채용 확대.",
+      "insight": "토스의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "토스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "토스 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "세 자릿수 채용",
+        "score:113"
+      ],
+      "sources": [
+        {
+          "name": "알파경제",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9waFpaUXBZSXdxekM2dlV5bnE5bC1OYWVPOGN3Y05hTld6cDBQVHNYSEY3TlEzY2VHdHhncVZab0lOY2wtU1dWZWRiZ1NSUDhPYWw5N3RnQ29udHVxY2pycDF4eWZTNmc4Q00wU1hR?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9waFpaUXBZSXdxekM2dlV5bnE5bC1OYWVPOGN3Y05hTld6cDBQVHNYSEY3TlEzY2VHdHhncVZab0lOY2wtU1dWZWRiZ1NSUDhPYWw5N3RnQ29udHVxY2pycDF4eWZTNmc4Q00wU1hR?oc=5"
+        }
+      ],
+      "raw_title": "첫 대규모 공채…전 직군서 세 자릿수 채용"
+    }
+  ]
+}
