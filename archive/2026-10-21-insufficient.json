@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-21",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [],
+  "items": [
+    {
+      "id": "20261017-5027930bcf",
+      "date": "2026-10-17",
+      "collected_date": "2026-10-21",
+      "time": "08:56",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 최저임금",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "HR NEWS",
+      "tags": [
+        "HR NEWS",
+        "최저임금",
+        "score:63"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.eroun.net/news/articleView.html?idxno=92659",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.eroun.net/news/articleView.html?idxno=92659"
+        }
+      ],
+      "raw_title": "[공유경제 ①] '공유'는 사라지고 임대업만 남았다"
+    }
+  ]
+}
