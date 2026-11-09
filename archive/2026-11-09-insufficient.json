@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-09",
+  "summary": "최소 표시 기준을 충족할 실제 URL 정보가 부족해 기존 대시보드 데이터를 유지했습니다.",
+  "contact_targets": [
+    "게임업계"
+  ],
+  "items": [
+    {
+      "id": "20261104-49f9e46e0e",
+      "date": "2026-11-04",
+      "collected_date": "2026-11-09",
+      "time": "11:00",
+      "cat": "outflow",
+      "priority": true,
+      "urgency": "high",
+      "company": "게임업계",
+      "signal": "인재 유출 가능성 · 희망퇴직",
+      "level": "B",
+      "title": "게임업계 인력 조정 - 핵심 인재 이동 가능성 확대",
+      "body": "게임업계에서 인력 조정 신호가 확인됐습니다. 해당 이슈는 재직자의 이직 탐색과 핵심 직군 이동 가능성으로 직접 이어질 수 있습니다. 원문 이슈: 게임업계 인력 조정.",
+      "insight": "게임업계의 인력 조정은 개발, PM, 운영, 영업 등 핵심 실무자의 시장 유입 가능성을 높입니다. 유사 업권 후보자 풀을 빠르게 갱신하세요.",
+      "action": "게임업계 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "contact_strategy": "게임업계 재직자와 최근 퇴직자를 직군별로 매핑하고, 리멤버·LinkedIn에서 핵심 실무자 중심으로 24~48시간 내 접촉 우선순위를 정하세요.",
+      "subcategory": "희망퇴직",
+      "tags": [
+        "인재 유출",
+        "희망퇴직",
+        "score:118"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.eroun.net/news/articleView.html?idxno=94321",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.eroun.net/news/articleView.html?idxno=94321"
+        }
+      ],
+      "raw_title": "감원 쓰나미..고용 없는 성장"
+    },
+    {
+      "id": "20261109-52c40d2b36",
+      "date": "2026-11-09",
+      "collected_date": "2026-11-09",
+      "time": "11:24",
+      "cat": "hiring",
+      "priority": false,
+      "urgency": "high",
+      "company": "안랩",
+      "signal": "공격적 채용 신호 · 공채",
+      "level": "B",
+      "title": "안랩 채용 확대 - 동일 직군 후보자 확보 경쟁 심화",
+      "body": "안랩의 채용 확대 움직임이 확인됐습니다. 이는 동일 직군 후보자 풀에서 제안 경쟁과 응답 속도 경쟁이 커질 수 있음을 뜻합니다. 원문 이슈: 안랩 채용 확대.",
+      "insight": "안랩의 공격적 채용은 후보자의 기대 보상과 선택지를 넓힐 수 있습니다. 우리 채용 포지션과 겹치는 직군을 먼저 확인하세요.",
+      "action": "안랩 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "contact_strategy": "안랩 채용 직군과 우리 포지션의 겹침을 확인하고, JD·보상·제안 메시지·컨택 속도를 경쟁 기준으로 재점검하세요.",
+      "subcategory": "채용 확대",
+      "tags": [
+        "채용 확대",
+        "공채",
+        "score:93"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "https://www.itdaily.kr/news/articleView.html?idxno=242769",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "https://www.itdaily.kr/news/articleView.html?idxno=242769"
+        }
+      ],
+      "raw_title": "하반기 공채…신입·경력 두 자릿수 모집"
+    },
+    {
+      "id": "20261108-822ef02437",
+      "date": "2026-11-08",
+      "collected_date": "2026-11-09",
+      "time": "15:32",
+      "cat": "hr",
+      "priority": false,
+      "urgency": "high",
+      "company": "시장 동향",
+      "signal": "HR/노무 변화 · 근로기준법 개정",
+      "level": "B",
+      "title": "HR 제도 변화 - 근로조건 커뮤니케이션 업데이트 필요",
+      "body": "HR·노무 제도 변화가 확인됐습니다. 이 이슈는 채용 운영 전반보다 후보자에게 안내할 근로조건과 내부 제도 설명의 정확성에 직접 영향을 줍니다. 원문 이슈: HR 제도 변화.",
+      "insight": "제도 변화는 후보자가 근무조건을 판단하는 기준에 영향을 줄 수 있습니다. 채용 공고, 오퍼 안내, 후보자 FAQ의 표현을 점검하세요.",
+      "action": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "contact_strategy": "변경된 제도 내용을 채용 공고와 오퍼 커뮤니케이션에 반영하고, 후보자 문의가 예상되는 항목을 FAQ로 정리하세요.",
+      "subcategory": "제도 변화",
+      "tags": [
+        "HR NEWS",
+        "제도 변화",
+        "근로기준법 개정",
+        "score:73"
+      ],
+      "sources": [
+        {
+          "name": "네이버뉴스",
+          "url": "http://www.tongilnews.com/news/articleView.html?idxno=218105",
+          "level": "B",
+          "verified": true,
+          "verify_note": "HTTP 200",
+          "http_status": 200,
+          "original_url": "http://www.tongilnews.com/news/articleView.html?idxno=218105"
+        }
+      ],
+      "raw_title": "민주노총은 '진짜 사장 찾아내는 투쟁본부'...해석지침으로 무력화된 노..."
+    }
+  ]
+}
